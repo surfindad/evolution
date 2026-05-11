@@ -1,147 +1,201 @@
-import type { Metadata } from 'next'
-import { ArrowRight } from 'lucide-react'
+'use client'
 
-export const metadata: Metadata = {
-  title: 'About | Evolution Accelerator',
-  description:
-    'Evolution Accelerator aims to help and serve others via access to capital, community, and culture that creates meaningful relationships to fuel positive change.',
-}
+import { useRef } from 'react'
+import { motion, useInView } from 'framer-motion'
+import { ArrowRight } from 'lucide-react'
 
 const sections = [
   {
     title: 'Welcome',
+    icon: '🌱',
     content:
       'Evolution Accelerator welcomes others to apply for access to the Evolution Ecosystem whereby we may unite together to expand the breadth and reach of the ecosystem.',
   },
   {
     title: 'Education',
+    icon: '📚',
     content:
       'Evolution Accelerator represents a desire to explore, help, listen, learn, serve, share, and teach a greatly diversified wisdom without bias or prejudice.',
   },
   {
     title: 'Grow',
+    icon: '🚀',
     content:
       'Evolution Accelerator seeks to nurture mutually-beneficial growth throughout the ecosystem via collaboration and teamwork; it also aims to foster and sponsor appreciation, kindness, and respect.',
   },
   {
     title: 'Legacy',
+    icon: '✨',
     content:
       'Evolution Accelerator seeks to build a legacy of helping and serving others via coaching, education, and mentorship, as well as things like these to positively impact the universe.',
   },
 ]
 
-export default function AboutPage() {
+function HeroSection() {
   return (
-    <main className="bg-black min-h-screen">
-      {/* Hero */}
-      <section className="relative pt-40 pb-24 overflow-hidden">
-        <div
-          className="absolute inset-0 pointer-events-none"
-          style={{
-            background:
-              'radial-gradient(ellipse at 25% 50%, rgba(119,221,119,0.09) 0%, transparent 60%)',
-          }}
-        />
-        <div className="absolute inset-0 grid-bg opacity-40" />
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10">
-          <p className="text-green/60 text-xs font-inter font-semibold tracking-[0.4em] uppercase mb-6">
-            About Us
-          </p>
-          <h1
-            className="font-raleway font-black uppercase leading-none text-green text-glow mb-10 max-w-5xl"
-            style={{ fontSize: 'clamp(3rem, 7vw, 6rem)' }}
-          >
-            Evolving the art of acceleration via the 3C&apos;s: Capital. Community. Culture.
-          </h1>
-          <p className="text-white/45 text-xl font-inter leading-relaxed max-w-2xl">
-            Evolution Accelerator aims to help and serve others via access to capital,
-            community, and culture that creates meaningful relationships to fuel positive change.
-          </p>
-        </div>
-      </section>
+    <section className="relative pt-40 pb-24 overflow-hidden bg-[#050508]">
+      <div className="absolute inset-0 grid-bg opacity-40 pointer-events-none" />
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background:
+            'radial-gradient(ellipse at 25% 50%, rgba(119,221,119,0.10) 0%, transparent 60%)',
+        }}
+      />
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.9, ease: [0.25, 0.4, 0.25, 1] }}
+        className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10"
+      >
+        <p className="text-green/50 text-xs font-inter font-semibold tracking-[0.4em] uppercase mb-6">
+          About Us
+        </p>
+        <h1
+          className="font-raleway font-black uppercase gradient-text text-glow leading-none mb-10 max-w-5xl"
+          style={{ fontSize: 'clamp(3rem, 7vw, 6rem)' }}
+        >
+          Evolving the art of acceleration via the 3C&apos;s:<br />
+          Capital. Community. Culture.
+        </h1>
+        <p className="text-white/40 text-xl font-inter leading-relaxed max-w-2xl">
+          Evolution Accelerator aims to help and serve others via access to capital,
+          community, and culture that creates meaningful relationships to fuel positive change.
+        </p>
+      </motion.div>
+    </section>
+  )
+}
 
-      <hr className="divider" />
+function CoreSections() {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, margin: '-80px' })
 
-      {/* Core sections */}
-      <section className="py-24">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {sections.map((section) => (
-              <div key={section.title} className="card-dark rounded-2xl p-10">
-                <h2 className="font-raleway font-black text-2xl text-green uppercase tracking-wide mb-5">
-                  {section.title}
-                </h2>
-                <p className="text-white/45 font-inter leading-relaxed text-lg">
-                  {section.content}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <hr className="divider" />
-
-      {/* Subscribe */}
-      <section className="py-24 bg-surface">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <div className="max-w-2xl">
-            <p className="text-green/60 text-xs font-inter font-semibold tracking-[0.4em] uppercase mb-5">
-              Stay Connected
-            </p>
-            <h2 className="font-raleway font-black text-5xl uppercase text-green text-glow mb-6">
-              Subscribe
-            </h2>
-            <p className="text-white/45 font-inter text-lg leading-relaxed mb-10">
-              Evolution Accelerator seeks to support others in providing access to elements,
-              such as, but not limited to the 3C&apos;s: Capital, Community, and Culture.
-              Please feel free to subscribe to Evolution Accelerator&apos;s Substack using the link below.
-            </p>
-            <a
-              href="https://www.evolutionaccelerator.co/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-green text-black font-raleway font-black text-sm tracking-widest uppercase px-8 py-4 rounded-full hover:bg-green-light hover:shadow-[0_0_30px_rgba(119,221,119,0.4)] transition-all duration-300"
+  return (
+    <section className="py-24 bg-[#050508]">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10">
+        <div ref={ref} className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          {sections.map((section, i) => (
+            <motion.div
+              key={section.title}
+              initial={{ opacity: 0, y: 30 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7, delay: i * 0.1, ease: [0.25, 0.4, 0.25, 1] }}
+              className="glass rounded-2xl p-10 group relative overflow-hidden"
             >
-              Subscribe on Substack <ArrowRight size={16} />
-            </a>
-          </div>
+              <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-green/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+              <div className="text-3xl mb-5 relative z-10">{section.icon}</div>
+              <h2 className="font-raleway font-black text-2xl text-green uppercase tracking-wide mb-5 relative z-10">
+                {section.title}
+              </h2>
+              <p className="text-white/40 font-inter leading-relaxed text-lg relative z-10">
+                {section.content}
+              </p>
+            </motion.div>
+          ))}
         </div>
-      </section>
+      </div>
+    </section>
+  )
+}
 
-      <hr className="divider" />
+function SubscribeSection() {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, margin: '-80px' })
 
-      {/* Apply */}
-      <section className="py-28 relative overflow-hidden">
-        <div
-          className="absolute inset-0 pointer-events-none"
-          style={{
-            background:
-              'radial-gradient(ellipse at 50% 50%, rgba(119,221,119,0.07) 0%, transparent 65%)',
-          }}
-        />
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 text-center">
-          <p className="text-green/50 text-xs font-inter font-semibold tracking-[0.4em] uppercase mb-6">
-            Join the Ecosystem
+  return (
+    <section className="py-28 bg-[#080810]">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10">
+        <motion.div
+          ref={ref}
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, ease: [0.25, 0.4, 0.25, 1] }}
+          className="max-w-2xl"
+        >
+          <p className="text-green/50 text-xs font-inter font-semibold tracking-[0.4em] uppercase mb-5">
+            Stay Connected
           </p>
-          <h2 className="font-raleway font-black text-5xl md:text-7xl uppercase text-green text-glow mb-6">
-            Apply
+          <h2 className="font-raleway font-black text-5xl uppercase gradient-text text-glow mb-6">
+            Subscribe
           </h2>
-          <p className="text-white/40 font-inter text-lg leading-relaxed max-w-2xl mx-auto mb-12">
-            Please feel free to use the button below to apply for access to the Evolution
-            Ecosystem if you&apos;re ready, willing, and able to play a part in positive change
-            and greater good.
+          <p className="text-white/40 font-inter text-lg leading-relaxed mb-10">
+            Evolution Accelerator seeks to support others in providing access to elements,
+            such as, but not limited to the 3C&apos;s: Capital, Community, and Culture.
+            Please feel free to subscribe to Evolution Accelerator&apos;s Substack using the link below.
           </p>
           <a
-            href="https://airtable.com/appNvUtobsLy17k38/page1l8ort3ooz8a7/form"
+            href="https://www.evolutionaccelerator.co/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-green text-black font-raleway font-black text-sm tracking-widest uppercase px-12 py-5 rounded-full hover:bg-green-light hover:shadow-[0_0_60px_rgba(119,221,119,0.5)] transition-all duration-300"
+            className="btn-primary"
           >
-            Apply Now <ArrowRight size={16} />
+            Subscribe on Substack <ArrowRight size={16} />
           </a>
-        </div>
-      </section>
+        </motion.div>
+      </div>
+    </section>
+  )
+}
+
+function ApplySection() {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, margin: '-80px' })
+
+  return (
+    <section className="py-36 bg-[#050508] relative overflow-hidden">
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background:
+            'radial-gradient(ellipse at 50% 50%, rgba(119,221,119,0.09) 0%, transparent 65%)',
+        }}
+      />
+      <div className="absolute inset-0 grid-bg opacity-20 pointer-events-none" />
+      <motion.div
+        ref={ref}
+        initial={{ opacity: 0, y: 40 }}
+        animate={isInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.8, ease: [0.25, 0.4, 0.25, 1] }}
+        className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 text-center"
+      >
+        <p className="text-green/50 text-xs font-inter font-semibold tracking-[0.4em] uppercase mb-6">
+          Join the Ecosystem
+        </p>
+        <h2
+          className="font-raleway font-black uppercase gradient-text text-glow mb-6 leading-none"
+          style={{ fontSize: 'clamp(4rem, 10vw, 7rem)' }}
+        >
+          Apply
+        </h2>
+        <p className="text-white/35 font-inter text-lg leading-relaxed max-w-2xl mx-auto mb-12">
+          Please feel free to use the button below to apply for access to the Evolution
+          Ecosystem if you&apos;re ready, willing, and able to play a part in positive change
+          and greater good.
+        </p>
+        <a
+          href="https://airtable.com/appNvUtobsLy17k38/page1l8ort3ooz8a7/form"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-primary"
+        >
+          Apply Now <ArrowRight size={16} />
+        </a>
+      </motion.div>
+    </section>
+  )
+}
+
+export default function AboutPage() {
+  return (
+    <main className="bg-[#050508] min-h-screen">
+      <HeroSection />
+      <hr className="divider" />
+      <CoreSections />
+      <hr className="divider" />
+      <SubscribeSection />
+      <hr className="divider" />
+      <ApplySection />
     </main>
   )
 }
