@@ -6,7 +6,7 @@ export default function MarqueeStrip() {
   const doubled = [...companiesData, ...companiesData]
 
   return (
-    <section className="py-28 bg-[#131310] overflow-hidden">
+    <section className="py-28 bg-[#1E1E1A] overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 mb-16">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div>
@@ -31,8 +31,8 @@ export default function MarqueeStrip() {
 
       {/* Row 1 — left to right */}
       <div className="marquee-container relative mb-4">
-        <div className="absolute left-0 top-0 bottom-0 w-40 bg-gradient-to-r from-[#131310] to-transparent z-10 pointer-events-none" />
-        <div className="absolute right-0 top-0 bottom-0 w-40 bg-gradient-to-l from-[#131310] to-transparent z-10 pointer-events-none" />
+        <div className="absolute left-0 top-0 bottom-0 w-40 bg-gradient-to-r from-[#1E1E1A] to-transparent z-10 pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-40 bg-gradient-to-l from-[#1E1E1A] to-transparent z-10 pointer-events-none" />
         <div className="marquee-track marquee-track-fwd">
           {doubled.map((company, i) => (
             <div key={`fwd-${company.id}-${i}`} className="flex items-center">
@@ -47,8 +47,8 @@ export default function MarqueeStrip() {
 
       {/* Row 2 — right to left */}
       <div className="marquee-container relative">
-        <div className="absolute left-0 top-0 bottom-0 w-40 bg-gradient-to-r from-[#131310] to-transparent z-10 pointer-events-none" />
-        <div className="absolute right-0 top-0 bottom-0 w-40 bg-gradient-to-l from-[#131310] to-transparent z-10 pointer-events-none" />
+        <div className="absolute left-0 top-0 bottom-0 w-40 bg-gradient-to-r from-[#1E1E1A] to-transparent z-10 pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-40 bg-gradient-to-l from-[#1E1E1A] to-transparent z-10 pointer-events-none" />
         <div className="marquee-track marquee-track-rev">
           {doubled.map((company, i) => (
             <div key={`rev-${company.id}-${i}`} className="flex items-center">

@@ -95,7 +95,7 @@ function Avatar({ member }: { member: typeof team[number] }) {
 
 function HeroSection() {
   return (
-    <section className="relative pt-40 pb-24 overflow-hidden bg-[#0D0D0B] grain">
+    <section className="relative pt-40 pb-24 overflow-hidden bg-[#161614] grain">
       <div className="absolute inset-0 grid-bg opacity-40 pointer-events-none" />
       <div
         className="absolute inset-0 pointer-events-none"
@@ -133,7 +133,7 @@ function TeamGrid() {
   const isInView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section className="py-24 bg-[#0D0D0B]">
+    <section className="py-24 bg-[#161614]">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div ref={ref} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {team.map((member, i) => (
@@ -192,7 +192,7 @@ function PhotoBanner() {
   const isInView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section className="bg-[#0D0D0B] px-6 lg:px-10">
+    <section className="bg-[#161614] px-6 lg:px-10">
       <motion.div
         ref={ref}
         initial={{ opacity: 0, y: 30 }}
@@ -220,7 +220,7 @@ function JoinSection() {
   const isInView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section className="py-28 bg-[#131310] grain">
+    <section className="py-28 bg-[#1E1E1A] grain">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <motion.div
           ref={ref}
@@ -255,7 +255,7 @@ function JoinSection() {
 
 export default function TeamPage() {
   return (
-    <main className="bg-[#0D0D0B] min-h-screen">
+    <main className="bg-[#161614] min-h-screen">
       <HeroSection />
       <hr className="divider" />
       <TeamGrid />

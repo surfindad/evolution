@@ -9,7 +9,7 @@ function HeroSection() {
   const isInView = useInView(ref, { once: true })
 
   return (
-    <section className="relative pt-40 pb-16 overflow-hidden bg-[#0D0D0B] grain">
+    <section className="relative pt-40 pb-16 overflow-hidden bg-[#161614] grain">
       <div className="absolute inset-0 grid-bg opacity-40 pointer-events-none" />
       <div
         className="absolute inset-0 pointer-events-none"
@@ -64,10 +64,10 @@ function HeroSection() {
 
 export default function PortfolioPage() {
   return (
-    <main className="bg-[#0D0D0B] min-h-screen">
+    <main className="bg-[#161614] min-h-screen">
       <HeroSection />
       <hr className="divider" />
-      <section className="py-16 bg-[#0D0D0B]">
+      <section className="py-16 bg-[#161614]">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <PortfolioGrid />
         </div>
