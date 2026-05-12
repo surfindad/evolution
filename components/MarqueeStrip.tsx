@@ -36,10 +36,10 @@ export default function MarqueeStrip() {
         <div className="marquee-track marquee-track-fwd">
           {doubled.map((company, i) => (
             <div key={`fwd-${company.id}-${i}`} className="flex items-center">
-              <span className="font-raleway font-bold text-2xl md:text-3xl text-white/15 hover:text-green/70 transition-colors duration-300 px-8 whitespace-nowrap cursor-default select-none">
+              <span className="font-raleway font-bold text-2xl md:text-3xl text-white/50 hover:text-green transition-colors duration-300 px-8 whitespace-nowrap cursor-default select-none">
                 {company.name}
               </span>
-              <span className="text-green/10 text-lg select-none">·</span>
+              <span className="text-green/30 text-lg select-none">·</span>
             </div>
           ))}
         </div>
@@ -52,10 +52,10 @@ export default function MarqueeStrip() {
         <div className="marquee-track marquee-track-rev">
           {doubled.map((company, i) => (
             <div key={`rev-${company.id}-${i}`} className="flex items-center">
-              <span className="font-raleway font-bold text-xl md:text-2xl text-white/10 hover:text-green/50 transition-colors duration-300 px-8 whitespace-nowrap cursor-default select-none">
+              <span className="font-raleway font-bold text-xl md:text-2xl text-white/35 hover:text-green/80 transition-colors duration-300 px-8 whitespace-nowrap cursor-default select-none">
                 {company.name}
               </span>
-              <span className="text-green/8 text-lg select-none">·</span>
+              <span className="text-green/20 text-lg select-none">·</span>
             </div>
           ))}
         </div>
