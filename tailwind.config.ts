@@ -16,7 +16,7 @@ const config: Config = {
           dim: 'rgba(119,221,119,0.15)',
         },
         bg: {
-          DEFAULT: '#050508',
+          DEFAULT: '#0D0D0B',
           elevated: '#0c0c14',
           card: '#0f0f18',
         },

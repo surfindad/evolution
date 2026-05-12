@@ -35,7 +35,7 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? 'bg-[#050508]/90 backdrop-blur-xl border-b border-white/5'
+          ? 'bg-[#0D0D0B]/90 backdrop-blur-xl border-b border-white/5'
           : 'bg-transparent'
       }`}
     >
@@ -99,7 +99,7 @@ export default function Navbar() {
           isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <div className="bg-[#050508]/95 backdrop-blur-xl border-t border-white/5 px-6 py-8 flex flex-col gap-6">
+        <div className="bg-[#0D0D0B]/95 backdrop-blur-xl border-t border-white/5 px-6 py-8 flex flex-col gap-6">
           {navLinks.map((link) =>
             link.external ? (
               <a

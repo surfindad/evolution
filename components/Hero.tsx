@@ -9,7 +9,7 @@ const words = ['Capital.', 'Community.', 'Culture.']
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#050508]">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0D0D0B]">
 
       {/*
        * ─────────────────────────────────────────────────────────────────

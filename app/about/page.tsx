@@ -33,7 +33,7 @@ const sections = [
 
 function HeroSection() {
   return (
-    <section className="relative pt-40 pb-24 overflow-hidden bg-[#050508] grain">
+    <section className="relative pt-40 pb-24 overflow-hidden bg-[#0D0D0B] grain">
       <div className="absolute inset-0 grid-bg opacity-40 pointer-events-none" />
       <div
         className="absolute inset-0 pointer-events-none"
@@ -80,7 +80,7 @@ function FeaturedPhoto() {
   const isInView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section className="py-0 bg-[#050508] px-6 lg:px-10">
+    <section className="py-0 bg-[#0D0D0B] px-6 lg:px-10">
       <motion.div
         ref={ref}
         initial={{ opacity: 0, scale: 0.98 }}
@@ -104,7 +104,7 @@ function CoreSections() {
   const isInView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section className="py-24 bg-[#050508]">
+    <section className="py-24 bg-[#0D0D0B]">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div ref={ref} className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {sections.map((section, i) => (
@@ -136,7 +136,7 @@ function SubscribeSection() {
   const isInView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section className="py-28 bg-[#080810]">
+    <section className="py-28 bg-[#131310]">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <motion.div
           ref={ref}
@@ -175,7 +175,7 @@ function ApplySection() {
   const isInView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section className="py-36 bg-[#050508] relative overflow-hidden">
+    <section className="py-36 bg-[#0D0D0B] relative overflow-hidden">
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
@@ -220,7 +220,7 @@ function ApplySection() {
 
 export default function AboutPage() {
   return (
-    <main className="bg-[#050508] min-h-screen">
+    <main className="bg-[#0D0D0B] min-h-screen">
       <HeroSection />
       <FeaturedPhoto />
       <hr className="divider" />

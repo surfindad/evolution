@@ -5,9 +5,9 @@
 :root {
   --green: #77DD77;
   --green-glow: rgba(119, 221, 119, 0.2);
-  --bg: #050508;
-  --bg-elevated: #0c0c14;
-  --bg-card: #0f0f18;
+  --bg: #0D0D0B;
+  --bg-elevated: #131310;
+  --bg-card: #1a1a16;
   --border: rgba(255, 255, 255, 0.06);
   --border-green: rgba(119, 221, 119, 0.3);
 }
@@ -17,7 +17,7 @@
 html { scroll-behavior: smooth; }
 
 body {
-  background-color: #050508;
+  background-color: #0D0D0B;
   color: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -25,7 +25,7 @@ body {
 
 /* Scrollbar */
 ::-webkit-scrollbar { width: 4px; }
-::-webkit-scrollbar-track { background: #050508; }
+::-webkit-scrollbar-track { background: #0D0D0B; }
 ::-webkit-scrollbar-thumb { background: rgba(119,221,119,0.4); border-radius: 2px; }
 
 /* Noise / grain texture overlay — applied to gradient-heavy sections */
