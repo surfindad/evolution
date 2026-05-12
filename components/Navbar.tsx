@@ -10,6 +10,7 @@ const navLinks = [
   { href: '/about', label: 'About' },
   { href: '/ecosystem', label: 'Ecosystem' },
   { href: '/portfolio', label: 'Portfolio' },
+  { href: '/team', label: 'Team' },
   { href: 'https://www.evolutionaccelerator.co/', label: 'Blog', external: true },
 ]
 

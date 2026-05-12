@@ -52,7 +52,7 @@ const termsBullets = [
 
 function HeroSection() {
   return (
-    <section className="relative pt-40 pb-20 overflow-hidden bg-[#050508]">
+    <section className="relative pt-40 pb-20 overflow-hidden bg-[#050508] grain">
       <div className="absolute inset-0 grid-bg opacity-40 pointer-events-none" />
       <div
         className="absolute inset-0 pointer-events-none"

@@ -25,6 +25,10 @@ const config: Config = {
         raleway: ['var(--font-raleway)', 'sans-serif'],
         inter: ['var(--font-inter)', 'sans-serif'],
       },
+      letterSpacing: {
+        tightest: '-0.04em',
+        tighter: '-0.03em',
+      },
       animation: {
         marquee: 'marquee 55s linear infinite',
         'marquee-reverse': 'marquee-reverse 55s linear infinite',

@@ -2,7 +2,7 @@
 
 import { useState, useMemo, useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { Search, ExternalLink } from 'lucide-react'
+import { Search, ExternalLink, ArrowUpRight } from 'lucide-react'
 import companiesData from '@/data/companies.json'
 
 export default function PortfolioGrid() {
@@ -18,32 +18,33 @@ export default function PortfolioGrid() {
 
   return (
     <div>
-      {/* Search */}
-      <div className="relative mb-10 max-w-lg">
-        <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-white/20" size={17} />
-        <input
-          type="text"
-          placeholder="Search companies..."
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          className="w-full bg-white/[0.03] border border-white/[0.07] focus:border-green/30 rounded-full pl-12 pr-6 py-3.5 text-white placeholder-white/20 font-inter text-sm outline-none transition-all duration-300 backdrop-blur-md"
-        />
-        {query && (
-          <button
-            onClick={() => setQuery('')}
-            className="absolute right-4 top-1/2 -translate-y-1/2 text-white/25 hover:text-white/60 transition-colors text-xs font-inter"
-          >
-            Clear
-          </button>
-        )}
+      {/* Search bar */}
+      <div className="flex items-center gap-4 mb-10">
+        <div className="relative flex-1 max-w-lg">
+          <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-white/20" size={16} />
+          <input
+            type="text"
+            placeholder="Search portfolio companies..."
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            className="w-full bg-white/[0.03] border border-white/[0.08] focus:border-green/40 rounded-full pl-11 pr-6 py-3.5 text-white placeholder-white/20 font-inter text-sm outline-none transition-all duration-300 backdrop-blur-md"
+          />
+          {query && (
+            <button
+              onClick={() => setQuery('')}
+              className="absolute right-4 top-1/2 -translate-y-1/2 text-white/25 hover:text-white/60 transition-colors text-xs font-inter"
+            >
+              Clear
+            </button>
+          )}
+        </div>
+        <p className="text-white/20 text-xs font-inter tracking-widest uppercase shrink-0">
+          {filtered.length} {filtered.length === 1 ? 'Company' : 'Companies'}
+        </p>
       </div>
 
-      <p className="text-white/20 text-xs font-inter tracking-widest uppercase mb-8">
-        {filtered.length} {filtered.length === 1 ? 'Company' : 'Companies'}
-      </p>
-
       {filtered.length > 0 ? (
-        <div ref={ref} className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
+        <div ref={ref} className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
           {filtered.map((company, i) => (
             <motion.a
               key={company.id}
@@ -54,38 +55,42 @@ export default function PortfolioGrid() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{
                 duration: 0.5,
-                delay: Math.min(i * 0.03, 0.8),
+                delay: Math.min(i * 0.025, 0.7),
                 ease: [0.25, 0.4, 0.25, 1],
               }}
-              className="glass rounded-xl aspect-square flex flex-col items-center justify-center p-5 group relative overflow-hidden"
+              className="group relative overflow-hidden rounded-xl border border-white/[0.07] bg-white/[0.03] hover:bg-white/[0.06] hover:border-green/30 transition-all duration-400 flex flex-col items-start justify-between p-6 h-36"
+              style={{
+                boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.04)',
+              }}
             >
-              {/* Green corner accent on hover */}
-              <div className="absolute top-0 left-0 w-8 h-8 opacity-0 group-hover:opacity-100 transition-opacity duration-400">
-                <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-green/50 to-transparent" />
-                <div className="absolute top-0 left-0 h-full w-px bg-gradient-to-b from-green/50 to-transparent" />
-              </div>
+              {/* Hover glow */}
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+                style={{ background: 'radial-gradient(circle at 50% 0%, rgba(119,221,119,0.07) 0%, transparent 70%)' }}
+              />
 
-              <span className="font-raleway font-bold text-center text-white/50 group-hover:text-green transition-colors duration-300 text-sm leading-tight relative z-10">
+              {/* Top left accent on hover */}
+              <div className="absolute top-0 left-0 w-12 h-px bg-gradient-to-r from-green/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+              <span className="font-raleway font-bold text-white/55 group-hover:text-white transition-colors duration-300 text-base leading-snug relative z-10 line-clamp-2">
                 {company.name}
               </span>
 
-              {company.description && (
-                <span className="text-white/20 text-xs text-center mt-2 leading-tight font-inter relative z-10">
-                  {company.description}
+              <div className="flex items-center justify-between w-full relative z-10">
+                <span className="text-green/0 group-hover:text-green/50 text-xs font-inter tracking-widest uppercase transition-colors duration-300">
+                  View
                 </span>
-              )}
-
-              <ExternalLink
-                size={11}
-                className="absolute bottom-3 right-3 text-white/0 group-hover:text-green/40 transition-all duration-300"
-              />
+                <ArrowUpRight
+                  size={14}
+                  className="text-white/0 group-hover:text-green/60 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                />
+              </div>
             </motion.a>
           ))}
         </div>
       ) : (
         <div className="text-center py-28">
           <p className="text-white/25 font-inter text-lg mb-2">No companies found</p>
-          <p className="text-white/12 font-inter text-sm">Try a different search term</p>
+          <p className="text-white/15 font-inter text-sm">Try a different search term</p>
         </div>
       )}
     </div>

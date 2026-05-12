@@ -19,7 +19,7 @@ function Manifesto() {
   ]
 
   return (
-    <section className="py-32 bg-[#050508] relative overflow-hidden">
+    <section className="py-32 bg-[#050508] relative overflow-hidden grain">
       {/* Giant watermark */}
       <div
         className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden"
@@ -248,7 +248,7 @@ function CTASection() {
   const isInView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section className="py-36 bg-[#050508] text-center relative overflow-hidden">
+    <section className="py-36 bg-[#050508] text-center relative overflow-hidden grain">
       <div
         className="absolute inset-0 pointer-events-none"
         style={{

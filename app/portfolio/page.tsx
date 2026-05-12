@@ -9,7 +9,7 @@ function HeroSection() {
   const isInView = useInView(ref, { once: true })
 
   return (
-    <section className="relative pt-40 pb-16 overflow-hidden bg-[#050508]">
+    <section className="relative pt-40 pb-16 overflow-hidden bg-[#050508] grain">
       <div className="absolute inset-0 grid-bg opacity-40 pointer-events-none" />
       <div
         className="absolute inset-0 pointer-events-none"
@@ -29,19 +29,33 @@ function HeroSection() {
           Our Investments
         </p>
         <h1
-          className="font-raleway font-black uppercase gradient-text text-glow mb-8 leading-none"
+          className="font-raleway font-black uppercase gradient-text text-glow mb-10 leading-none"
           style={{ fontSize: 'clamp(4rem, 12vw, 9rem)' }}
         >
           Portfolio
         </h1>
-        <p className="text-white/35 text-lg font-inter max-w-3xl leading-relaxed">
-          Evolution&apos;s portfolio construction is guided by four core principles. First, we
-          target startups using technology to decompose monolithic industries. Second, we
-          prioritize innovation over invention, seeking companies that refine and scale
-          existing technologies for practical application. Third, we invest in ventures with
-          clear, rapid pathways to revenue generation. Finally, we focus on companies where
-          marginal value significantly exceeds marginal costs, ensuring efficient capital
-          deployment and long-term profitability.
+
+        {/* Thesis pillars */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-12">
+          {[
+            { num: '01', text: 'Technology decomposing monolithic industries' },
+            { num: '02', text: 'Innovation over invention — refine and scale' },
+            { num: '03', text: 'Clear, rapid pathways to revenue' },
+            { num: '04', text: 'Marginal value exceeds marginal cost' },
+          ].map((pillar) => (
+            <div
+              key={pillar.num}
+              className="glass rounded-xl p-5 group"
+            >
+              <p className="text-green/30 font-raleway font-black text-xs mb-2">{pillar.num}</p>
+              <p className="text-white/40 font-inter text-sm leading-relaxed">{pillar.text}</p>
+            </div>
+          ))}
+        </div>
+
+        <p className="text-white/25 text-sm font-inter max-w-2xl leading-relaxed">
+          50+ portfolio companies across sectors — each selected for their ability to redefine
+          their market with technology, speed, and a clear path to value creation.
         </p>
       </motion.div>
     </section>
