@@ -10,7 +10,29 @@ const words = ['Capital.', 'Community.', 'Culture.']
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#050508]">
-      {/* Particle constellation */}
+
+      {/*
+       * ─────────────────────────────────────────────────────────────────
+       * HERO VIDEO
+       * To activate: drop your video file into /public/video/hero.mp4
+       * (also add hero.webm for broader browser support)
+       * Then remove the hidden class below.
+       * ─────────────────────────────────────────────────────────────────
+       */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover opacity-0 hidden"
+        aria-hidden
+      >
+        {/* <source src="/video/hero.mp4" type="video/mp4" /> */}
+        {/* <source src="/video/hero.webm" type="video/webm" /> */}
+      </video>
+      {/* When video is active, reduce particle opacity and increase vignette */}
+
+      {/* Particle constellation (fallback / layered behind video) */}
       <ParticleCanvas />
 
       {/* Grid */}

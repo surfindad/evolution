@@ -2,7 +2,7 @@
 
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Camera, ImageIcon } from 'lucide-react'
 
 const sections = [
   {
@@ -62,6 +62,38 @@ function HeroSection() {
           Evolution Accelerator aims to help and serve others via access to capital,
           community, and culture that creates meaningful relationships to fuel positive change.
         </p>
+      </motion.div>
+    </section>
+  )
+}
+
+/*
+ * ─────────────────────────────────────────────────────────────────────────────
+ * ABOUT PAGE — FEATURED PHOTO
+ * Add a wide photo (office, event, team candid) to /public/images/about-banner.jpg
+ * Then replace the placeholder div below with:
+ *   <img src="/images/about-banner.jpg" alt="Evolution Accelerator" className="..." />
+ * ─────────────────────────────────────────────────────────────────────────────
+ */
+function FeaturedPhoto() {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, margin: '-80px' })
+
+  return (
+    <section className="py-0 bg-[#050508] px-6 lg:px-10">
+      <motion.div
+        ref={ref}
+        initial={{ opacity: 0, scale: 0.98 }}
+        animate={isInView ? { opacity: 1, scale: 1 } : {}}
+        transition={{ duration: 0.9, ease: [0.25, 0.4, 0.25, 1] }}
+        className="max-w-7xl mx-auto"
+      >
+        {/* ↓ Replace with: <img src="/images/about-banner.jpg" alt="..." className="w-full h-[500px] object-cover rounded-2xl" /> */}
+        <div className="w-full h-64 md:h-[440px] rounded-2xl border border-dashed border-white/10 flex flex-col items-center justify-center gap-3 bg-white/[0.015]">
+          <ImageIcon size={36} className="text-white/15" />
+          <p className="text-white/20 font-inter text-sm tracking-widest uppercase">Featured Photo</p>
+          <p className="text-white/12 font-inter text-xs">Add image to /public/images/about-banner.jpg</p>
+        </div>
       </motion.div>
     </section>
   )
@@ -190,6 +222,7 @@ export default function AboutPage() {
   return (
     <main className="bg-[#050508] min-h-screen">
       <HeroSection />
+      <FeaturedPhoto />
       <hr className="divider" />
       <CoreSections />
       <hr className="divider" />

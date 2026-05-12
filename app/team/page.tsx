@@ -2,54 +2,96 @@
 
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { Linkedin, ArrowRight } from 'lucide-react'
+import { Linkedin, ArrowRight, Camera } from 'lucide-react'
 
-// ─── Replace with real team data ───────────────────────────
-const team = [
+/*
+ * ─────────────────────────────────────────────────────────────────────────────
+ * TEAM DATA — fill in real info here
+ *
+ * photo:    Add headshot images to /public/images/team/
+ *           Set photo to the path e.g. '/images/team/john-doe.jpg'
+ *           Leave as null to show the initials placeholder until photo is ready.
+ *
+ * linkedin: Replace '#' with the full LinkedIn profile URL.
+ * ─────────────────────────────────────────────────────────────────────────────
+ */
+const team: {
+  name: string
+  title: string
+  bio: string
+  initials: string
+  photo: string | null
+  linkedin: string
+}[] = [
   {
     name: 'Team Member Name',
     title: 'Co-Founder & Managing Partner',
-    bio: 'Add a short bio here — 1 to 2 sentences about background, expertise, and focus area.',
+    bio: 'Add a 1–2 sentence bio covering background, focus area, and what they bring to founders.',
     initials: 'TM',
-    linkedin: '#',
+    photo: null,           // → '/images/team/filename.jpg'
+    linkedin: '#',         // → 'https://linkedin.com/in/...'
   },
   {
     name: 'Team Member Name',
     title: 'General Partner',
-    bio: 'Add a short bio here — 1 to 2 sentences about background, expertise, and focus area.',
+    bio: 'Add a 1–2 sentence bio covering background, focus area, and what they bring to founders.',
     initials: 'TM',
+    photo: null,
     linkedin: '#',
   },
   {
     name: 'Team Member Name',
     title: 'Partner, Operations',
-    bio: 'Add a short bio here — 1 to 2 sentences about background, expertise, and focus area.',
+    bio: 'Add a 1–2 sentence bio covering background, focus area, and what they bring to founders.',
     initials: 'TM',
+    photo: null,
     linkedin: '#',
   },
   {
     name: 'Team Member Name',
     title: 'Venture Partner',
-    bio: 'Add a short bio here — 1 to 2 sentences about background, expertise, and focus area.',
+    bio: 'Add a 1–2 sentence bio covering background, focus area, and what they bring to founders.',
     initials: 'TM',
+    photo: null,
     linkedin: '#',
   },
   {
     name: 'Team Member Name',
     title: 'Venture Partner',
-    bio: 'Add a short bio here — 1 to 2 sentences about background, expertise, and focus area.',
+    bio: 'Add a 1–2 sentence bio covering background, focus area, and what they bring to founders.',
     initials: 'TM',
+    photo: null,
     linkedin: '#',
   },
   {
     name: 'Team Member Name',
     title: 'Ecosystem Associate',
-    bio: 'Add a short bio here — 1 to 2 sentences about background, expertise, and focus area.',
+    bio: 'Add a 1–2 sentence bio covering background, focus area, and what they bring to founders.',
     initials: 'TM',
+    photo: null,
     linkedin: '#',
   },
 ]
-// ───────────────────────────────────────────────────────────
+
+function Avatar({ member }: { member: typeof team[number] }) {
+  if (member.photo) {
+    return (
+      <img
+        src={member.photo}
+        alt={member.name}
+        className="w-20 h-20 rounded-full object-cover object-top border border-white/10 group-hover:border-green/30 transition-colors duration-300 mb-6"
+      />
+    )
+  }
+
+  /* Photo placeholder — shows until real photo is provided */
+  return (
+    <div className="w-20 h-20 rounded-full border border-dashed border-white/15 group-hover:border-green/30 flex flex-col items-center justify-center mb-6 transition-colors duration-300 bg-white/[0.02] relative overflow-hidden">
+      <Camera size={16} className="text-white/20 mb-1" />
+      <span className="text-white/20 text-[9px] font-inter tracking-widest uppercase">Photo</span>
+    </div>
+  )
+}
 
 function HeroSection() {
   return (
@@ -100,25 +142,20 @@ function TeamGrid() {
               initial={{ opacity: 0, y: 40 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
-              className="glass rounded-2xl p-8 group relative overflow-hidden"
+              className="glass rounded-2xl p-8 group relative overflow-hidden flex flex-col"
             >
-              <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-green/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+              <div className="absolute top-0 left-0 right-0 h-28 bg-gradient-to-b from-green/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
-              {/* Avatar */}
-              <div className="w-16 h-16 rounded-full bg-green/10 border border-green/20 flex items-center justify-center mb-6 group-hover:border-green/40 transition-colors duration-300">
-                <span className="font-raleway font-black text-green text-lg">
-                  {member.initials}
-                </span>
-              </div>
+              <Avatar member={member} />
 
-              <div className="relative z-10">
+              <div className="relative z-10 flex flex-col flex-1">
                 <h3 className="font-raleway font-bold text-white text-xl mb-1 group-hover:text-green transition-colors duration-300">
                   {member.name}
                 </h3>
                 <p className="text-green/50 text-xs font-inter tracking-widest uppercase mb-4">
                   {member.title}
                 </p>
-                <p className="text-white/35 font-inter text-sm leading-relaxed mb-6">
+                <p className="text-white/35 font-inter text-sm leading-relaxed flex-1 mb-6">
                   {member.bio}
                 </p>
 
@@ -138,6 +175,42 @@ function TeamGrid() {
           ))}
         </div>
       </div>
+    </section>
+  )
+}
+
+/*
+ * ─────────────────────────────────────────────────────────────────────────────
+ * TEAM / EVENT PHOTO BANNER
+ * Add a wide team or event photo to /public/images/team-banner.jpg
+ * Then replace the placeholder div below with:
+ *   <img src="/images/team-banner.jpg" alt="Evolution Accelerator team" ... />
+ * ─────────────────────────────────────────────────────────────────────────────
+ */
+function PhotoBanner() {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, margin: '-80px' })
+
+  return (
+    <section className="bg-[#050508] px-6 lg:px-10">
+      <motion.div
+        ref={ref}
+        initial={{ opacity: 0, y: 30 }}
+        animate={isInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.8, ease: [0.25, 0.4, 0.25, 1] }}
+        className="max-w-7xl mx-auto"
+      >
+        {/* ↓ Replace this div with your team/event photo */}
+        <div className="w-full h-72 md:h-96 rounded-2xl border border-dashed border-white/10 flex flex-col items-center justify-center gap-3 bg-white/[0.015]">
+          <Camera size={32} className="text-white/15" />
+          <p className="text-white/20 font-inter text-sm tracking-widest uppercase">
+            Team / Event Photo
+          </p>
+          <p className="text-white/12 font-inter text-xs">
+            Add image to /public/images/team-banner.jpg
+          </p>
+        </div>
+      </motion.div>
     </section>
   )
 }
@@ -186,6 +259,7 @@ export default function TeamPage() {
       <HeroSection />
       <hr className="divider" />
       <TeamGrid />
+      <PhotoBanner />
       <hr className="divider" />
       <JoinSection />
     </main>

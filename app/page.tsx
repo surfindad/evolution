@@ -2,7 +2,7 @@
 
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, ImageIcon } from 'lucide-react'
 import Hero from '@/components/Hero'
 import StatsBar from '@/components/StatsBar'
 import LearnMore from '@/components/LearnMore'
@@ -217,8 +217,18 @@ function AboutSection() {
             initial={{ opacity: 0, x: 40 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.15, ease: [0.25, 0.4, 0.25, 1] }}
-            className="glass rounded-3xl p-10"
+            className="glass rounded-3xl p-10 relative"
           >
+            {/*
+             * ─────────────────────────────────────────────────────────────
+             * SACRAMENTO VALLEY / OFFICE PHOTO
+             * Add a photo to /public/images/sacramento.jpg then replace the
+             * placeholder below with:
+             *   <img src="/images/sacramento.jpg" alt="Sacramento Valley"
+             *        className="absolute inset-0 w-full h-full object-cover rounded-3xl opacity-20" />
+             * ─────────────────────────────────────────────────────────────
+             */}
+            {/* Stats rows */}
             {stats.map((item, i) => (
               <motion.div
                 key={item.num}
