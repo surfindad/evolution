@@ -79,23 +79,23 @@ function Avatar({ member }: { member: typeof team[number] }) {
       <img
         src={member.photo}
         alt={member.name}
-        className="w-20 h-20 rounded-full object-cover object-top border border-[#1A1510]/10 group-hover:border-green/30 transition-colors duration-300 mb-6"
+        className="w-20 h-20 rounded-full object-cover object-top border border-white/10 group-hover:border-green/30 transition-colors duration-300 mb-6"
       />
     )
   }
 
   /* Photo placeholder — shows until real photo is provided */
   return (
-    <div className="w-20 h-20 rounded-full border border-dashed border-[#1A1510]/15 group-hover:border-green/30 flex flex-col items-center justify-center mb-6 transition-colors duration-300 bg-[#1A1510]/[0.02] relative overflow-hidden">
-      <Camera size={16} className="text-[#1A1510]/20 mb-1" />
-      <span className="text-[#1A1510]/20 text-[9px] font-inter tracking-widest uppercase">Photo</span>
+    <div className="w-20 h-20 rounded-full border border-dashed border-white/15 group-hover:border-green/30 flex flex-col items-center justify-center mb-6 transition-colors duration-300 bg-[#1A1510]/[0.02] relative overflow-hidden">
+      <Camera size={16} className="text-white/20 mb-1" />
+      <span className="text-white/20 text-[9px] font-inter tracking-widest uppercase">Photo</span>
     </div>
   )
 }
 
 function HeroSection() {
   return (
-    <section className="relative pt-40 pb-24 overflow-hidden bg-[#A8A8B0] grain">
+    <section className="relative pt-40 pb-24 overflow-hidden bg-[#1E1E2A] grain">
       <div className="absolute inset-0 grid-bg opacity-40 pointer-events-none" />
       <div
         className="absolute inset-0 pointer-events-none"
@@ -119,7 +119,7 @@ function HeroSection() {
         >
           Our Team
         </h1>
-        <p className="text-[#1A1510]/40 text-xl font-inter max-w-2xl leading-relaxed">
+        <p className="text-white/40 text-xl font-inter max-w-2xl leading-relaxed">
           The individuals behind Evolution Accelerator — operators, investors, and builders
           united by a shared belief in the Sacramento Valley&apos;s potential.
         </p>
@@ -133,7 +133,7 @@ function TeamGrid() {
   const isInView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section className="py-24 bg-[#A8A8B0]">
+    <section className="py-24 bg-[#1E1E2A]">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div ref={ref} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {team.map((member, i) => (
@@ -155,7 +155,7 @@ function TeamGrid() {
                 <p className="text-green/50 text-xs font-inter tracking-widest uppercase mb-4">
                   {member.title}
                 </p>
-                <p className="text-[#1A1510]/35 font-inter text-sm leading-relaxed flex-1 mb-6">
+                <p className="text-white/35 font-inter text-sm leading-relaxed flex-1 mb-6">
                   {member.bio}
                 </p>
 
@@ -164,7 +164,7 @@ function TeamGrid() {
                     href={member.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-[#1A1510]/30 hover:text-green transition-colors duration-200"
+                    className="inline-flex items-center gap-2 text-white/30 hover:text-green transition-colors duration-200"
                     aria-label={`${member.name} on LinkedIn`}
                   >
                     <Linkedin size={16} />
@@ -192,7 +192,7 @@ function PhotoBanner() {
   const isInView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section className="bg-[#A8A8B0] px-6 lg:px-10">
+    <section className="bg-[#1E1E2A] px-6 lg:px-10">
       <motion.div
         ref={ref}
         initial={{ opacity: 0, y: 30 }}
@@ -201,12 +201,12 @@ function PhotoBanner() {
         className="max-w-7xl mx-auto"
       >
         {/* ↓ Replace this div with your team/event photo */}
-        <div className="w-full h-72 md:h-96 rounded-2xl border border-dashed border-[#1A1510]/10 flex flex-col items-center justify-center gap-3 bg-[#1A1510]/[0.015]">
-          <Camera size={32} className="text-[#1A1510]/15" />
-          <p className="text-[#1A1510]/20 font-inter text-sm tracking-widest uppercase">
+        <div className="w-full h-72 md:h-96 rounded-2xl border border-dashed border-white/10 flex flex-col items-center justify-center gap-3 bg-[#1A1510]/[0.015]">
+          <Camera size={32} className="text-white/15" />
+          <p className="text-white/20 font-inter text-sm tracking-widest uppercase">
             Team / Event Photo
           </p>
-          <p className="text-[#1A1510]/12 font-inter text-xs">
+          <p className="text-white/12 font-inter text-xs">
             Add image to /public/images/team-banner.jpg
           </p>
         </div>
@@ -220,7 +220,7 @@ function JoinSection() {
   const isInView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section className="py-28 bg-[#9898A2] grain">
+    <section className="py-28 bg-[#16161F] grain">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <motion.div
           ref={ref}
@@ -235,7 +235,7 @@ function JoinSection() {
           <h2 className="font-raleway font-black text-5xl uppercase gradient-text text-glow mb-6">
             Join the Ecosystem
           </h2>
-          <p className="text-[#1A1510]/40 font-inter text-lg leading-relaxed mb-10">
+          <p className="text-white/40 font-inter text-lg leading-relaxed mb-10">
             Whether you&apos;re a founder, investor, or partner — there&apos;s a place for you
             in the Evolution Ecosystem. Apply today to start the conversation.
           </p>
@@ -255,7 +255,7 @@ function JoinSection() {
 
 export default function TeamPage() {
   return (
-    <main className="bg-[#A8A8B0] min-h-screen">
+    <main className="bg-[#1E1E2A] min-h-screen">
       <HeroSection />
       <hr className="divider" />
       <TeamGrid />

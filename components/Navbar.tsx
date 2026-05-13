@@ -35,7 +35,7 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? 'bg-[#A8A8B0]/90 backdrop-blur-xl border-b border-[#1A1510]/5'
+          ? 'bg-[#1E1E2A]/90 backdrop-blur-xl border-b border-white/5'
           : 'bg-transparent'
       }`}
     >
@@ -58,7 +58,7 @@ export default function Navbar() {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#1A1510]/55 hover:text-green transition-colors duration-200 text-sm font-inter font-medium tracking-widest uppercase"
+                  className="text-white/55 hover:text-green transition-colors duration-200 text-sm font-inter font-medium tracking-widest uppercase"
                 >
                   {link.label}
                 </a>
@@ -66,7 +66,7 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-[#1A1510]/55 hover:text-green transition-colors duration-200 text-sm font-inter font-medium tracking-widest uppercase"
+                  className="text-white/55 hover:text-green transition-colors duration-200 text-sm font-inter font-medium tracking-widest uppercase"
                 >
                   {link.label}
                 </Link>
@@ -85,7 +85,7 @@ export default function Navbar() {
           {/* Mobile hamburger */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-[#1A1510]/70 hover:text-green transition-colors"
+            className="md:hidden text-white/70 hover:text-green transition-colors"
             aria-label="Toggle menu"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -99,7 +99,7 @@ export default function Navbar() {
           isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <div className="bg-[#A8A8B0]/95 backdrop-blur-xl border-t border-[#1A1510]/5 px-6 py-8 flex flex-col gap-6">
+        <div className="bg-[#1E1E2A]/95 backdrop-blur-xl border-t border-white/5 px-6 py-8 flex flex-col gap-6">
           {navLinks.map((link) =>
             link.external ? (
               <a
@@ -107,7 +107,7 @@ export default function Navbar() {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#1A1510]/60 hover:text-green transition-colors text-xl font-inter font-medium tracking-widest uppercase"
+                className="text-white/60 hover:text-green transition-colors text-xl font-inter font-medium tracking-widest uppercase"
                 onClick={() => setIsOpen(false)}
               >
                 {link.label}
@@ -116,7 +116,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-[#1A1510]/60 hover:text-green transition-colors text-xl font-inter font-medium tracking-widest uppercase"
+                className="text-white/60 hover:text-green transition-colors text-xl font-inter font-medium tracking-widest uppercase"
                 onClick={() => setIsOpen(false)}
               >
                 {link.label}
@@ -131,7 +131,7 @@ export default function Navbar() {
           >
             Apply Now
           </a>
-          <div className="flex gap-5 pt-4 border-t border-[#1A1510]/10">
+          <div className="flex gap-5 pt-4 border-t border-white/10">
             {socialLinks.map(({ href, icon: Icon, label }) => (
               <a
                 key={href}
@@ -139,7 +139,7 @@ export default function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={label}
-                className="text-[#1A1510]/40 hover:text-green transition-colors"
+                className="text-white/40 hover:text-green transition-colors"
               >
                 <Icon size={20} />
               </a>

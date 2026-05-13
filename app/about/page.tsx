@@ -33,7 +33,7 @@ const sections = [
 
 function HeroSection() {
   return (
-    <section className="relative pt-40 pb-24 overflow-hidden bg-[#A8A8B0] grain">
+    <section className="relative pt-40 pb-24 overflow-hidden bg-[#1E1E2A] grain">
       <div className="absolute inset-0 grid-bg opacity-40 pointer-events-none" />
       <div
         className="absolute inset-0 pointer-events-none"
@@ -58,7 +58,7 @@ function HeroSection() {
           Evolving the art of acceleration via the 3C&apos;s:<br />
           Capital. Community. Culture.
         </h1>
-        <p className="text-[#1A1510]/40 text-xl font-inter leading-relaxed max-w-2xl">
+        <p className="text-white/40 text-xl font-inter leading-relaxed max-w-2xl">
           Evolution Accelerator aims to help and serve others via access to capital,
           community, and culture that creates meaningful relationships to fuel positive change.
         </p>
@@ -80,7 +80,7 @@ function FeaturedPhoto() {
   const isInView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section className="py-0 bg-[#A8A8B0] px-6 lg:px-10">
+    <section className="py-0 bg-[#1E1E2A] px-6 lg:px-10">
       <motion.div
         ref={ref}
         initial={{ opacity: 0, scale: 0.98 }}
@@ -89,10 +89,10 @@ function FeaturedPhoto() {
         className="max-w-7xl mx-auto"
       >
         {/* ↓ Replace with: <img src="/images/about-banner.jpg" alt="..." className="w-full h-[500px] object-cover rounded-2xl" /> */}
-        <div className="w-full h-64 md:h-[440px] rounded-2xl border border-dashed border-[#1A1510]/10 flex flex-col items-center justify-center gap-3 bg-[#1A1510]/[0.015]">
-          <ImageIcon size={36} className="text-[#1A1510]/15" />
-          <p className="text-[#1A1510]/20 font-inter text-sm tracking-widest uppercase">Featured Photo</p>
-          <p className="text-[#1A1510]/12 font-inter text-xs">Add image to /public/images/about-banner.jpg</p>
+        <div className="w-full h-64 md:h-[440px] rounded-2xl border border-dashed border-white/10 flex flex-col items-center justify-center gap-3 bg-[#1A1510]/[0.015]">
+          <ImageIcon size={36} className="text-white/15" />
+          <p className="text-white/20 font-inter text-sm tracking-widest uppercase">Featured Photo</p>
+          <p className="text-white/12 font-inter text-xs">Add image to /public/images/about-banner.jpg</p>
         </div>
       </motion.div>
     </section>
@@ -104,7 +104,7 @@ function CoreSections() {
   const isInView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section className="py-24 bg-[#A8A8B0]">
+    <section className="py-24 bg-[#1E1E2A]">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div ref={ref} className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {sections.map((section, i) => (
@@ -120,7 +120,7 @@ function CoreSections() {
               <h2 className="font-raleway font-black text-2xl text-green uppercase tracking-wide mb-5 relative z-10">
                 {section.title}
               </h2>
-              <p className="text-[#1A1510]/40 font-inter leading-relaxed text-lg relative z-10">
+              <p className="text-white/40 font-inter leading-relaxed text-lg relative z-10">
                 {section.content}
               </p>
             </motion.div>
@@ -136,7 +136,7 @@ function SubscribeSection() {
   const isInView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section className="py-28 bg-[#9898A2]">
+    <section className="py-28 bg-[#16161F]">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <motion.div
           ref={ref}
@@ -151,7 +151,7 @@ function SubscribeSection() {
           <h2 className="font-raleway font-black text-5xl uppercase gradient-text text-glow mb-6">
             Subscribe
           </h2>
-          <p className="text-[#1A1510]/40 font-inter text-lg leading-relaxed mb-10">
+          <p className="text-white/40 font-inter text-lg leading-relaxed mb-10">
             Evolution Accelerator seeks to support others in providing access to elements,
             such as, but not limited to the 3C&apos;s: Capital, Community, and Culture.
             Please feel free to subscribe to Evolution Accelerator&apos;s Substack using the link below.
@@ -175,7 +175,7 @@ function ApplySection() {
   const isInView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section className="py-36 bg-[#A8A8B0] relative overflow-hidden">
+    <section className="py-36 bg-[#1E1E2A] relative overflow-hidden">
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
@@ -200,7 +200,7 @@ function ApplySection() {
         >
           Apply
         </h2>
-        <p className="text-[#1A1510]/35 font-inter text-lg leading-relaxed max-w-2xl mx-auto mb-12">
+        <p className="text-white/35 font-inter text-lg leading-relaxed max-w-2xl mx-auto mb-12">
           Please feel free to use the button below to apply for access to the Evolution
           Ecosystem if you&apos;re ready, willing, and able to play a part in positive change
           and greater good.
@@ -220,7 +220,7 @@ function ApplySection() {
 
 export default function AboutPage() {
   return (
-    <main className="bg-[#A8A8B0] min-h-screen">
+    <main className="bg-[#1E1E2A] min-h-screen">
       <HeroSection />
       <FeaturedPhoto />
       <hr className="divider" />

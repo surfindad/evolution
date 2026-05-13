@@ -51,7 +51,7 @@ export default function LearnMore() {
   const isInView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section className="py-28 bg-[#A8A8B0]">
+    <section className="py-28 bg-[#1E1E2A]">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <motion.div
           ref={ref}
@@ -66,7 +66,7 @@ export default function LearnMore() {
           <h2 className="font-raleway font-black text-5xl md:text-6xl uppercase gradient-text text-glow mb-5">
             Learn More
           </h2>
-          <p className="text-[#1A1510]/30 text-lg font-inter max-w-lg">
+          <p className="text-white/30 text-lg font-inter max-w-lg">
             Investing, funding, and subscription — select a card to go to the respective platform.
           </p>
         </motion.div>
@@ -94,7 +94,7 @@ export default function LearnMore() {
                   </div>
                   <div className="text-right">
                     <p className={`font-raleway font-black text-sm ${link.iconColor}`}>{link.stat}</p>
-                    <p className="text-[#1A1510]/25 text-xs font-inter mt-0.5">{link.statLabel}</p>
+                    <p className="text-white/25 text-xs font-inter mt-0.5">{link.statLabel}</p>
                   </div>
                 </div>
 
@@ -106,7 +106,7 @@ export default function LearnMore() {
                   <h3 className="font-raleway font-bold text-white text-xl mb-3 group-hover:text-green transition-colors duration-300">
                     {link.title}
                   </h3>
-                  <p className="text-[#1A1510]/30 text-sm font-inter leading-relaxed">
+                  <p className="text-white/30 text-sm font-inter leading-relaxed">
                     {link.description}
                   </p>
                 </div>

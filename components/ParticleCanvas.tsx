@@ -55,15 +55,15 @@ export default function ParticleCanvas() {
             ctx.beginPath()
             ctx.moveTo(a.x, a.y)
             ctx.lineTo(b.x, b.y)
-            ctx.strokeStyle = `rgba(45,110,45,${0.18 * (1 - d / 160)})`
-            ctx.lineWidth = 0.7
+            ctx.strokeStyle = `rgba(119,221,119,${0.12 * (1 - d / 160)})`
+            ctx.lineWidth = 0.6
             ctx.stroke()
           }
         }
 
         ctx.beginPath()
         ctx.arc(a.x, a.y, a.r, 0, Math.PI * 2)
-        ctx.fillStyle = 'rgba(45,110,45,0.45)'
+        ctx.fillStyle = 'rgba(119,221,119,0.35)'
         ctx.fill()
       }
 
