@@ -15,7 +15,7 @@ export default function StatsBar() {
   const isInView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <div ref={ref} className="relative bg-[#E5E5E8] border-y border-[#1A1510]/5 py-14 overflow-hidden">
+    <div ref={ref} className="relative bg-[#9898A2] border-y border-[#1A1510]/5 py-14 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-green/[0.04] to-transparent pointer-events-none" />
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-0 divide-y md:divide-y-0 md:divide-x divide-[#1A1510]/5">

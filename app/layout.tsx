@@ -46,7 +46,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${raleway.variable} ${inter.variable}`}>
-      <body className="bg-[#F0F0F2] text-[#1A1510] font-inter antialiased">
+      <body className="bg-[#A8A8B0] text-[#1A1510] font-inter antialiased">
         <CursorGlow />
         <Navbar />
         {children}

@@ -19,7 +19,7 @@ function Manifesto() {
   ]
 
   return (
-    <section className="py-32 bg-[#F0F0F2] relative overflow-hidden grain">
+    <section className="py-32 bg-[#A8A8B0] relative overflow-hidden grain">
       {/* Giant watermark */}
       <div
         className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden"
@@ -109,7 +109,7 @@ function ThreeCsSection() {
   const isInView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section className="py-28 bg-[#E5E5E8]">
+    <section className="py-28 bg-[#9898A2]">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -181,7 +181,7 @@ function AboutSection() {
   ]
 
   return (
-    <section className="py-28 bg-[#F0F0F2]">
+    <section className="py-28 bg-[#A8A8B0]">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div
@@ -258,7 +258,7 @@ function CTASection() {
   const isInView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section className="py-36 bg-[#F0F0F2] text-center relative overflow-hidden grain">
+    <section className="py-36 bg-[#A8A8B0] text-center relative overflow-hidden grain">
       <div
         className="absolute inset-0 pointer-events-none"
         style={{

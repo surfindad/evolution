@@ -11,7 +11,7 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#F0F0F2] border-t border-[#1A1510]/5">
+    <footer className="bg-[#A8A8B0] border-t border-[#1A1510]/5">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-12">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           <Link href="/" className="flex items-center gap-3 group">

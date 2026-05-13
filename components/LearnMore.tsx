@@ -51,7 +51,7 @@ export default function LearnMore() {
   const isInView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section className="py-28 bg-[#F0F0F2]">
+    <section className="py-28 bg-[#A8A8B0]">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <motion.div
           ref={ref}
