@@ -52,7 +52,7 @@ const termsBullets = [
 
 function HeroSection() {
   return (
-    <section className="relative pt-40 pb-20 overflow-hidden bg-[#161614] grain">
+    <section className="relative pt-40 pb-20 overflow-hidden bg-[#E8D4B0] grain">
       <div className="absolute inset-0 grid-bg opacity-40 pointer-events-none" />
       <div
         className="absolute inset-0 pointer-events-none"
@@ -76,7 +76,7 @@ function HeroSection() {
         >
           Ecosystem
         </h1>
-        <p className="text-white/40 text-xl font-inter max-w-2xl leading-relaxed">
+        <p className="text-[#1A1510]/40 text-xl font-inter max-w-2xl leading-relaxed">
           A free-to-nest community of innovators, investors, and partners united in expanding the breadth and reach of the Evolution Ecosystem.
         </p>
       </motion.div>
@@ -89,7 +89,7 @@ function PartnersSection() {
   const isInView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section className="py-24 bg-[#161614]">
+    <section className="py-24 bg-[#E8D4B0]">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <p className="text-green/50 text-xs font-inter font-semibold tracking-[0.4em] uppercase mb-10">
           Ecosystem Partners
@@ -108,14 +108,14 @@ function PartnersSection() {
             >
               <div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-green/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
               <div className="relative z-10">
-                <h3 className="font-raleway font-bold text-xl text-white group-hover:text-green transition-colors duration-300 mb-1">
+                <h3 className="font-raleway font-bold text-xl text-[#1A1510] group-hover:text-green transition-colors duration-300 mb-1">
                   {partner.name}
                 </h3>
-                <p className="text-white/30 text-sm font-inter">{partner.description}</p>
+                <p className="text-[#1A1510]/30 text-sm font-inter">{partner.description}</p>
               </div>
               <ExternalLink
                 size={18}
-                className="text-white/15 group-hover:text-green/60 transition-colors duration-300 shrink-0 ml-4 relative z-10"
+                className="text-[#1A1510]/15 group-hover:text-green/60 transition-colors duration-300 shrink-0 ml-4 relative z-10"
               />
             </motion.a>
           ))}
@@ -130,7 +130,7 @@ function TermsSection() {
   const isInView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section className="py-24 bg-[#1E1E1A]">
+    <section className="py-24 bg-[#DFC9A0]">
       <motion.div
         ref={ref}
         initial={{ opacity: 0, y: 30 }}
@@ -141,7 +141,7 @@ function TermsSection() {
         <h2 className="font-raleway font-black text-5xl md:text-6xl uppercase gradient-text text-glow mb-10">
           Terms
         </h2>
-        <div className="space-y-6 text-white/40 font-inter text-lg leading-relaxed">
+        <div className="space-y-6 text-[#1A1510]/40 font-inter text-lg leading-relaxed">
           <p>
             In simple terms, no cages. The beautiful birds of the heavens are invited to nest
             in the beautiful tree of the Evolution Ecosystem by Evolution Accelerator and yet
@@ -168,7 +168,7 @@ function Terms2Section() {
   const isInView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section className="py-24 bg-[#161614]">
+    <section className="py-24 bg-[#E8D4B0]">
       <motion.div
         ref={ref}
         initial={{ opacity: 0, y: 30 }}
@@ -179,7 +179,7 @@ function Terms2Section() {
         <h2 className="font-raleway font-black text-5xl md:text-6xl uppercase gradient-text text-glow mb-10">
           Terms 2.0
         </h2>
-        <div className="space-y-5 text-white/40 font-inter text-lg leading-relaxed mb-10">
+        <div className="space-y-5 text-[#1A1510]/40 font-inter text-lg leading-relaxed mb-10">
           <p>
             Regrettably as the world changes and becomes more complex and more litigious it
             seems advisable and perhaps required to have a less simple version of the Terms.
@@ -214,14 +214,14 @@ function Terms2Section() {
             >
               <span className="text-green mt-1 shrink-0 font-bold">→</span>
               <div>
-                <p className="text-white/70 font-raleway font-bold mb-2">{bullet.title}:</p>
-                <p className="text-white/35 font-inter leading-relaxed">{bullet.content}</p>
+                <p className="text-[#1A1510]/70 font-raleway font-bold mb-2">{bullet.title}:</p>
+                <p className="text-[#1A1510]/35 font-inter leading-relaxed">{bullet.content}</p>
               </div>
             </motion.div>
           ))}
         </div>
 
-        <div className="space-y-5 text-white/40 font-inter text-lg leading-relaxed">
+        <div className="space-y-5 text-[#1A1510]/40 font-inter text-lg leading-relaxed">
           <p>
             In other words, the spirit is that we make money when and if you make money,
             until then, please nest freely. Even if you begin to monetize thereby potentially
@@ -232,7 +232,7 @@ function Terms2Section() {
             Should the time come when the Evolution Ecosystem &ldquo;tree&rdquo; fails to earn the
             grace of your presence, may the Universe provide another more suitable tree to nest.
           </p>
-          <p className="text-white/55 italic text-xl">
+          <p className="text-[#1A1510]/55 italic text-xl">
             Thank you. Without the birds, the tree will be lonely. May agape and peace be yours.
           </p>
         </div>
@@ -243,7 +243,7 @@ function Terms2Section() {
 
 export default function EcosystemPage() {
   return (
-    <main className="bg-[#161614] min-h-screen">
+    <main className="bg-[#E8D4B0] min-h-screen">
       <HeroSection />
       <hr className="divider" />
       <PartnersSection />

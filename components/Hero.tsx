@@ -9,7 +9,7 @@ const words = ['Capital.', 'Community.', 'Culture.']
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#161614]">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#E8D4B0]">
 
       {/*
        * ─────────────────────────────────────────────────────────────────
@@ -57,7 +57,7 @@ export default function Hero() {
       </div>
 
       {/* Vignette */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/70 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#E8D4B0]/30 via-transparent to-[#E8D4B0]/50 pointer-events-none" />
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 pt-32 pb-24 text-center">
@@ -111,7 +111,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.0, ease: [0.25, 0.4, 0.25, 1] }}
-          className="text-white/35 text-xl md:text-2xl max-w-2xl mx-auto mb-12 font-inter leading-relaxed"
+          className="text-[#1A1510]/35 text-xl md:text-2xl max-w-2xl mx-auto mb-12 font-inter leading-relaxed"
         >
           Evolving the art of acceleration within California&apos;s Sacramento Valley —
           where capital, community, and culture converge.
@@ -145,7 +145,7 @@ export default function Hero() {
         transition={{ delay: 1.8, duration: 1 }}
         className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3"
       >
-        <span className="text-white/20 text-[10px] font-inter tracking-[0.35em] uppercase">Scroll</span>
+        <span className="text-[#1A1510]/20 text-[10px] font-inter tracking-[0.35em] uppercase">Scroll</span>
         <div className="w-px h-14 bg-gradient-to-b from-green/50 to-transparent animate-float" />
       </motion.div>
     </section>

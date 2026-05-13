@@ -19,14 +19,14 @@ function Manifesto() {
   ]
 
   return (
-    <section className="py-32 bg-[#161614] relative overflow-hidden grain">
+    <section className="py-32 bg-[#E8D4B0] relative overflow-hidden grain">
       {/* Giant watermark */}
       <div
         className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden"
         aria-hidden
       >
         <span
-          className="font-raleway font-black uppercase text-white/[0.022] whitespace-nowrap leading-none"
+          className="font-raleway font-black uppercase text-[#1A1510]/[0.022] whitespace-nowrap leading-none"
           style={{ fontSize: 'clamp(8rem, 20vw, 22rem)' }}
         >
           EVOLUTION
@@ -58,7 +58,7 @@ function Manifesto() {
             className="mt-10"
           >
             <div className="w-16 h-px bg-green/40 mb-8" />
-            <p className="text-white/35 text-xl font-inter leading-relaxed max-w-2xl">
+            <p className="text-[#1A1510]/35 text-xl font-inter leading-relaxed max-w-2xl">
               Evolution Accelerator is redefining what it means to support founders —
               bringing together the three essential forces every startup needs to thrive
               in California&apos;s Sacramento Valley and beyond.
@@ -109,7 +109,7 @@ function ThreeCsSection() {
   const isInView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section className="py-28 bg-[#1E1E1A]">
+    <section className="py-28 bg-[#DFC9A0]">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -147,7 +147,7 @@ function ThreeCsSection() {
               </span>
 
               <div className="relative z-10">
-                <p className="text-white/20 font-inter text-xs tracking-widest uppercase mb-6">
+                <p className="text-[#1A1510]/20 font-inter text-xs tracking-widest uppercase mb-6">
                   {c.num}
                 </p>
                 <h3
@@ -156,7 +156,7 @@ function ThreeCsSection() {
                 >
                   {c.title}
                 </h3>
-                <p className="text-white/35 font-inter leading-relaxed text-base">
+                <p className="text-[#1A1510]/35 font-inter leading-relaxed text-base">
                   {c.description}
                 </p>
               </div>
@@ -181,7 +181,7 @@ function AboutSection() {
   ]
 
   return (
-    <section className="py-28 bg-[#161614]">
+    <section className="py-28 bg-[#E8D4B0]">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div
@@ -196,12 +196,12 @@ function AboutSection() {
             <h2 className="font-raleway font-black text-4xl md:text-5xl gradient-text leading-tight mb-8">
               Why the Sacramento Valley?
             </h2>
-            <p className="text-white/40 text-lg font-inter leading-relaxed mb-6">
+            <p className="text-[#1A1510]/40 text-lg font-inter leading-relaxed mb-6">
               The Sacramento Valley is one of California&apos;s most underestimated entrepreneurial
               ecosystems — ranked <span className="text-green font-semibold">#5 regionally for women entrepreneurs</span>,
               home to ~7,000 investors, and 700+ active startups.
             </p>
-            <p className="text-white/30 text-lg font-inter leading-relaxed mb-10">
+            <p className="text-[#1A1510]/30 text-lg font-inter leading-relaxed mb-10">
               With Intel, UC Davis, and Sutter Health anchoring a diverse market, this is where
               the next wave of transformative companies will be built.
             </p>
@@ -235,12 +235,12 @@ function AboutSection() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: 0.3 + i * 0.1, ease: [0.25, 0.4, 0.25, 1] }}
-                className="flex items-start gap-5 py-5 border-b border-white/5 last:border-0 last:pb-0 first:pt-0"
+                className="flex items-start gap-5 py-5 border-b border-[#1A1510]/5 last:border-0 last:pb-0 first:pt-0"
               >
                 <span className="font-raleway font-black text-3xl text-green text-glow-sm shrink-0 w-24">
                   {item.num}
                 </span>
-                <span className="text-white/40 font-inter leading-relaxed pt-1">
+                <span className="text-[#1A1510]/40 font-inter leading-relaxed pt-1">
                   {item.desc}
                 </span>
               </motion.div>
@@ -258,7 +258,7 @@ function CTASection() {
   const isInView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section className="py-36 bg-[#161614] text-center relative overflow-hidden grain">
+    <section className="py-36 bg-[#E8D4B0] text-center relative overflow-hidden grain">
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
@@ -283,7 +283,7 @@ function CTASection() {
         >
           Ready to<br />Evolve?
         </h2>
-        <p className="text-white/35 text-lg font-inter mb-12 leading-relaxed max-w-xl mx-auto">
+        <p className="text-[#1A1510]/35 text-lg font-inter mb-12 leading-relaxed max-w-xl mx-auto">
           Apply for access to the Evolution Ecosystem. Join startups, investors, and
           partners driving meaningful change in Sacramento Valley and beyond.
         </p>
