@@ -52,7 +52,7 @@ function HeroSection() {
           About Us
         </p>
         <h1
-          className="font-raleway font-black uppercase gradient-text text-glow leading-none mb-10 max-w-5xl"
+          className="font-raleway font-black uppercase gradient-text leading-none mb-10 max-w-5xl"
           style={{ fontSize: 'clamp(3rem, 7vw, 6rem)' }}
         >
           Evolving the art of acceleration via the 3C&apos;s:<br />
@@ -148,7 +148,7 @@ function SubscribeSection() {
           <p className="text-green/50 text-xs font-inter font-semibold tracking-[0.4em] uppercase mb-5">
             Stay Connected
           </p>
-          <h2 className="font-raleway font-black text-5xl uppercase gradient-text text-glow mb-6">
+          <h2 className="font-raleway font-black text-5xl uppercase gradient-text mb-6">
             Subscribe
           </h2>
           <p className="text-white/40 font-inter text-lg leading-relaxed mb-10">
@@ -195,7 +195,7 @@ function ApplySection() {
           Join the Ecosystem
         </p>
         <h2
-          className="font-raleway font-black uppercase gradient-text text-glow mb-6 leading-none"
+          className="font-raleway font-black uppercase gradient-text mb-6 leading-none"
           style={{ fontSize: 'clamp(4rem, 10vw, 7rem)' }}
         >
           Apply

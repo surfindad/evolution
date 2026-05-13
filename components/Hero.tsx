@@ -89,8 +89,8 @@ export default function Hero() {
               }}
             >
               <span
-                className="block font-raleway font-black uppercase gradient-text text-glow leading-[0.88]"
-                style={{ fontSize: 'clamp(4.5rem, 15vw, 13rem)' }}
+                className="block font-raleway font-black uppercase gradient-text leading-[0.88]"
+                style={{ fontSize: 'clamp(2.8rem, 9vw, 8rem)' }}
               >
                 {word}
               </span>

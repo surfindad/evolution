@@ -29,7 +29,7 @@ function HeroSection() {
           Our Investments
         </p>
         <h1
-          className="font-raleway font-black uppercase gradient-text text-glow mb-10 leading-none"
+          className="font-raleway font-black uppercase gradient-text mb-10 leading-none"
           style={{ fontSize: 'clamp(4rem, 12vw, 9rem)' }}
         >
           Portfolio

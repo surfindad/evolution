@@ -114,7 +114,7 @@ function HeroSection() {
           The People
         </p>
         <h1
-          className="font-raleway font-black uppercase gradient-text text-glow leading-none mb-8"
+          className="font-raleway font-black uppercase gradient-text leading-none mb-8"
           style={{ fontSize: 'clamp(4rem, 12vw, 9rem)' }}
         >
           Our Team
@@ -232,7 +232,7 @@ function JoinSection() {
           <p className="text-green/50 text-xs font-inter font-semibold tracking-[0.4em] uppercase mb-5">
             Get Involved
           </p>
-          <h2 className="font-raleway font-black text-5xl uppercase gradient-text text-glow mb-6">
+          <h2 className="font-raleway font-black text-5xl uppercase gradient-text mb-6">
             Join the Ecosystem
           </h2>
           <p className="text-white/40 font-inter text-lg leading-relaxed mb-10">

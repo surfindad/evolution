@@ -43,7 +43,7 @@ function Manifesto() {
               transition={{ duration: 1, delay, ease: [0.16, 1, 0.3, 1] }}
             >
               <p
-                className="font-raleway font-black uppercase gradient-text text-glow leading-[0.9] mb-2"
+                className="font-raleway font-black uppercase gradient-text leading-[0.9] mb-2"
                 style={{ fontSize: 'clamp(3.5rem, 8vw, 8rem)' }}
               >
                 {text}
@@ -120,7 +120,7 @@ function ThreeCsSection() {
           <p className="text-green/50 text-xs font-inter font-semibold tracking-[0.4em] uppercase mb-4">
             Our Foundation
           </p>
-          <h2 className="font-raleway font-black text-5xl md:text-6xl uppercase gradient-text text-glow">
+          <h2 className="font-raleway font-black text-5xl md:text-6xl uppercase gradient-text">
             The 3 C&apos;s
           </h2>
         </motion.div>
@@ -151,7 +151,7 @@ function ThreeCsSection() {
                   {c.num}
                 </p>
                 <h3
-                  className="font-raleway font-black uppercase gradient-text text-glow leading-none mb-6"
+                  className="font-raleway font-black uppercase gradient-text leading-none mb-6"
                   style={{ fontSize: 'clamp(2.5rem, 5vw, 3.5rem)' }}
                 >
                   {c.title}
@@ -237,7 +237,7 @@ function AboutSection() {
                 transition={{ duration: 0.6, delay: 0.3 + i * 0.1, ease: [0.25, 0.4, 0.25, 1] }}
                 className="flex items-start gap-5 py-5 border-b border-white/5 last:border-0 last:pb-0 first:pt-0"
               >
-                <span className="font-raleway font-black text-3xl text-green text-glow-sm shrink-0 w-24">
+                <span className="font-raleway font-black text-3xl text-green shrink-0 w-24">
                   {item.num}
                 </span>
                 <span className="text-white/40 font-inter leading-relaxed pt-1">
@@ -278,7 +278,7 @@ function CTASection() {
           Join the Ecosystem
         </p>
         <h2
-          className="font-raleway font-black uppercase gradient-text text-glow mb-6 leading-none"
+          className="font-raleway font-black uppercase gradient-text mb-6 leading-none"
           style={{ fontSize: 'clamp(4rem, 10vw, 8rem)' }}
         >
           Ready to<br />Evolve?

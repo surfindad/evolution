@@ -71,7 +71,7 @@ function HeroSection() {
           Our Network
         </p>
         <h1
-          className="font-raleway font-black uppercase gradient-text text-glow mb-6 leading-none"
+          className="font-raleway font-black uppercase gradient-text mb-6 leading-none"
           style={{ fontSize: 'clamp(4rem, 12vw, 9rem)' }}
         >
           Ecosystem
@@ -138,7 +138,7 @@ function TermsSection() {
         transition={{ duration: 0.7, ease: [0.25, 0.4, 0.25, 1] }}
         className="max-w-4xl mx-auto px-6 lg:px-10"
       >
-        <h2 className="font-raleway font-black text-5xl md:text-6xl uppercase gradient-text text-glow mb-10">
+        <h2 className="font-raleway font-black text-5xl md:text-6xl uppercase gradient-text mb-10">
           Terms
         </h2>
         <div className="space-y-6 text-white/40 font-inter text-lg leading-relaxed">
@@ -176,7 +176,7 @@ function Terms2Section() {
         transition={{ duration: 0.7, ease: [0.25, 0.4, 0.25, 1] }}
         className="max-w-4xl mx-auto px-6 lg:px-10"
       >
-        <h2 className="font-raleway font-black text-5xl md:text-6xl uppercase gradient-text text-glow mb-10">
+        <h2 className="font-raleway font-black text-5xl md:text-6xl uppercase gradient-text mb-10">
           Terms 2.0
         </h2>
         <div className="space-y-5 text-white/40 font-inter text-lg leading-relaxed mb-10">

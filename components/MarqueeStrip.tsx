@@ -13,7 +13,7 @@ export default function MarqueeStrip() {
             <p className="text-green/50 text-xs font-inter font-semibold tracking-[0.4em] uppercase mb-4">
               50+ Companies
             </p>
-            <h2 className="font-raleway font-black text-5xl md:text-6xl uppercase gradient-text text-glow mb-4">
+            <h2 className="font-raleway font-black text-5xl md:text-6xl uppercase gradient-text mb-4">
               Our Portfolio
             </h2>
             <p className="text-white/30 text-lg font-inter max-w-xl">
