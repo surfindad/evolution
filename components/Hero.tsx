@@ -9,7 +9,7 @@ const words = ['Capital.', 'Community.', 'Culture.']
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#E8D4B0]">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#F0F0F2]">
 
       {/*
        * ─────────────────────────────────────────────────────────────────
@@ -57,7 +57,7 @@ export default function Hero() {
       </div>
 
       {/* Vignette */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#E8D4B0]/30 via-transparent to-[#E8D4B0]/50 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#F0F0F2]/30 via-transparent to-[#F0F0F2]/50 pointer-events-none" />
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 pt-32 pb-24 text-center">
