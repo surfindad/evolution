@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { motion, useScroll, useTransform, useMotionValue, useSpring } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
 import ParticleCanvas from './ParticleCanvas'
 
@@ -12,24 +12,77 @@ export default function Hero() {
   const contentY = useTransform(scrollY, [0, 700], [0, -140])
   const contentOpacity = useTransform(scrollY, [0, 500], [1, 0])
 
+  const mouseX = useMotionValue(0)
+  const mouseY = useMotionValue(0)
+  const smoothX = useSpring(mouseX, { stiffness: 40, damping: 18 })
+  const smoothY = useSpring(mouseY, { stiffness: 40, damping: 18 })
+
+  // Three depth planes — far, mid, near
+  const farX  = useTransform(smoothX, [-1, 1], [-24, 24])
+  const farY  = useTransform(smoothY, [-1, 1], [-16, 16])
+  const midX  = useTransform(smoothX, [-1, 1], [-10, 10])
+  const midY  = useTransform(smoothY, [-1, 1], [-7,  7])
+  const nearX = useTransform(smoothX, [-1, 1], [-3,  3])
+
+  function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
+    const r = e.currentTarget.getBoundingClientRect()
+    mouseX.set((e.clientX - r.left - r.width  / 2) / (r.width  / 2))
+    mouseY.set((e.clientY - r.top  - r.height / 2) / (r.height / 2))
+  }
+
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-[#1E1E2A]">
+    <section
+      className="relative min-h-screen flex items-center overflow-hidden bg-[#1E1E2A]"
+      onMouseMove={handleMouseMove}
+      onMouseLeave={() => { mouseX.set(0); mouseY.set(0) }}
+    >
+      {/* Depth plane 1 — particles (farthest) */}
+      <motion.div className="absolute inset-0" style={{ x: farX, y: farY }}>
+        <ParticleCanvas />
+      </motion.div>
 
-      <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover opacity-0 hidden" aria-hidden>
-        {/* <source src="/video/hero.mp4" type="video/mp4" /> */}
-        {/* <source src="/video/hero.webm" type="video/webm" /> */}
-      </video>
-
-      <ParticleCanvas />
+      {/* Grid */}
       <div className="absolute inset-0 grid-bg opacity-20" />
+
+      {/* Depth plane 2 — giant ghost letters (mid) */}
+      <motion.div
+        className="absolute inset-0 flex items-center justify-end pointer-events-none select-none overflow-hidden"
+        style={{ x: midX, y: midY }}
+        aria-hidden
+      >
+        <span
+          className="font-raleway font-black uppercase leading-none text-white/[0.025] translate-x-[18%]"
+          style={{ fontSize: 'clamp(14rem, 34vw, 36rem)' }}
+        >
+          EVO
+        </span>
+      </motion.div>
+
+      {/* Depth plane 3 — floating stat bottom-right (mid) */}
+      <motion.div
+        className="absolute bottom-20 right-10 lg:right-20 hidden lg:flex flex-col items-end pointer-events-none"
+        style={{ x: midX, y: midY }}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1.8, duration: 1 }}
+      >
+        <span
+          className="font-raleway font-black text-green-accent leading-none"
+          style={{ fontSize: 'clamp(4rem, 7vw, 7rem)' }}
+        >
+          49+
+        </span>
+        <span className="label-mono mt-1 text-right">Portfolio Companies</span>
+      </motion.div>
+
+      {/* Vignette */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#1E1E2A]/10 via-transparent to-[#1E1E2A]/80 pointer-events-none" />
 
-      {/* Content — parallax */}
+      {/* Depth plane 4 — main content (nearest) */}
       <motion.div
-        style={{ y: contentY, opacity: contentOpacity }}
+        style={{ y: contentY, opacity: contentOpacity, x: nearX }}
         className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-10 pt-40 pb-32"
       >
-        {/* Mono label */}
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -39,7 +92,6 @@ export default function Hero() {
           Evolution Accelerator · Sacramento Valley, CA
         </motion.p>
 
-        {/* Headline — left aligned, white, large */}
         <div className="mb-10">
           {words.map((word, i) => (
             <div key={word} className="overflow-hidden">
@@ -56,7 +108,6 @@ export default function Hero() {
           ))}
         </div>
 
-        {/* Rule */}
         <motion.div
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
@@ -64,7 +115,6 @@ export default function Hero() {
           className="w-20 h-px bg-green mb-10 origin-left"
         />
 
-        {/* Subtext + CTAs side by side on desktop */}
         <div className="flex flex-col md:flex-row md:items-end gap-10 md:gap-20">
           <motion.p
             initial={{ opacity: 0, y: 20 }}

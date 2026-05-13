@@ -1,7 +1,7 @@
 'use client'
 
-import { useRef } from 'react'
-import { motion, useInView } from 'framer-motion'
+import { useRef, useState } from 'react'
+import { motion, useInView, useScroll, AnimatePresence, useMotionValueEvent } from 'framer-motion'
 import { ArrowRight, ArrowUpRight } from 'lucide-react'
 import Hero from '@/components/Hero'
 import StatsBar from '@/components/StatsBar'
@@ -42,7 +42,7 @@ function WordReveal({
   )
 }
 
-/* ── Manifesto ───────────────────────────────────────────────── */
+/* ── Manifesto — asymmetric split ────────────────────────────── */
 function Manifesto() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-80px' })
@@ -52,199 +52,329 @@ function Manifesto() {
       <div className="absolute inset-0 grid-bg opacity-[0.025] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        {/* Label */}
-        <motion.p
-          ref={ref}
-          initial={{ opacity: 0 }}
-          animate={isInView ? { opacity: 1 } : {}}
-          transition={{ duration: 0.6 }}
-          className="label-mono mb-10"
-        >
-          Our Mission
-        </motion.p>
+        <div className="grid lg:grid-cols-[1fr_360px] gap-16 lg:gap-24 items-end">
 
-        {/* Word reveal lines */}
-        <WordReveal
-          text="Not just another accelerator."
-          delay={0.1}
-          className="font-raleway font-black uppercase gradient-text leading-[0.9] mb-3"
-          style={{ fontSize: 'clamp(2.8rem, 7vw, 7.5rem)' }}
-        />
-        <WordReveal
-          text="A movement."
-          delay={0.4}
-          className="font-raleway font-black uppercase text-white/90 leading-[0.9]"
-          style={{ fontSize: 'clamp(2.8rem, 7vw, 7.5rem)' }}
-        />
+          {/* Left: big type */}
+          <div>
+            <motion.p
+              ref={ref}
+              initial={{ opacity: 0 }}
+              animate={isInView ? { opacity: 1 } : {}}
+              transition={{ duration: 0.6 }}
+              className="label-mono mb-10"
+            >
+              Our Mission
+            </motion.p>
+            <WordReveal
+              text="Not just another accelerator."
+              delay={0.1}
+              className="font-raleway font-black uppercase gradient-text leading-[0.9] mb-3"
+              style={{ fontSize: 'clamp(2.8rem, 7vw, 7.5rem)' }}
+            />
+            <WordReveal
+              text="A movement."
+              delay={0.4}
+              className="font-raleway font-black uppercase text-white/90 leading-[0.9]"
+              style={{ fontSize: 'clamp(2.8rem, 7vw, 7.5rem)' }}
+            />
+          </div>
 
-        {/* Body */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, delay: 0.8, ease: [0.25, 0.4, 0.25, 1] }}
-          className="mt-14 max-w-2xl border-l-2 border-green/30 pl-8"
-        >
-          <p className="text-white/40 text-xl font-inter leading-relaxed">
-            Evolution Accelerator is redefining what it means to support founders —
-            bringing together the three essential forces every startup needs to thrive
-            in California&apos;s Sacramento Valley and beyond.
-          </p>
-        </motion.div>
+          {/* Right: editorial sidebar */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8, delay: 0.7, ease: [0.25, 0.4, 0.25, 1] }}
+            className="border-l-2 border-green/30 pl-8 pb-1 flex flex-col gap-8"
+          >
+            <p className="text-white/40 text-lg font-inter leading-relaxed">
+              Evolution Accelerator is redefining what it means to support founders —
+              bringing together the three essential forces every startup needs to thrive
+              in California&apos;s Sacramento Valley and beyond.
+            </p>
+            <a
+              href="/about"
+              className="inline-flex items-center gap-2 text-green font-raleway font-bold text-xs tracking-[0.3em] uppercase border-b border-green/30 pb-1 hover:border-green transition-colors duration-300 self-start"
+            >
+              Our Story <ArrowRight size={13} />
+            </a>
+          </motion.div>
+        </div>
       </div>
     </section>
   )
 }
 
-/* ── The 3 C's — editorial rows ──────────────────────────────── */
+/* ── Three C's — sticky scroll narrative ─────────────────────── */
 const threeCs = [
   {
     num: '01',
     title: 'Capital',
     description:
       'Access to the funding and financial resources that give great ideas the runway to become great companies. We connect founders with investors who believe in the mission.',
+    accent: 'Funding & Resources',
   },
   {
     num: '02',
     title: 'Community',
     description:
       'A living network of founders, operators, and partners who actively lift each other up. The Sacramento Valley ecosystem grows stronger every time we collaborate.',
+    accent: 'Network & Belonging',
   },
   {
     num: '03',
     title: 'Culture',
     description:
       "The values, environment, and shared ethos that make exceptional companies possible. Culture isn't a perk — it's the foundation everything else is built on.",
+    accent: 'Values & Ethos',
   },
 ]
 
 function ThreeCsSection() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: '-80px' })
+  const containerRef = useRef<HTMLDivElement>(null)
+  const [active, setActive] = useState(0)
+
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ['start start', 'end end'],
+  })
+
+  useMotionValueEvent(scrollYProgress, 'change', (v) => {
+    if (v < 0.34) setActive(0)
+    else if (v < 0.67) setActive(1)
+    else setActive(2)
+  })
 
   return (
-    <section className="py-28 bg-[#16161F]">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10">
+    <section ref={containerRef} className="relative bg-[#16161F]" style={{ height: '300vh' }}>
+      <div className="sticky top-0 h-screen overflow-hidden flex flex-col">
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
-          className="flex items-end justify-between mb-16 pb-6 border-b border-white/8"
-        >
-          <p className="label-mono">
-            Our Foundation
-          </p>
-          <p className="text-white/20 font-inter text-sm tracking-widest">The 3 C&apos;s</p>
-        </motion.div>
-
-        <div ref={ref} className="divide-y divide-white/8">
-          {threeCs.map((c, i) => (
-            <motion.div
-              key={c.num}
-              initial={{ opacity: 0, y: 40 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.8, delay: i * 0.12, ease: [0.16, 1, 0.3, 1] }}
-              className="group grid grid-cols-[60px_1fr] md:grid-cols-[80px_1fr_1fr] gap-6 md:gap-12 py-10 md:py-14 hover:bg-white/[0.02] transition-colors duration-500 -mx-6 px-6 lg:-mx-10 lg:px-10"
-            >
-              {/* Number */}
-              <span className="text-white/20 font-inter text-sm tracking-widest pt-2 md:pt-4">
-                {c.num}
-              </span>
-
-              {/* Title */}
-              <div className="md:flex md:items-center">
-                <h3
-                  className="font-raleway font-black uppercase gradient-text leading-none"
-                  style={{ fontSize: 'clamp(2.4rem, 5vw, 5rem)' }}
-                >
-                  {c.title}
-                </h3>
-              </div>
-
-              {/* Description — hidden on mobile unless expanded */}
-              <div className="col-span-2 md:col-span-1 md:flex md:items-center">
-                <p className="text-white/40 font-inter leading-relaxed text-base md:text-lg">
-                  {c.description}
-                </p>
-              </div>
-            </motion.div>
-          ))}
+        {/* Top bar */}
+        <div className="flex items-center justify-between px-6 lg:px-10 pt-10 pb-0">
+          <p className="label-mono">Our Foundation — The 3 C&apos;s</p>
+          {/* Step indicators */}
+          <div className="flex gap-3 items-center">
+            {threeCs.map((_, i) => (
+              <motion.div
+                key={i}
+                animate={{ width: i === active ? 32 : 16, opacity: i === active ? 1 : 0.25 }}
+                transition={{ duration: 0.4, ease: [0.25, 0.4, 0.25, 1] }}
+                className="h-px bg-green origin-left"
+              />
+            ))}
+          </div>
         </div>
+
+        {/* Main grid */}
+        <div className="flex-1 grid lg:grid-cols-2 gap-0 items-center px-6 lg:px-10">
+
+          {/* Left: large number + title */}
+          <div className="relative flex flex-col justify-center overflow-hidden">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={active}
+                initial={{ opacity: 0, y: 60 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -60 }}
+                transition={{ duration: 0.55, ease: [0.16, 1, 0.3, 1] }}
+              >
+                {/* Ghost number */}
+                <div
+                  className="font-raleway font-black leading-none text-white/[0.04] select-none absolute -top-8 -left-4"
+                  style={{ fontSize: 'clamp(10rem, 22vw, 22rem)' }}
+                  aria-hidden
+                >
+                  {threeCs[active].num}
+                </div>
+                {/* Step label */}
+                <p className="label-mono mb-6 relative z-10">{threeCs[active].num} / 03</p>
+                {/* Title */}
+                <h3
+                  className="font-raleway font-black uppercase text-white leading-none relative z-10"
+                  style={{ fontSize: 'clamp(4rem, 10vw, 10rem)' }}
+                >
+                  {threeCs[active].title}
+                </h3>
+                {/* Accent tag */}
+                <div className="mt-6 inline-flex items-center gap-2 relative z-10">
+                  <div className="w-4 h-px bg-green" />
+                  <span className="text-green text-xs font-inter font-medium tracking-[0.2em] uppercase">
+                    {threeCs[active].accent}
+                  </span>
+                </div>
+              </motion.div>
+            </AnimatePresence>
+          </div>
+
+          {/* Right: description */}
+          <div className="flex items-center lg:pl-20 border-t lg:border-t-0 lg:border-l border-white/5 py-10 lg:py-0">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={active}
+                initial={{ opacity: 0, x: 40 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -40 }}
+                transition={{ duration: 0.55, ease: [0.16, 1, 0.3, 1] }}
+                className="max-w-md"
+              >
+                <p className="text-white/50 text-xl lg:text-2xl font-inter leading-relaxed">
+                  {threeCs[active].description}
+                </p>
+
+                {/* Navigation dots */}
+                <div className="mt-12 flex gap-6">
+                  {threeCs.map((c, i) => (
+                    <span
+                      key={i}
+                      className={`font-raleway font-bold text-xs uppercase tracking-widest transition-colors duration-300 ${
+                        i === active ? 'text-green' : 'text-white/20'
+                      }`}
+                    >
+                      {c.title}
+                    </span>
+                  ))}
+                </div>
+              </motion.div>
+            </AnimatePresence>
+          </div>
+        </div>
+
+        {/* Bottom progress bar */}
+        <motion.div
+          className="h-px bg-green/30 origin-left mx-6 lg:mx-10 mb-10"
+          animate={{ scaleX: (active + 1) / 3 }}
+          transition={{ duration: 0.6, ease: [0.25, 0.4, 0.25, 1] }}
+        />
       </div>
     </section>
   )
 }
 
-/* ── Sacramento Valley stats ─────────────────────────────────── */
-const stats = [
-  { num: '#5', label: 'Regionally for women entrepreneurs' },
-  { num: '~7K', label: 'Investors in the ecosystem' },
-  { num: '700+', label: 'Active startups in the region' },
-  { num: '49+', label: 'Portfolio companies' },
-]
-
+/* ── Sacramento Valley — bento grid ─────────────────────────── */
 function RegionSection() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-80px' })
+
+  const delay = (i: number) => ({ duration: 0.7, delay: i * 0.08, ease: [0.16, 1, 0.3, 1] as const })
 
   return (
     <section className="py-28 bg-[#1E1E2A]">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
-        {/* Heading */}
-        <div className="mb-20">
+        {/* Asymmetric heading */}
+        <div className="mb-16 flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8">
+          <div>
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="label-mono mb-6"
+            >
+              Sacramento Valley
+            </motion.p>
+            <WordReveal
+              text="California's most underestimated ecosystem."
+              className="font-raleway font-black leading-tight gradient-text"
+              style={{ fontSize: 'clamp(2rem, 5vw, 5rem)' }}
+            />
+          </div>
           <motion.p
-            initial={{ opacity: 0 }}
-            animate={isInView ? { opacity: 1 } : {}}
-            transition={{ duration: 0.5 }}
-            className="label-mono mb-6"
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="text-white/25 text-base font-inter max-w-xs leading-relaxed lg:text-right"
           >
-            Sacramento Valley
+            Numbers that tell the story of a region ready to become the next great startup hub.
           </motion.p>
-          <WordReveal
-            text="California's most underestimated ecosystem."
-            className="font-raleway font-black leading-tight gradient-text"
-            style={{ fontSize: 'clamp(2rem, 5vw, 5rem)' }}
-          />
         </div>
 
-        {/* Stats grid */}
-        <div ref={ref} className="grid grid-cols-2 md:grid-cols-4 gap-px bg-white/8 rounded-2xl overflow-hidden">
-          {stats.map((s, i) => (
-            <motion.div
-              key={s.num}
-              initial={{ opacity: 0, y: 30 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.7, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
-              className="bg-[#1E1E2A] p-8 md:p-10 flex flex-col gap-3"
+        {/* Bento grid */}
+        <div ref={ref} className="grid grid-cols-2 lg:grid-cols-4 grid-rows-[auto_auto] gap-px bg-white/[0.05] rounded-2xl overflow-hidden">
+
+          {/* Featured — #5 (tall, left) */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={delay(0)}
+            className="col-span-2 row-span-2 bg-[#16161F] p-10 lg:p-14 flex flex-col justify-between relative overflow-hidden min-h-[280px]"
+          >
+            {/* decorative corner arc */}
+            <div className="absolute top-0 right-0 w-48 h-48 rounded-bl-full bg-green/[0.04]" />
+            <p className="label-mono">Top Ranked</p>
+            <div>
+              <span
+                className="font-raleway font-black text-green-accent leading-none block"
+                style={{ fontSize: 'clamp(5rem, 14vw, 12rem)' }}
+              >
+                #5
+              </span>
+              <span className="text-white/40 font-inter text-base leading-relaxed max-w-[20ch] block mt-2">
+                Regionally for women entrepreneurs
+              </span>
+            </div>
+          </motion.div>
+
+          {/* ~7K */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={delay(1)}
+            className="col-span-1 bg-[#1E1E2A] p-8 lg:p-10 flex flex-col justify-end"
+          >
+            <span
+              className="font-raleway font-black text-green-accent leading-none"
+              style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)' }}
             >
+              ~7K
+            </span>
+            <span className="text-white/35 font-inter text-sm mt-3 leading-relaxed">
+              Investors in the ecosystem
+            </span>
+          </motion.div>
+
+          {/* 700+ */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={delay(2)}
+            className="col-span-1 bg-[#1A1A26] p-8 lg:p-10 flex flex-col justify-end"
+          >
+            <span
+              className="font-raleway font-black text-green-accent leading-none"
+              style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)' }}
+            >
+              700+
+            </span>
+            <span className="text-white/35 font-inter text-sm mt-3 leading-relaxed">
+              Active startups in the region
+            </span>
+          </motion.div>
+
+          {/* 49+ — wide bottom */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={delay(3)}
+            className="col-span-2 bg-[#16161F] p-8 lg:p-10 flex items-center justify-between gap-6"
+          >
+            <div>
               <span
                 className="font-raleway font-black text-green-accent leading-none"
-                style={{ fontSize: 'clamp(2.5rem, 5vw, 4.5rem)' }}
+                style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)' }}
               >
-                {s.num}
+                49+
               </span>
-              <span className="text-white/35 font-inter text-sm leading-relaxed">
-                {s.label}
-              </span>
-            </motion.div>
-          ))}
+              <span className="text-white/35 font-inter text-sm block mt-1">Portfolio companies</span>
+            </div>
+            <a
+              href="/portfolio"
+              className="inline-flex items-center gap-2 text-green font-raleway font-bold text-xs tracking-[0.25em] uppercase border border-green/25 px-6 py-3 rounded-full hover:bg-green/10 hover:border-green/50 transition-all duration-300 shrink-0"
+            >
+              View All <ArrowUpRight size={13} />
+            </a>
+          </motion.div>
         </div>
-
-        {/* Link */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={isInView ? { opacity: 1 } : {}}
-          transition={{ duration: 0.6, delay: 0.5 }}
-          className="mt-10 flex justify-end"
-        >
-          <a
-            href="/about"
-            className="inline-flex items-center gap-2 text-green font-raleway font-bold text-xs tracking-[0.3em] uppercase border-b border-green/30 pb-1 hover:border-green transition-colors duration-300"
-          >
-            Learn More About Us <ArrowRight size={13} />
-          </a>
-        </motion.div>
       </div>
     </section>
   )
@@ -289,7 +419,6 @@ function CTASection() {
     <section className="min-h-[85vh] flex flex-col items-center justify-center bg-[#1E1E2A] text-center relative overflow-hidden grain py-32">
       <div className="absolute inset-0 grid-bg opacity-20 pointer-events-none" />
 
-      {/* Giant background word */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden" aria-hidden>
         <span
           className="font-raleway font-black uppercase text-white/[0.018] whitespace-nowrap leading-none"
