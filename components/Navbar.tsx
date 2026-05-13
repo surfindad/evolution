@@ -40,13 +40,10 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        <div className="flex items-center justify-between h-24">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex flex-col items-center group">
+          <Link href="/" className="group">
             <Logo className="w-10 h-9 transition-all duration-300" />
-            <span className="font-raleway font-bold text-sm tracking-[0.22em] text-white uppercase leading-tight">
-              EVOLU<span className="text-green">T</span>ION
-            </span>
           </Link>
 
           {/* Desktop nav */}
