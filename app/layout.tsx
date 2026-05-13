@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Raleway, Inter } from 'next/font/google'
+import { Raleway, Inter, Space_Mono } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
@@ -16,6 +16,13 @@ const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
   weight: ['300', '400', '500', '600', '700'],
+  display: 'swap',
+})
+
+const spaceMono = Space_Mono({
+  subsets: ['latin'],
+  variable: '--font-mono',
+  weight: ['400', '700'],
   display: 'swap',
 })
 
@@ -45,7 +52,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${raleway.variable} ${inter.variable}`}>
+    <html lang="en" className={`${raleway.variable} ${inter.variable} ${spaceMono.variable}`}>
       <body className="bg-[#1E1E2A] text-white font-inter antialiased">
         <ScrollProgress />
         <Navbar />

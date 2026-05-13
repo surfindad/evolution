@@ -50,6 +50,15 @@ body {
   line-height: 1.05;
 }
 
+/* Editorial mono labels */
+.label-mono {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(119, 221, 119, 0.55);
+}
+
 /* Grid overlay */
 .grid-bg {
   background-image:
@@ -114,9 +123,14 @@ body {
   animation-play-state: paused;
 }
 
-/* Gradient text */
+/* Display heading — pure white, like elite VC sites */
 .gradient-text {
-  background: linear-gradient(135deg, #77DD77 0%, #a3f0a3 40%, #88e688 100%);
+  color: #ffffff;
+}
+
+/* Green accent — used sparingly: stats, one-word callouts */
+.text-green-accent {
+  background: linear-gradient(135deg, #77DD77 0%, #a3f0a3 50%, #77DD77 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

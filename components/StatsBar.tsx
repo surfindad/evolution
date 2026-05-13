@@ -27,7 +27,7 @@ export default function StatsBar() {
               transition={{ duration: 0.7, delay: i * 0.15, ease: [0.25, 0.4, 0.25, 1] }}
               className="flex flex-col items-center text-center py-8 md:py-2 px-8"
             >
-              <span className="font-raleway font-black text-5xl md:text-6xl gradient-text mb-2">
+              <span className="font-raleway font-black text-5xl md:text-6xl text-green-accent mb-2">
                 <CountUp to={stat.value} prefix={stat.prefix} suffix={stat.suffix} duration={1600} />
               </span>
               <span className="font-inter text-white/30 text-xs uppercase tracking-[0.25em]">

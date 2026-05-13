@@ -58,7 +58,7 @@ function Manifesto() {
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-green/50 text-xs font-inter font-semibold tracking-[0.5em] uppercase mb-10"
+          className="label-mono mb-10"
         >
           Our Mission
         </motion.p>
@@ -131,7 +131,7 @@ function ThreeCsSection() {
           transition={{ duration: 0.6 }}
           className="flex items-end justify-between mb-16 pb-6 border-b border-white/8"
         >
-          <p className="text-green/50 text-xs font-inter font-semibold tracking-[0.5em] uppercase">
+          <p className="label-mono">
             Our Foundation
           </p>
           <p className="text-white/20 font-inter text-sm tracking-widest">The 3 C&apos;s</p>
@@ -197,7 +197,7 @@ function RegionSection() {
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ duration: 0.5 }}
-            className="text-green/50 text-xs font-inter font-semibold tracking-[0.5em] uppercase mb-6"
+            className="label-mono mb-6"
           >
             Sacramento Valley
           </motion.p>
@@ -219,7 +219,7 @@ function RegionSection() {
               className="bg-[#1E1E2A] p-8 md:p-10 flex flex-col gap-3"
             >
               <span
-                className="font-raleway font-black gradient-text leading-none"
+                className="font-raleway font-black text-green-accent leading-none"
                 style={{ fontSize: 'clamp(2.5rem, 5vw, 4.5rem)' }}
               >
                 {s.num}
@@ -304,7 +304,7 @@ function CTASection() {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-green/50 text-xs font-inter font-semibold tracking-[0.5em] uppercase mb-10"
+          className="label-mono mb-10"
         >
           Join the Ecosystem
         </motion.p>
