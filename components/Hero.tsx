@@ -38,24 +38,6 @@ export default function Hero() {
       {/* Grid */}
       <div className="absolute inset-0 grid-bg opacity-30" />
 
-      {/* Center glow */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div
-          className="absolute rounded-full"
-          style={{
-            width: '1000px',
-            height: '1000px',
-            top: '50%',
-            left: '50%',
-            marginTop: '-500px',
-            marginLeft: '-500px',
-            background:
-              'radial-gradient(circle, rgba(119,221,119,0.08) 0%, rgba(119,221,119,0.03) 40%, transparent 70%)',
-            animation: 'hero-breathe 12s ease-in-out infinite',
-          }}
-        />
-      </div>
-
       {/* Vignette */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#1E1E2A]/30 via-transparent to-[#1E1E2A]/50 pointer-events-none" />
 

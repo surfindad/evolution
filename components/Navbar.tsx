@@ -43,7 +43,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <Logo className="w-9 h-9 transition-all duration-300 group-hover:drop-shadow-[0_0_8px_rgba(119,221,119,0.7)]" />
+            <Logo className="w-9 h-9 transition-all duration-300 " />
             <span className="font-raleway font-bold text-lg tracking-[0.2em] text-white uppercase">
               EVOLU<span className="text-green">T</span>ION
             </span>

@@ -15,7 +15,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-12">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           <Link href="/" className="flex items-center gap-3 group">
-            <Logo className="w-8 h-8 transition-all duration-300 group-hover:drop-shadow-[0_0_6px_rgba(119,221,119,0.6)]" />
+            <Logo className="w-8 h-8 transition-all duration-300 " />
             <span className="font-raleway font-bold text-base tracking-[0.2em] text-white uppercase">
               EVOLU<span className="text-green">T</span>ION
             </span>

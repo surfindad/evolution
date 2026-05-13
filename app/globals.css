@@ -58,15 +58,6 @@ body {
   background-size: 80px 80px;
 }
 
-/* Text glow */
-.text-glow {
-  text-shadow: 0 0 60px rgba(119, 221, 119, 0.5), 0 0 120px rgba(119, 221, 119, 0.2);
-}
-
-.text-glow-sm {
-  text-shadow: 0 0 30px rgba(119, 221, 119, 0.5);
-}
-
 /* Glassmorphism card — dark version */
 .glass {
   background: rgba(255, 255, 255, 0.04);
@@ -80,7 +71,7 @@ body {
 .glass:hover {
   background: rgba(255, 255, 255, 0.07);
   border-color: rgba(119, 221, 119, 0.35);
-  box-shadow: 0 0 0 1px rgba(119,221,119,0.15), 0 0 50px rgba(119,221,119,0.12), 0 12px 40px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.08);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.08);
   transform: translateY(-5px);
 }
 
@@ -149,7 +140,6 @@ body {
 }
 .btn-primary:hover {
   background: #5fcc5f;
-  box-shadow: 0 0 40px rgba(119,221,119,0.5), 0 0 80px rgba(119,221,119,0.2);
   transform: translateY(-2px);
 }
 
@@ -171,8 +161,7 @@ body {
 }
 .btn-outline:hover {
   background: rgba(119,221,119,0.12);
-  border-color: rgba(58,158,58,0.7);
-  box-shadow: 0 0 25px rgba(119,221,119,0.2);
+  border-color: rgba(119,221,119,0.6);
   transform: translateY(-2px);
 }
 
