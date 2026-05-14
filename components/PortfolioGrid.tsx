@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useMemo } from 'react'
+import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Search, ArrowUpRight, X } from 'lucide-react'
 import Image from 'next/image'
@@ -124,9 +125,8 @@ export default function PortfolioGrid() {
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-white/[0.05] rounded-2xl overflow-hidden"
           >
             {filtered.map((company, i) => {
-              const hasLink = !!company.pageUrl
               const inner = (
-                <div className={`group relative bg-[#16161F] p-7 flex flex-col gap-5 h-full min-h-[180px] transition-all duration-300 ${hasLink ? 'hover:bg-[#1a1a28]' : ''}`}>
+                <div className="group relative bg-[#16161F] p-7 flex flex-col gap-5 h-full min-h-[180px] transition-all duration-300 hover:bg-[#1a1a28]">
                   {/* Top: logo + sector pill */}
                   <div className="flex items-start justify-between gap-3">
                     <div className="w-11 h-11 rounded-lg bg-white/[0.06] border border-white/[0.08] flex items-center justify-center shrink-0 overflow-hidden">
@@ -140,21 +140,19 @@ export default function PortfolioGrid() {
                     </div>
                     <div className="flex items-center gap-2">
                       <SectorPill sector={company.sector} />
-                      {hasLink && (
-                        <ArrowUpRight size={14} className="text-white/20 group-hover:text-green transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 shrink-0" />
-                      )}
+                      <ArrowUpRight size={14} className="text-white/20 group-hover:text-green transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 shrink-0" />
                     </div>
                   </div>
                   {/* Name + description */}
                   <div className="flex-1">
-                    <h3 className={`font-raleway font-bold text-lg leading-snug mb-2 transition-colors duration-300 ${hasLink ? 'text-white/70 group-hover:text-white' : 'text-white/60'}`}>
+                    <h3 className="font-raleway font-bold text-lg leading-snug mb-2 text-white/70 group-hover:text-white transition-colors duration-300">
                       {company.name}
                     </h3>
                     {company.description && (
                       <p className="text-white/35 font-inter text-sm leading-relaxed line-clamp-2">{company.description}</p>
                     )}
                   </div>
-                  {hasLink && <div className="absolute bottom-0 left-0 right-0 h-px bg-green/0 group-hover:bg-green/30 transition-all duration-300" />}
+                  <div className="absolute bottom-0 left-0 right-0 h-px bg-green/0 group-hover:bg-green/30 transition-all duration-300" />
                 </div>
               )
 
@@ -165,11 +163,9 @@ export default function PortfolioGrid() {
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.4, delay: Math.min(i * 0.02, 0.4) }}
                 >
-                  {hasLink ? (
-                    <a href={company.pageUrl} target="_blank" rel="noopener noreferrer" className="block h-full">
-                      {inner}
-                    </a>
-                  ) : inner}
+                  <Link href={`/portfolio/${company.slug}`} className="block h-full">
+                    {inner}
+                  </Link>
                 </motion.div>
               )
             })}
