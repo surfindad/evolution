@@ -168,7 +168,7 @@ function ThreeCsSection() {
         <div className="flex-1 grid lg:grid-cols-2 gap-0 items-center px-6 lg:px-10">
 
           {/* Left: large number + title */}
-          <div className="relative flex flex-col justify-center overflow-hidden">
+          <div className="relative flex flex-col justify-center">
             <AnimatePresence mode="wait">
               <motion.div
                 key={active}
