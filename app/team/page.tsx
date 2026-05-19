@@ -28,7 +28,11 @@ const team: {
     title: 'Investment Lead',
     bio: 'Investment Lead at Evolution Ventures MinervaFund and Managing Director of Elevate Global IO, Hannah brings sharp investment instincts and a global network to support founders at every stage of their journey.',
     photo: '/images/team/hannah-savage.jpg',
-    links: [],
+    links: [
+      { label: 'LinkedIn', href: 'https://www.linkedin.com/in/hannahsavage7' },
+      { label: 'MinervaFund', href: 'https://www.evfm.co/p/funds' },
+      { label: 'Elevate Global IO', href: 'https://www.elevateglobal.io/' },
+    ],
   },
   {
     name: 'Rodney Ferrell',
