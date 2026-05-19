@@ -39,7 +39,10 @@ const team: {
     title: 'Partner',
     bio: 'Founder of Ferrell Digital Production and Partner at Evolution Accelerator, Rodney brings creative entrepreneurship and deep expertise in digital media to help portfolio founders tell their stories and build their brands.',
     photo: '/images/team/rodney-ferrell.jpg',
-    links: [],
+    links: [
+      { label: 'Ferrell Digital', href: 'https://www.ferrelldigital.co/' },
+      { label: 'Evolution Accelerator', href: 'https://www.evolutionaccelerator.co/' },
+    ],
   },
   {
     name: 'Charles Ansbach',
