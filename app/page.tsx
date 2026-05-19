@@ -190,7 +190,7 @@ function ThreeCsSection() {
                 {/* Title */}
                 <h3
                   className="font-raleway font-black uppercase text-white leading-none relative z-10"
-                  style={{ fontSize: 'clamp(4rem, 10vw, 10rem)' }}
+                  style={{ fontSize: 'clamp(2.8rem, 6vw, 6.5rem)' }}
                 >
                   {threeCs[active].title}
                 </h3>
