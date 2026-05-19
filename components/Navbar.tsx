@@ -73,7 +73,7 @@ export default function Navbar() {
               href="https://airtable.com/appNvUtobsLy17k38/page1l8ort3ooz8a7/form"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-green text-black font-raleway font-bold text-xs tracking-widest uppercase px-5 py-2.5 rounded-full hover:bg-green-light hover:shadow-[0_0_20px_rgba(119,221,119,0.5)] transition-all duration-300"
+              className="bg-green text-[#1E1E2A] font-raleway font-bold text-xs tracking-widest uppercase px-5 py-2.5 rounded-full hover:bg-[#5fcc5f] transition-all duration-300"
             >
               Apply Now
             </a>
