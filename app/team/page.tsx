@@ -2,59 +2,54 @@
 
 import { useRef } from 'react'
 import { motion, useInView, useScroll, useTransform } from 'framer-motion'
-import { Linkedin, ArrowRight, ImageIcon } from 'lucide-react'
+import { ArrowRight, ArrowUpRight, ImageIcon } from 'lucide-react'
 import Image from 'next/image'
 
-/*
- * ── TEAM DATA ────────────────────────────────────────────────────
- * photo:    Add headshots to /public/images/team/
- *           e.g. '/images/team/alex-chompff.jpg'
- *           Leave null to show initials placeholder.
- * title:    Leave empty string '' to hide the title row.
- * linkedin: Leave '' to hide the LinkedIn link.
- * ─────────────────────────────────────────────────────────────────
- */
 const team: {
   name: string
   title: string
   bio: string
   photo: string | null
-  linkedin: string
+  links: { label: string; href: string }[]
 }[] = [
   {
     name: 'Alex Chompff',
     title: 'Managing Director',
     bio: 'Lead General Partner of Evolution Ventures MinervaFund and AI Thought Leader at Evolution Labs, Alex brings a rare combination of investment expertise and frontier technology insight to his leadership of Evolution Accelerator.',
     photo: '/images/team/alex-chompff.jpg',
-    linkedin: '',
+    links: [
+      { label: 'MinervaFund', href: 'https://www.evfm.co/p/funds' },
+      { label: 'Evolution Labs', href: 'https://www.evolutionlabs.dev/' },
+      { label: 'Evolution Accelerator', href: 'https://www.evolutionaccelerator.co/' },
+    ],
   },
   {
     name: 'Hannah Savage',
     title: 'Investment Lead',
     bio: 'Investment Lead at Evolution Ventures MinervaFund and Managing Director of Elevate Global IO, Hannah brings sharp investment instincts and a global network to support founders at every stage of their journey.',
     photo: '/images/team/hannah-savage.jpg',
-    linkedin: '',
+    links: [],
   },
   {
     name: 'Rodney Ferrell',
     title: 'Partner',
     bio: 'Founder of Ferrell Digital Production and Partner at Evolution Accelerator, Rodney brings creative entrepreneurship and deep expertise in digital media to help portfolio founders tell their stories and build their brands.',
     photo: '/images/team/rodney-ferrell.jpg',
-    linkedin: '',
+    links: [],
   },
   {
     name: 'Charles Ansbach',
     title: 'Partner',
     bio: 'Lecturer at the UC Davis Graduate School of Management and Partner at Evolution Accelerator, Charles connects founders with world-class academic insight and a lifetime of entrepreneurial and business strategy expertise.',
     photo: '/images/team/charles-ansbach.jpg',
-    linkedin: '',
+    links: [],
   },
   {
     name: '',
     title: '',
     bio: '',
     photo: null,
-    linkedin: '',
+    links: [],
   },
 ]
 
@@ -242,18 +237,22 @@ function TeamGrid() {
                 </p>
               )}
 
-              {/* LinkedIn */}
-              {member.linkedin && (
-                <a
-                  href={member.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-8 inline-flex items-center gap-2 text-white/25 hover:text-green transition-colors duration-300"
-                  aria-label={`${member.name} on LinkedIn`}
-                >
-                  <Linkedin size={15} />
-                  <span className="font-inter text-xs tracking-widest uppercase">LinkedIn</span>
-                </a>
+              {/* Affiliation links */}
+              {member.links.length > 0 && (
+                <div className="mt-8 flex flex-wrap gap-3">
+                  {member.links.map((link) => (
+                    <a
+                      key={link.href}
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-white/25 hover:text-green transition-colors duration-300"
+                    >
+                      <span className="font-inter text-xs tracking-widest uppercase">{link.label}</span>
+                      <ArrowUpRight size={11} />
+                    </a>
+                  ))}
+                </div>
               )}
 
               {/* Bottom accent */}
