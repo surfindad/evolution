@@ -127,7 +127,7 @@ function Hero() {
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-12">
           <div className="lg:max-w-3xl">
             <WordReveal
-              text="Nest free. Fly free."
+              text="Open. Connected. Free."
               delay={0.1}
               className="font-raleway font-black uppercase text-white leading-[0.9]"
               style={{ fontSize: 'clamp(3.5rem, 10vw, 9rem)' }}
@@ -436,7 +436,7 @@ function Apply() {
           className="font-raleway font-black uppercase text-white/[0.018] whitespace-nowrap leading-none"
           style={{ fontSize: 'clamp(8rem, 22vw, 24rem)' }}
         >
-          NEST
+          JOIN
         </span>
       </div>
 
@@ -451,8 +451,8 @@ function Apply() {
             className="font-raleway font-black uppercase text-white leading-none"
             style={{ fontSize: 'clamp(2.5rem, 6vw, 5.5rem)' }}
           >
-            Ready to<br />
-            <span className="text-green">find your tree?</span>
+            Ready to join<br />
+            <span className="text-green">the ecosystem?</span>
           </h2>
         </motion.div>
 
