@@ -70,7 +70,7 @@ export default function Hero() {
           className="font-raleway font-black text-green-accent leading-none"
           style={{ fontSize: 'clamp(4rem, 7vw, 7rem)' }}
         >
-          49+
+          50+
         </span>
         <span className="label-mono mt-1 text-right">Portfolio Companies</span>
       </motion.div>

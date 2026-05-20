@@ -13,7 +13,7 @@ const THESIS = [
 ]
 
 const STATS = [
-  { value: '49+',  label: 'Portfolio Companies' },
+  { value: '50+',  label: 'Portfolio Companies' },
   { value: '9',    label: 'Sectors' },
   { value: '#5',   label: 'Women Entrepreneurs' },
   { value: '700+', label: 'Regional Startups' },
@@ -79,7 +79,7 @@ export default function PortfolioPage() {
               className="max-w-sm border-l-2 border-green/30 pl-6 pb-1 shrink-0"
             >
               <p className="text-white/40 font-inter text-base leading-relaxed mb-5">
-                49+ companies across 9 sectors — each selected for their ability to
+                50+ companies across 9 sectors — each selected for their ability to
                 redefine their market with technology, speed, and a clear path to
                 value creation.
               </p>

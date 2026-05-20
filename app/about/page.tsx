@@ -183,7 +183,7 @@ function Mission() {
             </p>
             <div className="w-8 h-px bg-green/40 mt-2" />
             <div>
-              <span className="text-green-accent font-raleway font-black text-4xl leading-none">49+</span>
+              <span className="text-green-accent font-raleway font-black text-4xl leading-none">50+</span>
               <p className="text-white/30 font-inter text-sm mt-1">companies and counting</p>
             </div>
           </motion.div>

@@ -351,7 +351,7 @@ function RegionSection() {
             </span>
           </motion.div>
 
-          {/* 49+ — wide bottom */}
+          {/* 50+ — wide bottom */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -363,7 +363,7 @@ function RegionSection() {
                 className="font-raleway font-black text-green-accent leading-none"
                 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)' }}
               >
-                49+
+                50+
               </span>
               <span className="text-white/35 font-inter text-sm block mt-1">Portfolio companies</span>
             </div>
@@ -397,7 +397,7 @@ function StatementBand() {
           className="font-raleway font-black uppercase text-[#1E1E2A] leading-none"
           style={{ fontSize: 'clamp(2.2rem, 5vw, 4.5rem)' }}
         >
-          49+ companies.<br />One ecosystem.
+          50+ companies.<br />One ecosystem.
         </p>
         <a
           href="/portfolio"
