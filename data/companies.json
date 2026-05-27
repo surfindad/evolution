@@ -295,13 +295,22 @@
     "slug": "core-impact",
     "sector": "Health",
     "pageUrl": "",
-    "logo": "",
-    "description": "Performance health platform helping athletes and everyday people reach peak potential.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/coreimpact.png",
+    "description": "Smart EMG-sensor garments delivering real-time muscle activity data to athletes, coaches, and trainers.",
+    "website": "https://coreimpactinc.com",
+    "tagline": "Wearable technology that rewrites athletic performance",
+    "longDescription": "Core Impact Inc. is a cutting-edge company revolutionizing athletic performance through innovative wearable technology. We specialize in developing and manufacturing smart garments embedded with advanced EMG (electromyography) sensors. These sensors capture real-time muscle activity data, providing athletes and coaches with unparalleled insights into performance, biomechanics, and injury prevention.\n\nFounded by a former professional baseball player with a deep understanding of the challenges athletes face, Core Impact is based in Elk Grove, CA. The company is proud to be backed by and used by elite athletes — including MLB superstar Mookie Betts, who believes in their vision and trains with their system.\n\nAt Evolution, we recognize the transformative potential of Core Impact's technology in reshaping sports training and performance. By combining EMG sensor technology with AI-driven insights, Core Impact equips athletes and coaches with real-time feedback to enhance decision-making and maximize results.",
+    "founders": "Samuel Taylor",
+    "founded": "",
+    "coverImage": "/images/coreimpact-product.jpg",
+    "team": [
+      {
+        "name": "Samuel Taylor",
+        "title": "Co-Founder & CEO",
+        "bio": "Samuel is the co-founder and CEO of Core Impact, bringing firsthand knowledge of elite athletic performance as a former professional baseball player. He built Core Impact to solve the performance and injury challenges he experienced firsthand, creating wearable EMG technology that gives athletes and coaches real-time muscle data to train smarter and prevent injury.",
+        "photo": "/images/coreimpact-samuel.jpg"
+      }
+    ]
   },
   {
     "id": 10,
