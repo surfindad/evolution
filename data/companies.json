@@ -318,13 +318,22 @@
     "slug": "companion-candles",
     "sector": "Consumer",
     "pageUrl": "",
-    "logo": "",
-    "description": "Thoughtfully crafted candles designed to create meaningful moments and memories.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/companion-candles.png",
+    "description": "The first premium, pet-safe fragrance brand — toxin-free candles that protect the animals who share your home.",
+    "website": "https://companioncandles.com",
+    "tagline": "Premium home fragrance that's safe for every member of the family",
+    "longDescription": "Companion Candles is the first premium, pet-safe fragrance brand. We've transformed the way we feed our pets — fresh food, supplements, specialty treats — but no one is talking about what they breathe all day, every day. Traditional candles and home fragrance products release 250+ toxins (carcinogens, endocrine disruptors, respiratory irritants) that settle onto floors, beds, and couches — exactly where pets spend their time. This can cause dermatitis and severe respiratory reactions. Pet parents who scrutinize every kibble ingredient unknowingly expose their animals to dangerous airborne toxins. Most importantly, a portion of every sale supports animal rescue organizations.\n\nAt Evolution, we see Companion Candles as a category-defining brand at the intersection of pet care and clean living. Founded by a former growth marketing leader with a passion for animal advocacy, the company is redefining home fragrance with products free of the 250+ toxins most harmful to pets and humans. By combining a proprietary coconut-soy wax blend, FSC-certified wood wicks, and essential-oil-based fragrances, Companion Candles delivers a premium, design-forward alternative to traditional candles.",
+    "founders": "Loren Lewin",
+    "founded": "",
+    "coverImage": "/images/companion-candles-product.jpg",
+    "team": [
+      {
+        "name": "Loren Lewin",
+        "title": "Co-Founder & CEO",
+        "bio": "With a background in growth marketing at Grubhub and SpotHero, Loren brings deep expertise in scaling consumer brands. As a dedicated animal welfare advocate and board member of The Anti-Cruelty Society, she founded Companion Candles to create a safer, toxin-free home environment for pets and their families.",
+        "photo": "/images/companion-candles-loren.jpg"
+      }
+    ]
   },
   {
     "id": 11,
