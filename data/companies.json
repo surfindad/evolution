@@ -214,13 +214,28 @@
     "slug": "cash-abroad",
     "sector": "Fintech",
     "pageUrl": "",
-    "logo": "",
-    "description": "International money movement made simple, fast, and affordable for everyone.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/cash-abroad.png",
+    "description": "Stablecoin-powered cross-border payment rails cutting FX costs from 6% to ~1.5% for SMEs in industrial and logistics markets.",
+    "website": "https://cashabroad.one",
+    "tagline": "Global treasury operations for the next era of trade",
+    "longDescription": "CashAbroad enables global treasury operations for SMEs in industrial and logistics markets using stablecoin-based payment rails. Today, SMEs lose up to 6% in FX conversion costs and time delays due to inefficient financial systems. CashAbroad reduces this to ~1.5%, while enabling multi-account operations, faster expansion, and cross-border settlement in under two hours through local partners in eight countries. The company is initially focused on the $900B+ U.S.–Mexico trade payments market, one of the most active trade corridors in the world. By turning supply chains into programmable financial engines, CashAbroad unlocks efficiency that compounds into growth, sustainability, resilience, and shared economic abundance.\n\nAt Evolution, we're excited by Cash Abroad's bold reimagining of international money movement in an era where global commerce demands speed and simplicity. By leveraging digital wallet infrastructure, real-time currency conversion, and multi-currency accounts designed for international trade, they've built a platform that brings enterprise-grade FX capabilities to businesses that have long been underserved by traditional banks.",
+    "founders": "Ruth Gomez Hidalgo, Braulio Alejandro Ramirez Montiel",
+    "founded": "",
+    "coverImage": "/images/cash-abroad-product.jpg",
+    "team": [
+      {
+        "name": "Ruth Gomez Hidalgo",
+        "title": "Co-Founder & CEO",
+        "bio": "Ruth is the CEO and co-founder of CashAbroad, a financial technology company transforming cross-border trade payments with fast, compliant, and cost-effective digital dollar solutions for exporters and importers in Latin America. With deep expertise in technology, finance, and innovation, she specializes in blockchain, AI-driven financial solutions, and programmable financial infrastructure. She has been part of DraperU x Stellar Embark Accelerator and Techstars Payments, actively shaping the future of digital finance.",
+        "photo": "/images/cash-abroad-ruth.jpg"
+      },
+      {
+        "name": "Braulio Alejandro Ramirez Montiel",
+        "title": "Co-Founder & CTO",
+        "bio": "Braulio is the CTO and co-founder of CashAbroad, building the technical infrastructure that powers the future of global trade finance. With a background in physics engineering and international finance, he combines deep expertise in software development, cloud architecture, and blockchain. He previously led innovation initiatives at Telmex and digital product growth at Walmart. As an active contributor to the Stellar ecosystem and alumnus of DraperU x Stellar Embark Accelerator and Techstars Payments, he leads CashAbroad's technical vision.",
+        "photo": "/images/cash-abroad-braulio.jpg"
+      }
+    ]
   },
   {
     "id": 7,
