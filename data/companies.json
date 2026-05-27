@@ -185,13 +185,28 @@
     "slug": "cartwheelio",
     "sector": "Fintech",
     "pageUrl": "",
-    "logo": "",
+    "logo": "/images/cartwheel.png",
     "description": "Simplifying payments and financial operations for modern businesses.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "website": "https://cartwheel.io",
+    "tagline": "Automated accounts receivables for staffing agencies",
+    "longDescription": "Cartwheel is a cutting-edge platform designed to simplify and automate accounts receivables management for staffing agencies. By leveraging advanced technology, Cartwheel streamlines cash flow processes, reducing administrative burdens and optimizing payment cycles. Its mission is to empower staffing agencies to focus more on their core operations by automating key financial workflows, improving efficiency, and enhancing overall financial health.\n\nAt Evolution, we see significant potential in Cartwheel's innovative approach to automating accounts receivables for staffing agencies. Their focus on simplifying cash flow management and improving payment cycles addresses a critical need within the staffing industry.",
+    "founders": "Mani Themadathil, Stephen Wigginton",
+    "founded": "",
+    "coverImage": "/images/cartwheel-product.jpg",
+    "team": [
+      {
+        "name": "Mani Themadathil",
+        "title": "CEO & Co-Founder",
+        "bio": "Mani has a strong background in product leadership, having served as Chief Product Officer at a rapidly growing startup where he frequently collaborated with staffing agencies. Those experiences inspired him to co-found Cartwheel, revolutionizing accounts receivables through automation.",
+        "photo": "/images/cartwheel-mani.jpg"
+      },
+      {
+        "name": "Stephen Wigginton",
+        "title": "Co-Founder & CTO",
+        "bio": "Stephen brings firsthand experience with the operational challenges staffing agencies face. Together with Mani, he co-founded Cartwheel to streamline and automate receivables processes, helping staffing companies manage their cash flow more effectively.",
+        "photo": "/images/cartwheel-stephen.jpg"
+      }
+    ]
   },
   {
     "id": 6,
