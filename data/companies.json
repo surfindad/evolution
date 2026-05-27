@@ -411,13 +411,28 @@
     "slug": "dopedog",
     "sector": "Consumer",
     "pageUrl": "",
-    "logo": "",
-    "description": "Premium CBD pet wellness products for healthier, happier dogs.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/dope-dog.png",
+    "description": "Premium CBD-infused pet wellness products — treats, oils, and grooming items lab-tested for purity and effectiveness.",
+    "website": "https://dope.dog",
+    "tagline": "Bringing relief and comfort to dogs everywhere",
+    "longDescription": "Dope Dog is a pet wellness brand that specializes in CBD-infused products designed to improve the health and well-being of dogs. Their product line includes treats, oils, and grooming items formulated to help alleviate anxiety, joint pain, and other common ailments in dogs. Dope Dog prioritizes quality and safety, using premium ingredients that are lab-tested to ensure purity and effectiveness.\n\nAt Evolution, we recognize Dope Dog's commitment to enhancing the lives of pets through their innovative use of CBD products. Their focus on developing safe, high-quality solutions for common canine health issues aligns with our vision of supporting brands that drive meaningful impact. Dope Dog's dedication to transparency and product efficacy sets them apart in the pet wellness space, and we are proud to support their mission to bring relief and comfort to dogs everywhere.",
+    "founders": "Michael Benatar, Erin Mastropietro",
+    "founded": "2017",
+    "coverImage": "/images/dope-dog-product.jpg",
+    "team": [
+      {
+        "name": "Michael Benatar",
+        "title": "Co-Founder & CEO",
+        "bio": "Michael co-founded Dope Dog in 2017 and serves as its CEO. He has a diverse background in media and production, having worked as an air talent/producer at Clear Channel and a fashion photographer. Michael has a degree in Cinematography and Film/Video Production and is also Klaviyo-certified, bringing both creative and technical expertise to the business.",
+        "photo": "/images/dope-dog-michael.jpg"
+      },
+      {
+        "name": "Erin Mastropietro",
+        "title": "Co-Founder & COO",
+        "bio": "Erin co-founded Dope Dog and is the driving force behind its operations. With a passion for building customer-focused brands, she plays a critical role in product development and marketing strategy. Erin is also an advocate for women in business and has been featured in numerous media outlets for her leadership and entrepreneurial insights.",
+        "photo": "/images/dope-dog-erin.jpg"
+      }
+    ]
   },
   {
     "id": 14,
