@@ -169,16 +169,33 @@ function ContentSection({
   const isInView = useInView(ref, { once: true, margin: '-60px' })
 
   return (
-    <section ref={ref} className="py-20 bg-[#1E1E2A]">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10">
+    <section ref={ref} className="bg-[#1E1E2A]">
 
-        {/* Cover image — shown when provided */}
-        {company.coverImage && (
+      {/* Two-column layout when cover image exists */}
+      {company.coverImage ? (
+        <div className="grid lg:grid-cols-[1fr_45%] min-h-[600px]">
+          {/* Left: text + details */}
+          <div className="py-20 px-6 lg:px-10 lg:pl-[max(2.5rem,calc((100vw-80rem)/2+2.5rem))]">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7 }}
+              className="max-w-xl"
+            >
+              <p className="label-mono mb-6">About</p>
+              <div className="space-y-5">
+                {body.split('\n\n').map((para, i) => (
+                  <p key={i} className="text-white/55 font-inter text-lg leading-relaxed">{para}</p>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+          {/* Right: tall cover image */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.7 }}
-            className="relative w-full h-[480px] lg:h-[600px] rounded-2xl overflow-hidden mb-16 border border-white/[0.07]"
+            initial={{ opacity: 0 }}
+            animate={isInView ? { opacity: 1 } : {}}
+            transition={{ duration: 0.8, delay: 0.1 }}
+            className="relative min-h-[500px] lg:min-h-full"
           >
             <Image
               src={company.coverImage}
@@ -186,47 +203,52 @@ function ContentSection({
               fill
               className="object-cover object-center"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#1E1E2A]/60 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#1E1E2A]/30 to-transparent" />
           </motion.div>
-        )}
+        </div>
+      ) : null}
 
+      {/* Standard layout: about + details card (always shown; also details when cover image present) */}
+      <div className={`max-w-7xl mx-auto px-6 lg:px-10 ${company.coverImage ? 'py-16' : 'py-20'}`}>
         <div className="grid lg:grid-cols-[1fr_320px] gap-16 lg:gap-24">
 
-          {/* Left: About */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.7 }}
-          >
-            <p className="label-mono mb-6">About</p>
+          {/* Left: About — only shown when no cover image (cover image layout has its own about) */}
+          {!company.coverImage && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7 }}
+            >
+              <p className="label-mono mb-6">About</p>
 
-            {body ? (
-              <div className="space-y-5">
-                {body.split('\n\n').map((para, i) => (
-                  <p key={i} className="text-white/55 font-inter text-lg leading-relaxed">
-                    {para}
+              {body ? (
+                <div className="space-y-5">
+                  {body.split('\n\n').map((para, i) => (
+                    <p key={i} className="text-white/55 font-inter text-lg leading-relaxed">
+                      {para}
+                    </p>
+                  ))}
+                </div>
+              ) : (
+                <div className="border border-white/[0.07] rounded-xl p-10 text-center">
+                  <p className="text-white/25 font-inter text-base mb-2">Full profile coming soon</p>
+                  <p className="text-white/15 font-inter text-sm">
+                    We&apos;re building out this page. Check back shortly.
                   </p>
-                ))}
-              </div>
-            ) : (
-              <div className="border border-white/[0.07] rounded-xl p-10 text-center">
-                <p className="text-white/25 font-inter text-base mb-2">Full profile coming soon</p>
-                <p className="text-white/15 font-inter text-sm">
-                  We&apos;re building out this page. Check back shortly.
-                </p>
-                {company.website && (
-                  <a
-                    href={company.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 mt-6 text-green font-inter text-sm hover:text-green/80 transition-colors"
-                  >
-                    Visit {company.name} directly <ArrowUpRight size={13} />
-                  </a>
-                )}
-              </div>
-            )}
-          </motion.div>
+                  {company.website && (
+                    <a
+                      href={company.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 mt-6 text-green font-inter text-sm hover:text-green/80 transition-colors"
+                    >
+                      Visit {company.name} directly <ArrowUpRight size={13} />
+                    </a>
+                  )}
+                </div>
+              )}
+            </motion.div>
+          )}
 
           {/* Right: Details card */}
           {hasDetail && (
@@ -294,7 +316,7 @@ function ContentSection({
   )
 }
 
-/* ── Team / Founders ─────────────────────────────────────────── */
+/* ── Team / Founders ──────────────────────────────────────────── */
 function TeamSection({ team }: { team: { name: string; title: string; bio: string; photo: string }[] }) {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-60px' })
