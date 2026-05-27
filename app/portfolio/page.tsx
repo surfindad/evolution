@@ -34,10 +34,10 @@ export default function PortfolioPage() {
         <div className="absolute inset-0 grid-bg opacity-30 pointer-events-none" />
 
         {/* Ghost background word */}
-        <div className="absolute inset-0 flex items-center pointer-events-none select-none overflow-hidden" aria-hidden>
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none" aria-hidden>
           <span
-            className="font-raleway font-black uppercase text-white/[0.022] leading-none -ml-4"
-            style={{ fontSize: 'clamp(12rem, 32vw, 34rem)' }}
+            className="font-raleway font-black uppercase text-white/[0.022] leading-none whitespace-nowrap"
+            style={{ fontSize: 'clamp(5rem, 14vw, 15rem)' }}
           >
             PORTFOLIO
           </span>
