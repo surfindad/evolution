@@ -126,22 +126,21 @@ export default function PortfolioGrid() {
           >
             {filtered.map((company, i) => {
               const inner = (
-                <div className="group relative bg-[#16161F] p-7 flex flex-col gap-5 h-full min-h-[180px] transition-all duration-300 hover:bg-[#1a1a28]">
-                  {/* Top: logo + sector pill */}
-                  <div className="flex items-start justify-between gap-3">
-                    <div className="w-11 h-11 rounded-lg bg-white/[0.06] border border-white/[0.08] flex items-center justify-center shrink-0 overflow-hidden">
-                      {company.logo ? (
-                        <Image src={company.logo} alt={company.name} width={44} height={44} className="object-contain w-full h-full p-1" />
-                      ) : (
-                        <span className="font-raleway font-black text-white/30 text-base leading-none">
-                          {company.name.charAt(0)}
-                        </span>
-                      )}
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <SectorPill sector={company.sector} />
-                      <ArrowUpRight size={14} className="text-white/20 group-hover:text-green transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 shrink-0" />
-                    </div>
+                <div className="group relative bg-[#16161F] p-7 flex flex-col gap-5 h-full min-h-[220px] transition-all duration-300 hover:bg-[#1a1a28]">
+                  {/* Top: sector pill + arrow */}
+                  <div className="flex items-center justify-between gap-3">
+                    <SectorPill sector={company.sector} />
+                    <ArrowUpRight size={14} className="text-white/20 group-hover:text-green transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 shrink-0" />
+                  </div>
+                  {/* Logo — centrepiece */}
+                  <div className="w-20 h-20 rounded-2xl bg-white/[0.06] border border-white/[0.08] flex items-center justify-center shrink-0 overflow-hidden">
+                    {company.logo ? (
+                      <Image src={company.logo} alt={company.name} width={80} height={80} className="object-contain w-full h-full p-2" />
+                    ) : (
+                      <span className="font-raleway font-black text-white/30 text-2xl leading-none">
+                        {company.name.charAt(0)}
+                      </span>
+                    )}
                   </div>
                   {/* Name + description */}
                   <div className="flex-1">
