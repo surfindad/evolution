@@ -538,15 +538,30 @@
     "id": 16,
     "name": "Fanalyze",
     "slug": "fanalyze",
-    "sector": "Enterprise",
+    "sector": "Technology",
     "pageUrl": "",
-    "logo": "",
-    "description": "Fan intelligence platform giving sports organizations deep insight into their audiences.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/fanalyze.png",
+    "description": "The fastest way to get sports data — one platform to consolidate all your fantasy teams and track player performance.",
+    "website": "https://fanalyze.com",
+    "tagline": "The fastest way to get sports data",
+    "longDescription": "Fanalyze is a comprehensive platform for fantasy sports players, allowing them to consolidate all their fantasy teams in one place. Their platform uses a specialized algorithm to streamline sports analysis, enabling users to quickly analyze and track player performance, making fantasy sports more accessible and efficient.\n\nAt Evolution, we see significant value in Fanalyze's innovative approach to enhancing the fantasy sports experience. Their focus on simplifying complex data into actionable insights aligns with our mission to support companies that drive innovation and improve user experiences across diverse communities.",
+    "founders": "Juan Juan, Chris Longboy",
+    "founded": "",
+    "coverImage": "/images/fanalyze-product.jpg",
+    "team": [
+      {
+        "name": "Juan Juan",
+        "title": "CEO & Co-Founder",
+        "bio": "Juan is the CEO and Co-Founder of Fanalyze. He has a background in marketing, with a BS in Marketing from San Jose State University. With over 15 years of experience in web design and mobile app development, Juan has worked with numerous startups and prominent companies such as Apple and Schwab, bringing a wealth of experience in both technical and strategic roles to Fanalyze.",
+        "photo": "/images/fanalyze-juan.jpg"
+      },
+      {
+        "name": "Chris Longboy",
+        "title": "CTO & Co-Founder",
+        "bio": "Chris is the CTO and Co-Founder of Fanalyze. He has played a key role in developing the technical foundation of the company's search engine and sports data platform. With expertise in backend architecture and product development, Chris ensures the seamless integration of data analytics to deliver real-time insights for fantasy sports and sports betting users.",
+        "photo": "/images/fanalyze-chris.jpg"
+      }
+    ]
   },
   {
     "id": 17,
