@@ -633,13 +633,28 @@
     "slug": "fuelai",
     "sector": "AI & ML",
     "pageUrl": "",
-    "logo": "",
-    "description": "AI-powered growth engine helping e-commerce brands acquire and retain customers.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/fuel-ai.png",
+    "description": "Democratized AI data platform connecting developers with 'Bounty Hunters' who contribute real-world photos, videos, audio, and text.",
+    "website": "https://gofuel.ai",
+    "tagline": "Grounding AI in real-world data — one bounty hunter at a time",
+    "longDescription": "Fuel AI is a cutting-edge platform that connects AI developers with everyday individuals, known as \"Bounty Hunters,\" who contribute diverse data like photos, videos, audio, and text files. This innovative, democratized approach allows people from all walks of life to participate in AI development while earning money, making AI more accessible and grounded in real-world data.\n\nAt Evolution, we value Fuel AI's commitment to inclusivity in the tech space. By leveraging a broad range of user-contributed data, they create a more representative and accessible AI landscape. This aligns with our mission to support companies that push the boundaries of innovation while fostering greater participation and diversity in technology.",
+    "founders": "Virginia Puccio, Jon Nam",
+    "founded": "",
+    "coverImage": "/images/fuel-ai-product.jpg",
+    "team": [
+      {
+        "name": "Virginia Puccio",
+        "title": "Co-Founder & CEO",
+        "bio": "Virginia is the Co-Founder and CEO of Fuel AI. She has a deep understanding of the data challenges faced by AI companies, particularly in sourcing unique, high-quality datasets required to train AI models. Her leadership focuses on enabling AI builders to access custom data through the platform's network of \"bounty hunters,\" facilitating efficient data collection that fuels AI development.",
+        "photo": "/images/fuel-ai-virginia.jpg"
+      },
+      {
+        "name": "Jon Nam",
+        "title": "Co-Founder & COO",
+        "bio": "Jon is the Co-Founder and COO of Fuel AI. He works closely with Virginia in overseeing the operational aspects of the company, focusing on scaling the bounty hunter network and optimizing the delivery of custom data solutions. Jon's expertise lies in managing the intersection of AI technology and marketplace operations, ensuring seamless coordination between AI builders and data providers.",
+        "photo": "/images/fuel-ai-jon.jpg"
+      }
+    ]
   },
   {
     "id": 20,
