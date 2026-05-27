@@ -742,15 +742,24 @@
     "id": 22,
     "name": "Javlin Concepts",
     "slug": "javlinconcepts",
-    "sector": "Technology",
+    "sector": "Enterprise",
     "pageUrl": "",
-    "logo": "",
-    "description": "Hardware innovation studio building next-generation consumer and industrial devices.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/javlin-concepts.png",
+    "description": "Designing and manufacturing advanced tactical gear with a focus on operator comfort, modularity, and maneuverability for military and law enforcement.",
+    "website": "https://www.javlinconcepts.com",
+    "tagline": "Advanced tactical gear engineered for those who serve.",
+    "longDescription": "Javlin Concepts is a company specializing in designing and manufacturing advanced tactical gear, with a particular focus on maximizing operator comfort, modularity, and maneuverability. Their flagship product, the Javlin Adaptive Carrier, is built to address the specific needs of military and law enforcement professionals, ensuring superior performance in the field.\n\nAt Evolution, we see great potential in Javlin Concepts' dedication to enhancing the safety and efficiency of those who serve. Their commitment to innovation and user-centered design strongly aligns with our mission to support companies that deliver impactful solutions.",
+    "founders": "Boston Bonn",
+    "founded": "",
+    "coverImage": "/images/javlin-concepts-product.jpg",
+    "team": [
+      {
+        "name": "Boston Bonn",
+        "title": "Founder & CEO",
+        "bio": "Boston Bonn is the founder and CEO of Javlin Concepts, a company specializing in custom plastic extrusions and components. With a background in engineering and product design, Boston plays a key role in developing innovative solutions for their clients' product needs. Under his leadership, Javlin Concepts focuses on optimizing functionality and efficiency across various industries.",
+        "photo": "/images/javlin-concepts-boston.jpg"
+      }
+    ]
   },
   {
     "id": 23,
