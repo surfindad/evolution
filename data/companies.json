@@ -697,13 +697,46 @@
     "slug": "invasivespeciescorporation",
     "sector": "CleanTech",
     "pageUrl": "",
-    "logo": "",
-    "description": "Turning invasive species from ecological threat into sustainable commercial resource.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/isc.png",
+    "description": "Using naturally occurring microorganisms to create sustainable biological solutions for invasive species in aquatic, forestry, and agricultural environments.",
+    "website": "https://invasivespeciescorporation.com",
+    "tagline": "Biological solutions for a world under invasion.",
+    "longDescription": "Invasive Species Corporation (ISC) addresses the economic and ecological threats posed by invasive species, which cost the global economy over $420 billion annually. The company uses naturally occurring microorganisms to create sustainable biological solutions for invasive species in aquatic, forestry, and agricultural environments, reducing reliance on harmful chemicals. ISC's mission is to protect biodiversity and ecosystems by pioneering eco-friendly and scalable interventions that target invasive species affecting critical natural resources.\n\nEvolution recognized ISC's innovative approach to invasive species control as a significant advancement in ecological and environmental health. ISC's biologically driven solutions align with Evolution's mission to support sustainable technologies that address pressing global issues. The company's ability to develop targeted, eco-friendly alternatives to toxic chemicals, alongside partnerships and expertise in biologics, presented an outstanding opportunity for Evolution to invest in a leader driving real, scalable change in biodiversity preservation.",
+    "founders": "Pam Marrone, Jim Boyd",
+    "founded": "",
+    "coverImage": "/images/isc-product.jpg",
+    "team": [
+      {
+        "name": "Pam Marrone",
+        "title": "Founder & Executive Chair",
+        "bio": "As the Executive Chair and Co-founder, Dr. Marrone is a veteran in biological pest management, with over 30 years leading bioag companies, including Marrone Bio Innovations. She has a robust history in launching bio-based solutions and guiding successful exits for bioag startups. Dr. Marrone is a Cornell and North Carolina State University alumna and serves on multiple boards in agriculture and biotechnology.",
+        "photo": "/images/isc-pam.jpg"
+      },
+      {
+        "name": "Jim Boyd",
+        "title": "Founder & CEO",
+        "bio": "A seasoned CFO and co-founder, Boyd brings 21 years of financial leadership experience across five public companies, including time as CFO at Marrone Bio Innovations. He excels in investor relations, finance, and strategic planning, providing essential insights and decision-making for ISC's financial and operational success.",
+        "photo": "/images/isc-jim-boyd.jpg"
+      },
+      {
+        "name": "Amit Vasavada",
+        "title": "Chief Science Officer",
+        "bio": "Chief Scientific Advisor at ISC, Dr. Vasavada holds a Ph.D. in Applied Microbiology and brings extensive expertise in bioproducts for agriculture, food, and animal health. With over 35 years in research and development, he is instrumental in ISC's biomanufacturing and biological innovation efforts.",
+        "photo": "/images/isc-amit.jpg"
+      },
+      {
+        "name": "Jim Gollub",
+        "title": "VP of Business Development",
+        "bio": "Specializing in innovation-driven economic strategy, Gollub supports ISC's mission by engaging stakeholders in the invasive species control market. He has a background in shaping economic strategies globally for various sectors and helps ISC in scaling solutions through collaboration.",
+        "photo": "/images/isc-jim-gollub.jpg"
+      },
+      {
+        "name": "Peter Kennedy",
+        "title": "Acting CFO",
+        "bio": "Peter Kennedy, a former partner at Fulcrum Capital, has deep expertise in sustainable investing, with a focus on agriculture, recycling, and healthcare innovations for underserved markets. His impactful investments include Marrone Bio Innovations and Terracycle, reflecting his dedication to environmentally responsible and socially impactful ventures.",
+        "photo": "/images/isc-peter.jpg"
+      }
+    ]
   },
   {
     "id": 22,
