@@ -243,13 +243,22 @@
     "slug": "ciao-pappy",
     "sector": "Consumer",
     "pageUrl": "",
-    "logo": "",
-    "description": "Authentic Italian food experiences reimagined for the modern consumer.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/ciao-pappy.png",
+    "description": "Modern Italian-American pantry brand reimagining the $4.5B pasta sauce market with chef-crafted, clean-label sauces.",
+    "website": "https://ciaopappy.com",
+    "tagline": "Premium pasta sauces with Italian roots and California soul",
+    "longDescription": "Ciao Pappy is a modern Italian-American pantry brand reimagining the $4.5B U.S. pasta sauce market with chef-crafted, clean-label sauces inspired by the Italian and California coast. Founded to meet growing demand for premium, clean, and culturally resonant pantry staples, our sauces bridge tradition and innovation in a category long dominated by legacy brands. With a distinct voice, West Coast spirit, and bold flavors, Ciao Pappy modernizes pantry classics and adds an accent to your pantry staples.\n\nAt Evolution, we backed Ciao Pappy for their refreshing take on a pantry staple that's long overdue for reinvention. By blending the richness of Italian heritage with the brightness of California cuisine, they've created a line of premium sauces that stand out in both flavor and brand voice. Their chef-driven approach, early traction within a discerning niche, and modern vision for clean-label convenience position them as a compelling force in the future of everyday cooking.",
+    "founders": "Francesca Pittaluga",
+    "founded": "",
+    "coverImage": "/images/ciao-pappy-product.jpg",
+    "team": [
+      {
+        "name": "Francesca Pittaluga",
+        "title": "Founder & CEO",
+        "bio": "Francesca is the founder of Ciao Pappy, a modern Italian-American pantry brand inspired by her Italian father and their shared love of cooking. After a 14-year career in fashion marketing and communications for luxury brands, she launched Ciao Pappy to bring premium, clean-label sauces to a category dominated by outdated, mass-market players. With deep roots in Italian culture and a passion for thoughtful brand building, Francesca is reimagining the pantry for today's home cook with a West Coast ease and modern touch.",
+        "photo": "/images/ciao-pappy-francesca.jpg"
+      }
+    ]
   },
   {
     "id": 8,
