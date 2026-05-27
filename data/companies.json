@@ -370,13 +370,40 @@
     "slug": "daxe",
     "sector": "Enterprise",
     "pageUrl": "",
-    "logo": "",
-    "description": "Data exchange infrastructure enabling secure, compliant B2B data sharing at scale.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/daxe.png",
+    "description": "AI-powered search with 98% accuracy — eliminating hallucinations and data security risks for pharma, finance, and government.",
+    "website": "https://www.daxe.ai",
+    "tagline": "Structured Semantic Search that sets a new standard for AI retrieval",
+    "longDescription": "Daxe offers an AI-powered search platform designed to improve the accuracy and efficiency of data retrieval in industries where precision is critical, such as pharmaceuticals, finance, and government. Their solution boasts 98% accuracy and tackles common issues like AI \"hallucinations\" and data security concerns. By utilizing a graph database, Daxe ensures rapid, accurate searches across large datasets, helping businesses easily locate critical information.\n\nAt Evolution, we value Daxe's cutting-edge Structured Semantic Search (SSS) technology, which sets a new standard for AI retrieval. Their innovative approach to managing unstructured data provides unmatched accuracy, empowering companies to make data-driven decisions with confidence. Daxe's flexible deployment options also ensure a broad range of organizations can benefit from this powerful technology.",
+    "founders": "Erika Bahr",
+    "founded": "",
+    "coverImage": "/images/daxe-product.jpg",
+    "team": [
+      {
+        "name": "Erika Bahr",
+        "title": "Founder & CEO",
+        "bio": "Erika brings a wealth of experience in developing large-scale data systems, having worked with Fortune 500 companies. She managed $25 million in ad spend data quarterly and led a proof-of-concept project with AWS focused on real-time market forecasting using machine learning. Her expertise in handling complex data systems is key to Daxe's advanced AI-powered platform.",
+        "photo": "/images/daxe-erika.jpg"
+      },
+      {
+        "name": "Barak Michener",
+        "title": "CTO",
+        "bio": "Barak has a distinguished background in AI and data technology. At Google, he played a pivotal role in developing the Knowledge Graph, revolutionizing search capabilities, and led the development of Mapgraph at Lyft, transforming mapping services. His innovative contributions to AI technologies are reflected in several patents he holds, making him a valuable leader at Daxe.",
+        "photo": "/images/daxe-barak.jpg"
+      },
+      {
+        "name": "Avery Lyford",
+        "title": "Software and Services Executive",
+        "bio": "Avery has a long track record of success as a CEO and Chief Customer Officer, with experience in delivering enterprise software solutions to some of the world's largest companies. His expertise spans creating and executing winning strategies for software and services. With a master's degree in computer science, he has deep technical knowledge that helps drive Daxe's business innovation.",
+        "photo": "/images/daxe-avery.jpg"
+      },
+      {
+        "name": "James Costantini",
+        "title": "Growth and GTM Expert",
+        "bio": "James is a multi-exited founder with a strong background in scaling companies to hundreds of millions in revenue. Known for his growth hacking expertise and go-to-market strategies, he brings invaluable skills to Daxe's expansion efforts. His proven track record in scaling startups highlights his ability to take Daxe to new heights.",
+        "photo": "/images/daxe-james.jpg"
+      }
+    ]
   },
   {
     "id": 13,
