@@ -481,13 +481,58 @@
     "slug": "eqvista",
     "sector": "Fintech",
     "pageUrl": "",
-    "logo": "",
-    "description": "Cap table management and equity administration software for startups and investors.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/eqvista.png",
+    "description": "Comprehensive equity management platform for cap tables, share issuance, 409A valuations, and company incorporations.",
+    "website": "https://eqvista.com",
+    "tagline": "Manage equity efficiently — from cap table to $1 trillion AUA",
+    "longDescription": "Eqvista is a comprehensive equity management platform that helps companies manage cap tables, issue shares, and conduct valuations like 409A assessments. The platform is designed to simplify the process for startups, growing businesses, and large corporations, providing tools for share issuance, financial analysis, and reporting. It also offers services like company incorporation and advanced features such as waterfall analysis for tracking equity dilution and exit scenarios.\n\nAt Evolution, we recognized Eqvista's potential to streamline complex equity management processes. Its scalable, user-friendly platform aligned with our commitment to investing in solutions that empower startups to grow efficiently.",
+    "founders": "Tomas Milar",
+    "founded": "",
+    "coverImage": "/images/eqvista-product.jpg",
+    "team": [
+      {
+        "name": "Tomas Milar",
+        "title": "Founder & CEO",
+        "bio": "Tomas is a seasoned entrepreneur with vast experience in founding multiple startups and managing thousands of company incorporations. He established one of the largest company secretary services in Hong Kong and has grown IncParadise into a major registered agent in Nevada. His vision for Eqvista is to manage equity efficiently and reach $1 trillion in assets under administration within a few years.",
+        "photo": "/images/eqvista-tomas.jpg"
+      },
+      {
+        "name": "Colin McCrea",
+        "title": "CFO & Head of Valuation",
+        "bio": "Colin is a certified valuation analyst (CVA) who manages Eqvista's valuation and corporate taxation teams. He has experience in taxation and auditing for small to medium-sized companies in both the US and Asia. Colin holds an Enrolled Agent accreditation with the IRS and played a key role in the acquisition of IncParadise.",
+        "photo": "/images/eqvista-colin.jpg"
+      },
+      {
+        "name": "Martin Bargl",
+        "title": "Chief Technology Officer",
+        "bio": "Martin brings over a decade of IT experience, having managed global IT projects from scratch to post-acquisition. He was instrumental in automating operations for companies like IncParadise and Startupr. At Eqvista, he focuses on enhancing the company's technological infrastructure.",
+        "photo": "/images/eqvista-martin.jpg"
+      },
+      {
+        "name": "Shilki Eesha",
+        "title": "Chief Compliance Officer",
+        "bio": "Shilki is an expert in financial crimes and regulatory compliance. She played a significant role in the launch of Cheqly, a neobank for SMEs, and oversees regulatory compliance across Eqvista and Cheqly's operations in the US and Hong Kong.",
+        "photo": "/images/eqvista-shilki.jpg"
+      },
+      {
+        "name": "Tom Novotny",
+        "title": "Chief Growth Officer",
+        "bio": "Tom is a serial entrepreneur with a strong track record in building and scaling businesses. One of his companies was acquired by a publicly traded company, showcasing his expertise in business development. At Eqvista, Tom focuses on strategic partnerships and driving global growth.",
+        "photo": "/images/eqvista-tom.jpg"
+      },
+      {
+        "name": "Jakub Vele",
+        "title": "Marketing Director",
+        "bio": "Jakub brings over a decade of experience in digital marketing and brand strategy to Eqvista. He has worked on improving customer experience and expanding the company's digital presence. His previous collaborations with Tomas Milar include successful projects at Startupr and IncParadise.",
+        "photo": "/images/eqvista-jakub.jpg"
+      },
+      {
+        "name": "Brayton Johnson",
+        "title": "COO & Head of Revenue",
+        "bio": "",
+        "photo": "/images/eqvista-brayton.jpg"
+      }
+    ]
   },
   {
     "id": 16,
