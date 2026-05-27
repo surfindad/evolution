@@ -567,15 +567,24 @@
     "id": 17,
     "name": "Fasten",
     "slug": "fasten",
-    "sector": "Technology",
+    "sector": "Health",
     "pageUrl": "",
-    "logo": "",
-    "description": "On-demand logistics and last-mile delivery solutions for local businesses.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/fasten.png",
+    "description": "Interoperability platform connecting 40,000+ U.S. health systems — basically Plaid for healthcare.",
+    "website": "https://www.fastenhealth.com",
+    "tagline": "Plaid for healthcare — seamless medical record sharing at scale",
+    "longDescription": "Fasten Health is an interoperability platform enabling patients to share medical records with trusted organizations — it's basically Plaid for healthcare. We connect to over 40,000 U.S. health systems via integrations with 40 major EHR platforms, providing seamless access to medical data without record releases or manual processes.\n\nFasten Health is revolutionizing healthcare data access with a single, unified API that enables seamless medical record sharing across thousands of health systems. Designed for clinical researchers, digital health platforms, and patient recruitment agencies, Fasten eliminates the friction of integrating with fragmented systems and brings healthcare interoperability within reach.\n\nFounder and CEO Jason Kulatunga brings over a decade of experience designing secure, compliant cloud infrastructures across HIPAA, SOC, PCI, and FedRAMP standards. His deep understanding of regulatory complexity is baked into Fasten's architecture, making it a trusted partner for data-driven healthcare organizations navigating today's interoperability mandates.",
+    "founders": "Jason Kulatunga",
+    "founded": "",
+    "coverImage": "/images/fasten-product.jpg",
+    "team": [
+      {
+        "name": "Jason Kulatunga",
+        "title": "Founder & CEO",
+        "bio": "Jason has 15 years of experience building HIPAA, SOC, PCI, and FedRAMP-compliant cloud architectures. He has led enterprise-scale projects that solve the same security, interoperability, and compliance challenges Fasten addresses today. His deep technical expertise in compliant infrastructure, combined with his involvement in industry standards groups like HL7, the Sequoia Project, and the CARIN Alliance, helps keep Fasten ahead of the curve on both infrastructure and evolving regulations.",
+        "photo": "/images/fasten-jason.jpg"
+      }
+    ]
   },
   {
     "id": 18,
