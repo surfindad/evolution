@@ -95,11 +95,11 @@ function HeroSection({ company, sectorCls }: { company: CompanyType; sectorCls: 
               transition={{ duration: 0.5, delay: 0.1 }}
               className="flex items-center gap-4 mb-8"
             >
-              <div className="w-14 h-14 rounded-xl bg-white/[0.06] border border-white/[0.08] flex items-center justify-center overflow-hidden shrink-0">
+              <div className="w-24 h-24 rounded-2xl bg-white/[0.06] border border-white/[0.08] flex items-center justify-center overflow-hidden shrink-0">
                 {company.logo ? (
-                  <Image src={company.logo} alt={company.name} width={56} height={56} className="object-contain w-full h-full p-1.5" />
+                  <Image src={company.logo} alt={company.name} width={96} height={96} className="object-contain w-full h-full p-2" />
                 ) : (
-                  <span className="font-raleway font-black text-white/35 text-xl leading-none">
+                  <span className="font-raleway font-black text-white/35 text-2xl leading-none">
                     {company.name.charAt(0)}
                   </span>
                 )}
@@ -171,6 +171,25 @@ function ContentSection({
   return (
     <section ref={ref} className="py-20 bg-[#1E1E2A]">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
+
+        {/* Cover image — shown when provided */}
+        {company.coverImage && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.7 }}
+            className="relative w-full h-72 lg:h-96 rounded-2xl overflow-hidden mb-16 border border-white/[0.07]"
+          >
+            <Image
+              src={company.coverImage}
+              alt={`${company.name} cover`}
+              fill
+              className="object-cover object-center"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#1E1E2A]/60 to-transparent" />
+          </motion.div>
+        )}
+
         <div className="grid lg:grid-cols-[1fr_320px] gap-16 lg:gap-24">
 
           {/* Left: About */}
