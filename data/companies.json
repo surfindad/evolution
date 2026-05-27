@@ -51,13 +51,39 @@
     "slug": "allos",
     "sector": "Health",
     "pageUrl": "",
-    "logo": "",
+    "logo": "/images/allos.png",
     "description": "Transforming how healthcare organizations manage and optimize clinical workflows.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "website": "https://www.allos.com",
+    "tagline": "Causal AI bringing generic drugs to market faster",
+    "longDescription": "Allos leverages its proprietary Causal AI platform to bring generic versions of complex drugs to market, addressing an $88B opportunity. Their approach reduces drug development costs by 40% and focuses on securing FDA exclusivity for complex generics.\n\nBy 2030, hundreds of drugs will go off-patent, and Allos' strategy helps pharmaceutical companies tackle the high costs and risks associated with developing these generics.\n\nAt Evolution, we recognize the value of Allos' innovative use of AI to address critical challenges in the pharmaceutical industry. Their focus on leveraging advanced technology to solve industry-wide issues aligns with our commitment to investing in companies that drive meaningful change and innovation.",
+    "founders": "Aditya Varna Iyer",
+    "founded": "",
+    "team": [
+      {
+        "name": "Aditya Varna Iyer, PhD",
+        "title": "CEO",
+        "bio": "Aditya brings a rich blend of scientific expertise and leadership to Allos. With a DPhil from Oxford and machine learning work at CERN, he drives Allos' mission to revolutionize complex drug development using AI, combining cutting-edge technology with pharmaceutical innovation.",
+        "photo": "/images/allos-aditya.jpg"
+      },
+      {
+        "name": "Isaac To",
+        "title": "COO",
+        "bio": "Isaac leverages broad experience in operational strategy, having worked for Walt Disney Imagineering and the Hospital Authority of Hong Kong. His deep understanding of complex systems keeps Allos operating efficiently while scaling its mission of reducing drug development costs.",
+        "photo": "/images/allos-isaac.jpg"
+      },
+      {
+        "name": "Balasubramanian (Balu) Krishnamurthy",
+        "title": "Chief Pharmaceutical Officer",
+        "bio": "Balu brings decades of pharmaceutical expertise, having developed and launched over 50 complex generics. Formerly with Aurobindo Pharma, his deep knowledge in pharmaceutical science complements Allos' technology-driven approach to solving cost and efficacy challenges.",
+        "photo": "/images/allos-balu.jpg"
+      },
+      {
+        "name": "Ivano Lodato, PhD",
+        "title": "Chief Scientist",
+        "bio": "Ivano holds a PhD from the University of Utrecht with previous experience at Fudan University. He spearheads the integration of AI into Allos' drug development process, optimizing the accuracy and success rates of clinical trials for complex generics.",
+        "photo": "/images/allos-ivano.jpg"
+      }
+    ]
   },
   {
     "id": 3,
