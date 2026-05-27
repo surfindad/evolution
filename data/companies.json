@@ -697,6 +697,20 @@
     "tagline": "Simplify and Unlock College Admissions",
     "longDescription": "Admisio provides powerful tools and personalized guidance to simplify college applications.\n\nCollege matching helps students find the best schools based on their goals, budgets, and career path. Personalized roadmaps deliver customized checklists of tasks needed to meet each student's admission goals.\n\nEssay assistance connects students with experts who craft compelling essays geared toward their dream schools. Private counselors with experience on both the college admission and counseling sides guide students every step of the way.",
     "founders": "Joshua Y. Lee, Jim Lee",
-    "founded": ""
+    "founded": "",
+    "team": [
+      {
+        "name": "Joshua Y. Lee",
+        "title": "Co-Founder",
+        "bio": "Award-winning tech CEO who previously founded Ardius, which was successfully acquired by Gusto.",
+        "photo": "/images/joshua_profile.jpg"
+      },
+      {
+        "name": "Jim Lee",
+        "title": "Co-Founder",
+        "bio": "Seasoned design leader who spent over 13 years driving user experience and design at Nintendo before serving as Design Director for Ardius.",
+        "photo": "/images/jimlee_profile.jpg"
+      }
+    ]
   }
 ]

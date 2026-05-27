@@ -31,11 +31,19 @@ export default function CompanyPage() {
   const body      = company.longDescription || company.description || ''
   const hasDetail = !!(company.website || company.founders || company.founded)
 
+  const hasTeam = !!(company.team && company.team.length > 0)
+
   return (
     <main className="bg-[#1E1E2A] min-h-screen">
       <HeroSection company={company} sectorCls={sectorCls} />
       <hr className="divider" />
       <ContentSection company={company} body={body} hasDetail={hasDetail} sectorCls={sectorCls} />
+      {hasTeam && (
+        <>
+          <hr className="divider" />
+          <TeamSection team={company.team!} />
+        </>
+      )}
       <hr className="divider" />
       <BottomNav slug={slug ?? ''} />
     </main>
@@ -261,6 +269,48 @@ function ContentSection({
               </div>
             </motion.div>
           )}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+/* ── Team / Founders ─────────────────────────────────────────── */
+function TeamSection({ team }: { team: { name: string; title: string; bio: string; photo: string }[] }) {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, margin: '-60px' })
+
+  return (
+    <section ref={ref} className="py-20 bg-[#16161F]">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10">
+        <p className="label-mono mb-12">The Team</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {team.map((member, i) => (
+            <motion.div
+              key={member.name}
+              initial={{ opacity: 0, y: 20 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: i * 0.1 }}
+              className="flex flex-col gap-5"
+            >
+              <div className="w-20 h-20 rounded-full overflow-hidden border border-white/10">
+                <Image
+                  src={member.photo}
+                  alt={member.name}
+                  width={80}
+                  height={80}
+                  className="object-cover object-top w-full h-full"
+                />
+              </div>
+              <div>
+                <h3 className="font-raleway font-black uppercase text-white text-lg leading-none mb-1">
+                  {member.name}
+                </h3>
+                <p className="label-mono mb-3">{member.title}</p>
+                <p className="text-white/40 font-inter text-sm leading-relaxed">{member.bio}</p>
+              </div>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>
