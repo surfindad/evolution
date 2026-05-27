@@ -662,13 +662,34 @@
     "slug": "identical",
     "sector": "Health",
     "pageUrl": "",
-    "logo": "",
-    "description": "The drill-free dental implant \u2014 a breakthrough in minimally invasive oral surgery.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/identical.png",
+    "description": "3D-printed, drill-free dental implants \u2014 transforming tooth replacement with precision, speed, and patient comfort.",
+    "website": "https://www.identicalimplant.com",
+    "tagline": "The drill-free dental implant",
+    "longDescription": "iDentical is a pioneering company in the field of dental technology, offering advanced solutions for creating 3D-printed, drill-free dental implants. Their innovative approach combines cutting-edge 3D printing technology with a patient-centered focus, allowing for more precise, efficient, and comfortable dental procedures. iDentical's solutions are transforming the dental industry by reducing treatment times and improving outcomes for patients and practitioners alike.\n\nAt Evolution, we see iDentical Dental Solutions as a game-changer in the dental industry. Their commitment to leveraging 3D printing technology to simplify and enhance dental procedures aligns perfectly with our mission to support companies that drive technological innovation and improve quality of life. iDentical's focus on patient-centric care and efficiency makes them a valuable partner in shaping the future of dental health.",
+    "founders": "Iris Wedeking",
+    "founded": "2018",
+    "coverImage": "/images/identical-product.jpg",
+    "team": [
+      {
+        "name": "Iris Wedeking",
+        "title": "Founder & CEO",
+        "bio": "Iris founded iDentical in 2018 and currently serves as the CEO. She has played a pivotal role in driving the company's vision of creating 3D-printed, personalized dental implants. Under her leadership, iDentical has raised significant funding and has become a key player in the dental technology space, focusing on innovative solutions for tooth replacement.",
+        "photo": "/images/identical-iris.jpg"
+      },
+      {
+        "name": "David Sanderson",
+        "title": "Vice President of R&D",
+        "bio": "David serves as the VP of Research & Development at iDentical, bringing 25 years of leadership experience in R&D, Operations, and Quality within the medical device industry. Throughout his career, David has managed R&D teams at renowned companies including Boston Scientific, Xtent, and BioCardia. His expertise ensures the successful development and delivery of groundbreaking medical technologies.",
+        "photo": "/images/identical-david.jpg"
+      },
+      {
+        "name": "Mike Finke",
+        "title": "Director of Implant Design",
+        "bio": "Mike is the Director of Implant Design at iDentical, where he developed the patented implant design process used in clinical research and oversees the innovation pipeline to expand its applications. With over 10 years in the dental technology industry, he has extensive experience designing and implementing digital workflows that entail 3D printing, ensuring iDentical stays at the forefront of dental advancements.",
+        "photo": "/images/identical-mike.jpg"
+      }
+    ]
   },
   {
     "id": 21,
