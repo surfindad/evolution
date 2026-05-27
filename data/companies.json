@@ -590,15 +590,42 @@
     "id": 18,
     "name": "Fraxura",
     "slug": "fraxura",
-    "sector": "Fintech",
+    "sector": "Health",
     "pageUrl": "",
-    "logo": "",
-    "description": "Fractional real estate investment platform democratizing property ownership.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/fraxura.png",
+    "description": "Ready-made reduction system for arm and wrist fractures — simplifying bone alignment for medical professionals.",
+    "website": "https://fraxura.com",
+    "tagline": "Advancing fracture treatment in emergency rooms across the U.S.",
+    "longDescription": "Fraxura is a company that offers a ready-made reduction system specifically designed for arm and wrist bone fractures. Their innovative system simplifies the process of bone alignment and stabilization, making it easier for medical professionals to provide effective treatment, ultimately improving patient outcomes.\n\nAt Evolution, we recognize the tremendous value in Fraxura's commitment to advancing medical technology. Their focus on creating a user-friendly yet highly effective solution for a common medical issue aligns with our dedication to supporting companies that drive innovation and improve healthcare accessibility.",
+    "founders": "Geoff Skraber",
+    "founded": "",
+    "coverImage": "/images/fraxura-product.jpg",
+    "team": [
+      {
+        "name": "Geoff Skraber",
+        "title": "CEO & Chief Creative Officer",
+        "bio": "Geoff is the founder and CEO of Fraxura, which he launched after identifying a need for a more efficient fracture reduction system during his 30+ years as an orthopedic technician. His background at UC Davis helped him develop a product aimed at streamlining the treatment of arm and wrist fractures, which he first prototyped in his kitchen. Through his leadership, Fraxura has gained traction in emergency rooms across the U.S., starting with a contract from UC Davis Health.",
+        "photo": "/images/fraxura-geoff.jpg"
+      },
+      {
+        "name": "Sandie Domerofski",
+        "title": "Controller & Consultant",
+        "bio": "Sandie plays a key role in Fraxura's financial and operational management as the company's Controller. Her expertise in consultancy and financial controls supports the company's growth as it expands its product into the healthcare market. Sandie also provides advisory services to help the company stay on course financially during its early stages of growth.",
+        "photo": "/images/fraxura-sandie.jpg"
+      },
+      {
+        "name": "Wes Lemos",
+        "title": "Tech / Digital / Marketing",
+        "bio": "Wes leads the digital and marketing strategies at Fraxura. His expertise in technology and marketing is instrumental in elevating Fraxura's presence in the healthcare market. Wes brings a wealth of experience from his prior ventures, helping to drive Fraxura's digital transformation.",
+        "photo": "/images/fraxura-wes.jpg"
+      },
+      {
+        "name": "Aaron Rines",
+        "title": "Advisor / Consultant",
+        "bio": "Aaron acts as a strategic advisor to Fraxura, offering guidance on business development and partnerships. With his consulting experience, Aaron contributes valuable insights that help shape the company's direction and growth. His advisory role supports Fraxura's mission to advance fracture treatment.",
+        "photo": "/images/fraxura-aaron.jpg"
+      }
+    ]
   },
   {
     "id": 19,
