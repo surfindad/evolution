@@ -178,7 +178,7 @@ function ContentSection({
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7 }}
-            className="relative w-full h-72 lg:h-96 rounded-2xl overflow-hidden mb-16 border border-white/[0.07]"
+            className="relative w-full h-[480px] lg:h-[600px] rounded-2xl overflow-hidden mb-16 border border-white/[0.07]"
           >
             <Image
               src={company.coverImage}
