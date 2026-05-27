@@ -3,15 +3,47 @@
     "id": 1,
     "name": "Aermetric",
     "slug": "aermetric",
-    "sector": "Technology",
+    "sector": "AI & ML",
     "pageUrl": "",
-    "logo": "",
+    "logo": "/images/Aermetric.jpg",
     "description": "Precision aerial data and analytics platform for infrastructure and land management.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "website": "https://www.aermetric.com",
+    "tagline": "Predictive maintenance for aviation, powered by AI",
+    "longDescription": "Aermetric offers a cloud-based predictive maintenance platform specifically designed for the aviation industry. Their platform leverages big data and AI to provide real-time monitoring and predictive analytics for aircraft maintenance, helping airlines reduce downtime and improve operational efficiency.\n\nAt Evolution, we see immense value in Aermetric's innovative approach to transforming the aviation industry. Their focus on utilizing advanced technology to solve critical industry challenges aligns with our commitment to supporting companies that drive meaningful change and innovation.",
+    "founders": "Derek Waterman, Sean Bushkov",
+    "founded": "",
+    "team": [
+      {
+        "name": "Derek Waterman",
+        "title": "Founder & CEO",
+        "bio": "Derek leads Aermetric with over two decades of experience in technology and entrepreneurship. He has a distinguished track record in developing data-driven solutions and previously played a pivotal role in pioneering predictive search engine algorithms, and served as a director at a $1.3 billion publicly traded company.",
+        "photo": "/images/derek_waterman.jpg"
+      },
+      {
+        "name": "Sean Bushkov",
+        "title": "President & CTO",
+        "bio": "A seasoned aerospace engineer with over 12 years of experience from Boeing Defense, NASA, and United Airlines, where he served as a Subject Matter Expert in fleet engineering and tech services. His expertise in reliability and predictive maintenance shapes Aermetric's cutting-edge solutions.",
+        "photo": "/images/sean _bushkov.jpg"
+      },
+      {
+        "name": "Roger Lehman",
+        "title": "Board Member",
+        "bio": "With more than 35 years in the aviation and aerospace sectors, Roger provides strategic oversight at Aermetric. As Managing Partner at Oliver Wyman, he specializes in inorganic growth and acquisitions across the Americas, encompassing aviation MRO, operations analytics, and aerospace aftermarket services.",
+        "photo": "/images/roger_lehman.jpg"
+      },
+      {
+        "name": "Eunhwan Yoo",
+        "title": "Data Scientist",
+        "bio": "Eunhwan brings 7 years of data science expertise with previous roles at United Airlines and Meta. At Aermetric he focuses on leveraging advanced data analytics to enhance the reliability and safety of aircraft operations.",
+        "photo": "/images/eunhwan_yoo.jpg"
+      },
+      {
+        "name": "Nick Sachon",
+        "title": "Operations",
+        "bio": "A veteran of the US Navy with over 20 years of experience as an aviator and officer. His deep background in aviation operations, program management, and project management ensures Aermetric's operational processes are robust, efficient, and aligned with industry best practices.",
+        "photo": "/images/nick.jpg"
+      }
+    ]
   },
   {
     "id": 2,
@@ -710,50 +742,6 @@
         "title": "Co-Founder",
         "bio": "Seasoned design leader who spent over 13 years driving user experience and design at Nintendo before serving as Design Director for Ardius.",
         "photo": "/images/jimlee_profile.jpg"
-      }
-    ]
-  },
-  {
-    "id": 51,
-    "name": "Aermetric",
-    "slug": "aermetric",
-    "sector": "AI & ML",
-    "logo": "/images/aermetric.png",
-    "website": "https://www.aermetric.com",
-    "tagline": "Predictive maintenance for aviation, powered by AI",
-    "longDescription": "Aermetric offers a cloud-based predictive maintenance platform specifically designed for the aviation industry. Their platform leverages big data and AI to provide real-time monitoring and predictive analytics for aircraft maintenance, helping airlines reduce downtime and improve operational efficiency.\n\nAt Evolution, we see immense value in Aermetric's innovative approach to transforming the aviation industry. Their focus on utilizing advanced technology to solve critical industry challenges aligns with our commitment to supporting companies that drive meaningful change and innovation.",
-    "founders": "Derek Waterman, Sean Bushkov",
-    "founded": "",
-    "team": [
-      {
-        "name": "Derek Waterman",
-        "title": "Founder & CEO",
-        "bio": "Derek leads Aermetric with over two decades of experience in technology and entrepreneurship. He has a distinguished track record in developing data-driven solutions and previously played a pivotal role in pioneering predictive search engine algorithms, and served as a director at a $1.3 billion publicly traded company.",
-        "photo": "/images/aermetric-derek.jpg"
-      },
-      {
-        "name": "Sean Bushkov",
-        "title": "President & CTO",
-        "bio": "A seasoned aerospace engineer with over 12 years of experience from Boeing Defense, NASA, and United Airlines, where he served as a Subject Matter Expert in fleet engineering and tech services. His expertise in reliability and predictive maintenance shapes Aermetric's cutting-edge solutions.",
-        "photo": "/images/aermetric-sean.jpg"
-      },
-      {
-        "name": "Roger Lehman",
-        "title": "Board Member",
-        "bio": "With more than 35 years in the aviation and aerospace sectors, Roger provides strategic oversight at Aermetric. As Managing Partner at Oliver Wyman, he specializes in inorganic growth and acquisitions across the Americas, encompassing aviation MRO, operations analytics, and aerospace aftermarket services.",
-        "photo": "/images/aermetric-roger.jpg"
-      },
-      {
-        "name": "Eunhwan Yoo",
-        "title": "Data Scientist",
-        "bio": "Eunhwan brings 7 years of data science expertise with previous roles at United Airlines and Meta. At Aermetric he focuses on leveraging advanced data analytics to enhance the reliability and safety of aircraft operations.",
-        "photo": "/images/aermetric-eunhwan.jpg"
-      },
-      {
-        "name": "Nick Sachon",
-        "title": "Operations",
-        "bio": "A veteran of the US Navy with over 20 years of experience as an aviator and officer. His deep background in aviation operations, program management, and project management ensures Aermetric's operational processes are robust, efficient, and aligned with industry best practices.",
-        "photo": "/images/aermetric-nick.jpg"
       }
     ]
   }
