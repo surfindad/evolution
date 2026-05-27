@@ -120,13 +120,64 @@
     "slug": "bekonix",
     "sector": "Enterprise",
     "pageUrl": "",
-    "logo": "",
+    "logo": "/images/bekonix.png",
     "description": "Smart workplace connectivity solutions that bridge physical and digital operations.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "website": "https://www.bekonix.com",
+    "tagline": "No-code platform for IoT and connected device development",
+    "longDescription": "Bekonix is a no-code platform that enables users to design, prototype, and deploy connected devices and IoT solutions with ease. By offering an array of user-friendly tools and templates, Bekonix streamlines the process for creators, engineers, and entrepreneurs, allowing them to transform innovative ideas into functional smart products without the need for coding expertise.\n\nAt Evolution, we recognize the significance of Bekonix's mission to make IoT development accessible to a wider audience. By lowering the barriers to entry for creating connected devices, Bekonix is fostering a new wave of innovation that aligns with our commitment to supporting companies driving technological progress and empowerment.",
+    "founders": "Daniel Kaye, Jyoti Das, Ken Turcotte",
+    "founded": "",
+    "coverImage": "/images/bekonix-product.jpg",
+    "team": [
+      {
+        "name": "Daniel Kaye",
+        "title": "Co-Founder & CEO",
+        "bio": "Daniel leads Bekonix's mission to simplify smart technology development using their no-code platform. He has a background in developing over 100 tech products, contributing to the growth of consumer electronics and video spaces.",
+        "photo": "/images/bekonix-daniel.jpg"
+      },
+      {
+        "name": "Jyoti Das",
+        "title": "Co-Founder & President",
+        "bio": "Jyoti has over two decades of experience in high-tech leadership, responsible for product, marketing, and operations. Prior to Bekonix, he held senior roles at IBM and Intel, focusing on IoT and Big Data strategies.",
+        "photo": "/images/bekonix-jyoti.jpg"
+      },
+      {
+        "name": "Ken Turcotte",
+        "title": "Co-Founder & CTO",
+        "bio": "Ken oversees the technical development of Bekonix's no-code platform. He has a long history of contributions to the tech world, including work on the revolutionary Video Toaster, and ensures the technological backbone of the company's product offerings.",
+        "photo": "/images/bekonix-ken.jpg"
+      },
+      {
+        "name": "Chris Davey",
+        "title": "Chief Design Officer",
+        "bio": "Chris oversees product design and user experience at Bekonix. His focus is on making the platform intuitive and easy to use, supporting the company's goal of democratizing smart tech creation.",
+        "photo": "/images/bekonix-chris.jpg"
+      },
+      {
+        "name": "Debbie English-Deason",
+        "title": "Director of OCS",
+        "bio": "Debbie leads the Operational Customer Support team at Bekonix, ensuring customers have a seamless experience on the platform. Her work focuses on optimizing customer success and operational processes.",
+        "photo": "/images/bekonix-debbie.jpg"
+      },
+      {
+        "name": "Richard Wardlow",
+        "title": "Director of Hardware Engineering",
+        "bio": "Richard oversees hardware engineering at Bekonix, focusing on the integration of smart technologies with physical hardware. His expertise is crucial for bridging the gap between software and hardware within the Bekonix ecosystem.",
+        "photo": "/images/bekonix-richard.jpg"
+      },
+      {
+        "name": "Nicole Shuman",
+        "title": "Product Manager",
+        "bio": "Nicole manages product development at Bekonix, coordinating between engineering and marketing teams. Her role ensures that product releases align with customer needs and market trends, continuously evolving the platform.",
+        "photo": "/images/bekonix-nicole.jpg"
+      },
+      {
+        "name": "Joshua Armonio",
+        "title": "Growth Manager",
+        "bio": "Joshua drives Bekonix's expansion and customer base as Growth Manager. His efforts are centered around business development and scaling Bekonix's platform to grow the company's market presence.",
+        "photo": "/images/bekonix-joshua.jpg"
+      }
+    ]
   },
   {
     "id": 5,
