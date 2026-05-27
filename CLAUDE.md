@@ -131,14 +131,24 @@ When uploading multiple files at once via the GitHub web UI, the **first file al
 
 ## Companies Completed So Far
 
-| ID | Name | Logo | Team | Cover Image |
-|----|------|------|------|-------------|
-| 1 | Aermetric | ✅ | ✅ 5 members | ❌ removed |
-| 2 | Allos | ✅ | ✅ 4 members | ❌ |
-| 3 | Arovia | ✅ | ✅ 2 members | ✅ |
-| 4 | Bekonix | ✅ | ✅ 8 members | ✅ |
-| 50 | Admisio | ✅ | ✅ 2 members | ❌ |
-| 5–49 | Various | ❌ most | ❌ most | ❌ |
+| ID | Name | Sector | Logo | Team | Cover Image |
+|----|------|--------|------|------|-------------|
+| 1 | Aermetric | AI & ML | ✅ | ✅ 5 members | ❌ removed |
+| 2 | Allos | Health | ✅ | ✅ 4 members | ❌ |
+| 3 | Arovia | Technology | ✅ | ✅ 2 members | ✅ |
+| 4 | Bekonix | Enterprise | ✅ | ✅ 8 members | ✅ |
+| 5 | Cartwheel (staffing AR) | Fintech | ✅ | ✅ 2 members | ✅ |
+| 6 | Cash Abroad | Fintech | ✅ | ✅ 2 members | ✅ |
+| 7 | Ciao Pappy | Consumer | ✅ | ✅ 1 member | ✅ |
+| 8 | Cleona | Health | ✅ | ✅ 2 members | ✅ |
+| 9 | CoreImpact | Health | ✅ | ✅ 1 member | ✅ |
+| 10 | Companion Candles | Consumer | ✅ | ✅ 1 member | ✅ |
+| 11 | Dapper Boi | Consumer | ✅ | ✅ 2 members | ✅ |
+| 12 | Daxe | Enterprise | ✅ | ✅ 4 members | ✅ |
+| 13 | Dope Dog | Consumer | ✅ | ✅ 2 members | ✅ |
+| 51 | Admisio | EdTech | ✅ | ✅ 2 members | ❌ |
+| 51 | Cartwheel (delivery) | Consumer | ✅ | ✅ 4 members | ✅ |
+| 14–49 | Various | — | ❌ most | ❌ most | ❌ |
 
 ---
 
@@ -179,6 +189,7 @@ Photos expected at `/public/images/team/` — **not yet uploaded**.
 ## Pages Still Pending / To-Do
 
 - [ ] Team page photos (Alex, Hannah, Rodney, Charles headshots)
-- [ ] Remaining 45 company profiles (logos, descriptions, team where available)
+- [ ] Remaining ~35 company profiles (ids 14–49, excluding completed ones)
 - [ ] Event photos to add somewhere (about/home page)
 - [ ] Admisio `founded` year not yet provided
+- [ ] CoreImpact Samuel Taylor bio (not shown on original site — placeholder used)
