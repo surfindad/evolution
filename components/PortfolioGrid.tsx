@@ -126,30 +126,38 @@ export default function PortfolioGrid() {
           >
             {filtered.map((company, i) => {
               const inner = (
-                <div className="group relative bg-[#16161F] p-7 flex flex-col gap-5 h-full min-h-[220px] transition-all duration-300 hover:bg-[#1a1a28]">
-                  {/* Top: sector pill + arrow */}
-                  <div className="flex items-center justify-between gap-3">
-                    <SectorPill sector={company.sector} />
-                    <ArrowUpRight size={14} className="text-white/20 group-hover:text-green transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 shrink-0" />
-                  </div>
-                  {/* Logo — centrepiece */}
-                  <div className="w-20 h-20 rounded-2xl bg-white/[0.06] border border-white/[0.08] flex items-center justify-center shrink-0 overflow-hidden">
+                <div className="group relative bg-[#16161F] flex flex-col h-full min-h-[260px] transition-all duration-300 hover:bg-[#1a1a28] overflow-hidden">
+                  {/* Logo banner — full width top */}
+                  <div className="w-full h-36 bg-white/[0.04] border-b border-white/[0.06] flex items-center justify-center p-6 shrink-0">
                     {company.logo ? (
-                      <Image src={company.logo} alt={company.name} width={80} height={80} className="object-contain w-full h-full p-2" />
+                      <Image
+                        src={company.logo}
+                        alt={company.name}
+                        width={200}
+                        height={100}
+                        className="object-contain max-w-full max-h-full"
+                      />
                     ) : (
-                      <span className="font-raleway font-black text-white/30 text-2xl leading-none">
+                      <span className="font-raleway font-black text-white/20 text-5xl leading-none">
                         {company.name.charAt(0)}
                       </span>
                     )}
                   </div>
-                  {/* Name + description */}
-                  <div className="flex-1">
-                    <h3 className="font-raleway font-bold text-lg leading-snug mb-2 text-white/70 group-hover:text-white transition-colors duration-300">
-                      {company.name}
-                    </h3>
-                    {company.description && (
-                      <p className="text-white/35 font-inter text-sm leading-relaxed line-clamp-2">{company.description}</p>
-                    )}
+                  {/* Card body */}
+                  <div className="p-6 flex flex-col gap-3 flex-1">
+                    <div className="flex items-center justify-between gap-3">
+                      <SectorPill sector={company.sector} />
+                      <ArrowUpRight size={14} className="text-white/20 group-hover:text-green transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 shrink-0" />
+                    </div>
+                    {/* Name + description */}
+                    <div className="flex-1">
+                      <h3 className="font-raleway font-bold text-lg leading-snug mb-2 text-white/70 group-hover:text-white transition-colors duration-300">
+                        {company.name}
+                      </h3>
+                      {company.description && (
+                        <p className="text-white/35 font-inter text-sm leading-relaxed line-clamp-2">{company.description}</p>
+                      )}
+                    </div>
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 h-px bg-green/0 group-hover:bg-green/30 transition-all duration-300" />
                 </div>
