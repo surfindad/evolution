@@ -91,13 +91,28 @@
     "slug": "arovia",
     "sector": "Technology",
     "pageUrl": "",
-    "logo": "",
+    "logo": "/images/arovia.png",
     "description": "Portable display technology bringing large-screen experiences to any environment.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "website": "https://www.arovia.com",
+    "tagline": "Portable pop-up displays for on-the-go productivity",
+    "longDescription": "Arovia specializes in developing innovative portable display solutions. Their flagship product, the Spontaneous Pop-up Display (SPUD), is a collapsible, lightweight, high-resolution screen that expands to provide users with a larger display for on-the-go productivity and entertainment.\n\nAt Evolution, we recognize Arovia's commitment to redefining mobile workspaces with their cutting-edge display technology. Their focus on creating portable, high-quality visual solutions resonates with our mission to back companies that are pushing the boundaries of innovation.",
+    "founders": "Alex Wesley, George Zhu",
+    "founded": "",
+    "coverImage": "/images/arovia-product.jpg",
+    "team": [
+      {
+        "name": "Alex Wesley",
+        "title": "Co-Founder & CEO",
+        "bio": "Alex was an MBA student at Rice University when he initiated the idea for SPUD (Spontaneous Pop-Up Display). His entrepreneurial spirit secured significant crowdfunding and investment for Arovia, driving the company from concept to market success.",
+        "photo": "/images/arovia-alex.jpg"
+      },
+      {
+        "name": "George Zhu",
+        "title": "Co-Founder & CTO",
+        "bio": "George holds a Mechanical Engineering degree from Rice University, graduating in the top 3 of his class. The technical brain behind SPUD, his expertise in product design \u2014 honed in Shenzhen, China \u2014 brought Arovia's collapsible display concept to life.",
+        "photo": "/images/arovia-george.jpg"
+      }
+    ]
   },
   {
     "id": 4,
