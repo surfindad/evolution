@@ -341,13 +341,28 @@
     "slug": "dapperboi",
     "sector": "Consumer",
     "pageUrl": "",
-    "logo": "",
-    "description": "Inclusive apparel brand redefining fashion for the full spectrum of gender expression.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/dapper-boi.png",
+    "description": "Gender-neutral apparel built for every body type — style, comfort, and inclusivity without compromise.",
+    "website": "https://www.dapperboi.com",
+    "tagline": "Fashion that transcends gender norms",
+    "longDescription": "Dapper Boi is an apparel company specializing in gender-neutral clothing that offers a blend of style, comfort, and inclusivity. Their products cater to a wide range of body types and identities, aiming to redefine fashion by providing versatile clothing options that transcend traditional gender norms.\n\nAt Evolution, we recognize the significant cultural impact of Dapper Boi's mission to make fashion more inclusive. Their dedication to filling a gap in the market aligns with our investment philosophy of supporting companies that champion diversity and innovation while addressing consumer needs in a meaningful way.",
+    "founders": "Vicky Pasche, Charisse Pasche",
+    "founded": "2015",
+    "coverImage": "/images/dapper-boi-product.jpg",
+    "team": [
+      {
+        "name": "Vicky Pasche",
+        "title": "CEO & Co-Founder",
+        "bio": "Vicky co-founded Dapper Boi in 2015, driven by her frustration with the lack of inclusive fashion that catered to her body type and aesthetic. With no prior experience in fashion, she launched the brand with a mission to break gender norms and provide body-inclusive clothing. Her leadership has taken Dapper Boi from a successful Kickstarter launch to becoming a brand known for empowering people to feel confident through gender-neutral and affordable clothing.",
+        "photo": "/images/dapper-boi-vicky.jpg"
+      },
+      {
+        "name": "Charisse Pasche",
+        "title": "COO & Co-Founder",
+        "bio": "Charisse is the co-founder and Chief Operating Officer of Dapper Boi, holding a background in organizational management and business psychology. She has been instrumental in managing operations and scaling the company, ensuring the brand's commitment to inclusivity and customer engagement. Charisse also played a key role in the brand's crowdfunding efforts, helping Dapper Boi grow while staying connected to its community of supporters.",
+        "photo": "/images/dapper-boi-charisse.jpg"
+      }
+    ]
   },
   {
     "id": 12,
