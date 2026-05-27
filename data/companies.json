@@ -266,13 +266,28 @@
     "slug": "cleona",
     "sector": "Health",
     "pageUrl": "",
-    "logo": "",
-    "description": "Next-generation skincare solutions powered by personalized AI-driven recommendations.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/cleona.png",
+    "description": "Reimagining the maternal health journey with personalized support and resources for pregnancy and postpartum.",
+    "website": "https://www.cleona.io",
+    "tagline": "Personalized maternal care for every birthing individual",
+    "longDescription": "Cleona is reimagining the maternal health journey by offering personalized support and resources to guide families through pregnancy and postpartum. Their platform addresses critical gaps in care, especially in underserved communities, empowering users to access local services and essential knowledge quickly. With a focus on reducing preventable maternal deaths, Cleona is committed to making healthier, safer experiences the norm for every birthing individual.\n\nAt Evolution, we value Cleona's mission to reshape maternal healthcare by offering accessible, personalized support to those who need it most. Their efforts to empower communities and improve reproductive outcomes align with our commitment to fostering innovation that drives positive social change.",
+    "founders": "Ashley Street, Sacha Taylor",
+    "founded": "",
+    "coverImage": "/images/cleona-product.jpg",
+    "team": [
+      {
+        "name": "Ashley Street",
+        "title": "Co-Founder & CEO",
+        "bio": "Ashley is passionate about transforming maternal care, particularly for marginalized communities. With a background in strategic management, she co-founded Cleona to tackle the maternal health crisis in the U.S. Ashley is an alumna of Georgetown University and draws on her experience in public health to lead Cleona's mission for equitable care.",
+        "photo": "/images/cleona-ashley.jpg"
+      },
+      {
+        "name": "Sacha Taylor",
+        "title": "Co-Founder & COO",
+        "bio": "Sacha brings deep operational expertise to Cleona, managing the platform's day-to-day operations. She has a background in technology and has worked in leadership roles across various sectors. Together with Ashley, Sacha envisions Cleona as a transformative platform that empowers women and ensures safe, personalized care for all mothers.",
+        "photo": "/images/cleona-sacha.jpg"
+      }
+    ]
   },
   {
     "id": 9,
