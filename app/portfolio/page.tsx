@@ -37,7 +37,7 @@ export default function PortfolioPage() {
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none" aria-hidden>
           <span
             className="font-raleway font-black uppercase text-white/[0.022] leading-none whitespace-nowrap"
-            style={{ fontSize: 'clamp(5rem, 14vw, 15rem)' }}
+            style={{ fontSize: 'clamp(6rem, 18vw, 20rem)' }}
           >
             PORTFOLIO
           </span>
@@ -63,7 +63,7 @@ export default function PortfolioPage() {
             <div className="overflow-hidden">
               <motion.h1
                 className="font-raleway font-black uppercase text-white leading-none"
-                style={{ fontSize: 'clamp(5rem, 14vw, 13rem)' }}
+                style={{ fontSize: 'clamp(3rem, 8vw, 8.5rem)' }}
                 initial={{ y: '110%' }}
                 animate={isInView ? { y: 0 } : {}}
                 transition={{ duration: 1.1, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
