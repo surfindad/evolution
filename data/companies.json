@@ -440,13 +440,40 @@
     "slug": "enrich",
     "sector": "EdTech",
     "pageUrl": "",
-    "logo": "",
-    "description": "Connecting underserved students to scholarships, mentors, and higher education pathways.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/enrich-scholars.png",
+    "description": "Platform connecting underrepresented scholars with mentors, internships, and career development opportunities.",
+    "website": "https://www.enrichscholars.com",
+    "tagline": "Transforming college potential into real-world success",
+    "longDescription": "Enrich is a platform designed to support scholars by providing them with the resources, guidance, and community necessary for academic and professional success. Focused on helping underrepresented students, Enrich offers a comprehensive network that connects scholars with mentors, internships, and career development opportunities, empowering them to navigate their educational and career paths with confidence.\n\nAt Evolution, we recognize the immense potential of Enrich in addressing the gap in academic support for underrepresented students. Their commitment to fostering equitable access to education and career development aligns perfectly with our investment focus on companies that drive meaningful societal impact while delivering scalable solutions to pressing challenges.",
+    "founders": "Alfonso Carney III",
+    "founded": "",
+    "coverImage": "/images/enrich-scholars-product.jpg",
+    "team": [
+      {
+        "name": "Alfonso Carney III",
+        "title": "CEO",
+        "bio": "Alfonso leads Enrich Scholars with a passion for transforming college potential into real-world success. Having grown up between Washington, DC, and Manhattan, he has a deep understanding of the social and professional challenges faced by people of color. With a background in Consumer Finance at RedRock Financial and as a Management Consultant at Publicis, he holds degrees in Economics from Amherst College and a JD/MBA from the University of Virginia.",
+        "photo": "/images/enrich-scholars-alfonso.jpg"
+      },
+      {
+        "name": "Georges Clement",
+        "title": "Chief Product Officer",
+        "bio": "Georges is an experienced entrepreneur and product manager, with a Master's in Public Policy from Harvard Kennedy School. Previously, he founded JustFix and worked as a Product Manager at General Assembly. Recognized as a Forbes 30 Under 30 in Law & Policy, Georges brings a wealth of experience in social impact and product development to Enrich Scholars.",
+        "photo": "/images/enrich-scholars-georges.jpg"
+      },
+      {
+        "name": "Joshua Zemke",
+        "title": "Chief Technology Officer",
+        "bio": "Josh has over a decade of experience in professional software development, including roles at Target and MyAlerts, where he modernized warehouse distribution systems and optimized product recommendations. He is passionate about using technology to build connections and support personal growth, contributing his expertise to the technical direction of Enrich Scholars.",
+        "photo": "/images/enrich-scholars-joshua.jpg"
+      },
+      {
+        "name": "Eric Cole",
+        "title": "Head of Partnerships & Key Accounts",
+        "bio": "Eric has nearly 30 years of experience in senior management roles within the financial services industry, including working for Fidelity Investments and founding his own company. With a background in Business Administration and Organizational Psychology, he is instrumental in building partnerships for Enrich. Eric also has a passion for competitive skiing, sailing, and managing a rap rock band of Berklee college alumni.",
+        "photo": "/images/enrich-scholars-eric.jpg"
+      }
+    ]
   },
   {
     "id": 15,
