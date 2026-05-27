@@ -851,5 +851,45 @@
         "photo": "/images/jimlee_profile.jpg"
       }
     ]
+  },
+  {
+    "id": 51,
+    "name": "Cartwheel",
+    "slug": "cartwheel",
+    "sector": "Enterprise",
+    "logo": "/images/cartwheel-delivery.png",
+    "description": "AI-powered delivery management platform integrating in-house and third-party deliveries for enterprise brands.",
+    "website": "https://trycartwheel.com",
+    "tagline": "Smarter delivery management for enterprise businesses",
+    "longDescription": "Cartwheel is a delivery management software that empowers businesses to efficiently manage their delivery operations through a hybrid approach that integrates in-house and third-party deliveries. The platform uses AI-driven tools for route optimization, real-time driver tracking, and automated delivery assignments, enabling businesses to reduce operational costs and enhance customer satisfaction.\n\nAt Evolution, we value Cartwheel's innovative approach to optimizing delivery operations. Their ability to seamlessly integrate technology with practical business solutions reflects our commitment to backing companies that not only drive efficiency but also empower businesses to better serve their communities.",
+    "founders": "Alex Vasilkin",
+    "founded": "",
+    "coverImage": "/images/cartwheel-delivery-product.jpg",
+    "team": [
+      {
+        "name": "Alex Vasilkin",
+        "title": "Co-Founder & CEO",
+        "bio": "Alex has been instrumental in guiding Cartwheel from its origins as a delivery service to becoming a leading provider of delivery management software. Under his leadership, Cartwheel has expanded its hybrid delivery solutions, helping enterprise brands improve efficiency and grow revenue.",
+        "photo": "/images/cartwheel-delivery-alex.jpg"
+      },
+      {
+        "name": "Mike Borozdin",
+        "title": "Technical Advisor",
+        "bio": "Mike brings extensive experience from leadership roles at Google, DocuSign, and Microsoft. His engineering expertise helps Cartwheel strengthen its technical capabilities, ensuring the platform remains innovative and scalable.",
+        "photo": "/images/cartwheel-delivery-mike.jpg"
+      },
+      {
+        "name": "Shalin Sheth",
+        "title": "Industry Advisor",
+        "bio": "A seasoned expert in the restaurant and food tech industries, Shalin has held key roles including Senior VP & GM of Olo Direct Ordering and Head of Delivery at Yelp Eat24. He guides Cartwheel in creating solutions for the evolving needs of enterprise restaurants.",
+        "photo": "/images/cartwheel-delivery-shalin.jpg"
+      },
+      {
+        "name": "John Hancock",
+        "title": "Industry Advisor",
+        "bio": "John brings operational expertise from Sweetgreen and Instacart, having overseen off-premises operations and led innovative delivery models at major brands. His knowledge is vital in helping Cartwheel improve delivery efficiency and optimize hybrid solutions.",
+        "photo": "/images/cartwheel-delivery-john.jpg"
+      }
+    ]
   }
 ]
