@@ -923,15 +923,42 @@
     "id": 27,
     "name": "Matrubials",
     "slug": "matrubials",
-    "sector": "CleanTech",
+    "sector": "Health",
     "pageUrl": "",
-    "logo": "",
-    "description": "Bio-based material science company creating sustainable alternatives to single-use plastics.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/matrubials.png",
+    "description": "Biotech company harnessing the antimicrobial properties of human milk peptides to develop novel therapeutics targeting infectious diseases like bacterial vaginosis.",
+    "website": "https://matrubials.com",
+    "tagline": "Nature's blueprint for next-generation antimicrobials.",
+    "longDescription": "Matrubials is a biotech company focused on developing milk-inspired therapeutics to combat infectious diseases. They harness the antimicrobial properties of human milk peptides to create treatments that address the growing issue of antimicrobial resistance. Their initial focus is on treating bacterial vaginosis, a condition that causes recurrent infections and long-term health complications for women of reproductive age.\n\nAt Evolution, we recognize Matrubials' potential to revolutionize the treatment of infectious diseases with their innovative approach. Their work aligns with our mission to support groundbreaking solutions that address critical health challenges, particularly those that impact underrepresented communities.",
+    "founders": "Ishita M. Shah",
+    "founded": "",
+    "coverImage": "/images/matrubials-product.jpg",
+    "team": [
+      {
+        "name": "Ishita M. Shah, Ph.D.",
+        "title": "Co-Founder & CEO",
+        "bio": "Dr. Ishita Shah is a co-founder and the CEO of Matrubials. She has a strong background in microbiology, chemistry, and food science, with expertise drawn from over a decade of research at the University of California, Davis. Dr. Shah leads the company's mission to develop milk-inspired antimicrobial therapies, particularly targeting women's health, starting with bacterial vaginosis.",
+        "photo": "/images/matrubials-ishita.jpg"
+      },
+      {
+        "name": "J. Bruce German, Ph.D.",
+        "title": "Co-Founder",
+        "bio": "Dr. Bruce German is a co-founder of Matrubials and serves as a professor of Food Science and Technology at UC Davis. He is also the Director of the Foods for Health Institute. Dr. German's research focuses on the role of milk in human health and the potential of milk's bioactive molecules as therapeutic agents.",
+        "photo": "/images/matrubials-bruce.jpg"
+      },
+      {
+        "name": "David A. Mills, Ph.D.",
+        "title": "Co-Founder",
+        "bio": "Dr. David Mills is a co-founder and holds the Shields Endowed Chair in Dairy Food Science at UC Davis. His expertise in microbiomes, probiotics, and dairy science helps drive the development of Matrubials' antimicrobial peptide technology, aiming to combat bacterial infections through safe and selective therapies.",
+        "photo": "/images/matrubials-david.jpg"
+      },
+      {
+        "name": "Carlito B. Lebrilla, Ph.D.",
+        "title": "Co-Founder",
+        "bio": "Dr. Carlito Lebrilla is a Distinguished Professor of Chemistry at UC Davis and a co-founder of Matrubials. He is renowned for his work on glycobiology and mass spectrometry, contributing crucial insights into the molecular components of milk that can be harnessed for therapeutic purposes.",
+        "photo": "/images/matrubials-carlito.jpg"
+      }
+    ]
   },
   {
     "id": 28,
