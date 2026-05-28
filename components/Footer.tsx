@@ -29,7 +29,7 @@ export default function Footer() {
           {/* Left: logo + tagline + apply */}
           <div className="flex flex-col gap-8">
             <Link href="/" className="self-start">
-              <Logo className="w-10 h-9 transition-all duration-300" />
+              <Logo className="h-16 w-auto transition-all duration-300" />
             </Link>
             <p className="text-white/30 font-inter text-sm leading-relaxed max-w-xs">
               Evolving the art of acceleration within California&apos;s Sacramento Valley — capital, community, and culture.

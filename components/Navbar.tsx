@@ -43,7 +43,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="group">
-            <Logo className="w-20 h-16 transition-all duration-300" />
+            <Logo className="h-16 w-auto transition-all duration-300" />
           </Link>
 
           {/* Desktop nav */}
