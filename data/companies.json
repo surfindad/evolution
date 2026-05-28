@@ -849,13 +849,34 @@
     "slug": "ladera",
     "sector": "AI & ML",
     "pageUrl": "",
-    "logo": "",
-    "description": "Enterprise AI platform automating complex document processing and compliance workflows.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/ladera-ai.png",
+    "description": "GenAI analytics platform that puts the power of a personal data analyst in every business user's hands — ask questions in natural language and get instant insights.",
+    "website": "https://www.ladera.ai",
+    "tagline": "Democratize data. Accelerate decisions.",
+    "longDescription": "Democratize data access and accelerate decision-making with Ladera AI's GenAI analytics platform that puts the power of a personal data analyst in the hands of every business user. Ask questions in natural language, get instant insights, and unlock the full potential of your company data for troubleshooting, problem-solving, and strategic planning.\n\nAt Evolution, we recognize the impact of Ladera's approach to addressing critical financial challenges. Their commitment to integrating financial education with practical solutions aligns with our mission to support innovative companies that foster economic empowerment and systemic transformation.",
+    "founders": "Samara Andrieux, Dave Goulden",
+    "founded": "",
+    "coverImage": "/images/ladera-ai-product.jpg",
+    "team": [
+      {
+        "name": "Samara Andrieux",
+        "title": "Co-Founder & Chief Customer Officer",
+        "bio": "Samara Andrieux co-founded Ladera with a mission rooted in personal experiences with the damaging effects of payday loans. With a background in Public Health, she recognized the link between financial stress and poor health outcomes and was driven to create a solution addressing economic stress. Her vision for Ladera focuses on improving the financial well-being of underserved communities by helping them break the payday lending cycle.",
+        "photo": "/images/ladera-ai-samara.jpg"
+      },
+      {
+        "name": "Dave Goulden",
+        "title": "Co-Founder & CEO",
+        "bio": "Dave Goulden, co-founder and CEO of Ladera, has over 23 years of experience in the ad tech industry. Initially an advisor to Samara Andrieux, he was inspired to join Ladera's mission to reduce debt for financially vulnerable individuals. Dave brings his deep expertise in product sales and business strategy to lead the company's vision of financial empowerment for credit union members.",
+        "photo": "/images/ladera-ai-dave.jpg"
+      },
+      {
+        "name": "Alexey Solovtsov",
+        "title": "CTO",
+        "bio": "As Ladera's Chief Technology Officer, Alexey Solovtsov is responsible for the company's AI-driven financial wellness platform. With a history of collaboration with Dave Goulden, Alexey shares a passion for applying technology to improve customer outcomes. He is instrumental in developing Ladera's innovative solutions that analyze cash flow and support credit unions in enhancing their services.",
+        "photo": "/images/ladera-ai-alexey.jpg"
+      }
+    ]
   },
   {
     "id": 26,
