@@ -767,13 +767,22 @@
     "slug": "kids-care-finder",
     "sector": "Consumer",
     "pageUrl": "",
-    "logo": "",
-    "description": "Marketplace connecting families to vetted childcare providers in their community.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/kids-care-finder.png",
+    "description": "The only childcare platform tackling cost, supply, and access — connecting parents with providers through AI matching, nanny share, and automated enrollment tools.",
+    "website": "https://www.kidscarefinder.com",
+    "tagline": "Every child deserves great care. Every family deserves to find it.",
+    "longDescription": "Kids Care Finder is a game-changing childcare platform that connects parents with all the child-related services they need for their kids in one place. It is the only childcare platform addressing the root cause issues that make up the childcare crisis, which are cost, supply, and access. The platform helps reduce costs and grow supply with patent pending features like nanny share, provider administrative tools, and licensing support guides, and helps improve access by matching the right families with the right providers, through comprehensive filtering and AI matching technology.\n\nAt Evolution, we invested in Kids Care Finder because of its innovative approach to solving the U.S. childcare crisis with a one-stop platform that seamlessly connects parents with providers. With patent-pending features like NannyShare and automated enrollment management, the platform simplifies childcare logistics while unlocking new revenue opportunities for providers.",
+    "founders": "Olivia Rutman",
+    "founded": "",
+    "coverImage": "/images/kids-care-finder-product.jpg",
+    "team": [
+      {
+        "name": "Olivia Rutman",
+        "title": "Founder & CEO",
+        "bio": "Olivia Rutman spent 15 years in the banking industry with Wells Fargo before taking the leap of faith to leave to start her own tech company. In banking, Olivia held a number of different roles across in sales, leadership, and enablement, and is well versed in both Retail and Commercial Banking. Olivia is a born executor who excels in problem solving, change management, training and go-to-market activities, and improving sales effectiveness. That experience, coupled with her own childcare struggles as the mom of three young boys, gave her the skills and passion needed to launch Kids Care Finder, a revolutionary childcare platform disrupting the care industry.",
+        "photo": "/images/kids-care-finder-olivia.jpg"
+      }
+    ]
   },
   {
     "id": 24,
