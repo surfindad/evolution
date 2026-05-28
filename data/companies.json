@@ -779,15 +779,60 @@
     "id": 24,
     "name": "Knomee",
     "slug": "knomeee",
-    "sector": "AI & ML",
+    "sector": "Fintech",
     "pageUrl": "",
-    "logo": "",
-    "description": "Personal knowledge management platform powered by conversational AI.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/knomee.png",
+    "description": "Personalized financial wellness platform that helps users build a comprehensive financial identity and connect with trusted advisors aligned to their values.",
+    "website": "https://www.knomee.com",
+    "tagline": "Financial wellness built around who you are.",
+    "longDescription": "Knomee is a platform that provides personalized financial wellness services by helping users create a comprehensive financial identity. This identity is based on their values, goals, and financial situations, and it connects them with trusted financial advisors who can offer tailored guidance. Knomee's mission is to empower individuals to make informed financial decisions that align with what truly matters to them.\n\nAt Evolution, we recognize the transformative potential of Knomee's approach to financial wellness. Their focus on personalization and value-driven financial planning resonates with our commitment to supporting companies that empower underrepresented communities by offering meaningful and impactful solutions.",
+    "founders": "Marla Sofer",
+    "founded": "",
+    "coverImage": "/images/knomee-product.jpg",
+    "team": [
+      {
+        "name": "Marla Sofer",
+        "title": "Founder & CEO",
+        "bio": "Marla Sofer has an extensive background in financial services, having worked with companies such as BlackRock, Lending Club, and Microsoft before founding Knomee. She is passionate about personalizing financial services and empowering customers to take control of their financial identities. Marla launched Knomee with a vision to help individuals share their financial data consensually, aligning their values and behaviors with the services they need.",
+        "photo": "/images/knomee-marla.jpg"
+      },
+      {
+        "name": "Sonja Strzoda",
+        "title": "Financial Industry Change Agent",
+        "bio": "Sonja Strzoda brings a wealth of experience in wealth and asset management, community banking, and government collaboration. Her leadership at NuVision Federal Credit Union and involvement with WISE (Women Investing in Security and Education) highlights her commitment to financial empowerment and inclusivity. At Knomee, Sonja contributes to the mission of making financial wellness accessible to diverse communities.",
+        "photo": "/images/knomee-sonja.jpg"
+      },
+      {
+        "name": "John Pearce",
+        "title": "Finance & Operations",
+        "bio": "John Pearce is responsible for managing Knomee's financial and operational functions. His role involves ensuring the company's financial stability while streamlining operations for growth. John brings a wealth of experience in finance, contributing to Knomee's mission of transforming the relationship between individuals and financial services.",
+        "photo": "/images/knomee-john.jpg"
+      },
+      {
+        "name": "Tim Lin",
+        "title": "Data Science",
+        "bio": "Tim Lin leads Knomee's data science initiatives, leveraging advanced analytics to personalize financial services for users. His work focuses on using data to optimize customer experiences and enhance the predictive capabilities of Knomee's platform. Tim's expertise ensures that the company's data-driven approach meets the unique needs of its users.",
+        "photo": "/images/knomee-tim.jpg"
+      },
+      {
+        "name": "Meghaan Lurtz, PhD",
+        "title": "Behavioral Psychology Advisor",
+        "bio": "Meghaan Lurtz provides insights into behavioral psychology to help shape Knomee's approach to financial wellness. Her academic expertise ensures that the platform incorporates human behavior principles, making it more effective in guiding users toward better financial decisions. Meghaan's contributions help Knomee focus on long-term financial behavior changes for its users.",
+        "photo": "/images/knomee-meghaan.jpg"
+      },
+      {
+        "name": "Ilan Davidovici",
+        "title": "Customer Experience Advisor",
+        "bio": "Ilan Davidovici is a thought leader in customer experience and advises Knomee on creating meaningful interactions between users and financial providers. His focus is on improving customer engagement and satisfaction, which are core to Knomee's personalized approach to financial services. Ilan's guidance ensures the platform delivers a seamless and effective customer experience.",
+        "photo": "/images/knomee-ilan.jpg"
+      },
+      {
+        "name": "Beto Pallares, PhD, MBA",
+        "title": "Growth Advisor",
+        "bio": "Beto Pallares supports Knomee's growth strategy by advising on business expansion and market penetration. With a background in entrepreneurship and venture capital, Beto helps guide the company as it scales its operations and reaches new customers. His expertise in scaling businesses ensures Knomee can expand while maintaining its customer-focused mission.",
+        "photo": "/images/knomee-beto.jpg"
+      }
+    ]
   },
   {
     "id": 25,
