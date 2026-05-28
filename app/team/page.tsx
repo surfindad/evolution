@@ -16,7 +16,7 @@ const team: {
     name: 'Alex Chompff',
     title: 'Managing Director',
     bio: 'Lead General Partner of Evolution Ventures MinervaFund and AI Thought Leader at Evolution Labs, Alex brings a rare combination of investment expertise and frontier technology insight to his leadership of Evolution Accelerator.',
-    photo: '/images/team/alex-chompff.jpg',
+    photo: '/images/alex_chompff.png',
     links: [
       { label: 'MinervaFund', href: 'https://www.evfm.co/p/funds' },
       { label: 'Evolution Labs', href: 'https://www.evolutionlabs.dev/' },
@@ -27,7 +27,7 @@ const team: {
     name: 'Hannah Savage',
     title: 'Investment Lead',
     bio: 'Investment Lead at Evolution Ventures MinervaFund and Managing Director of Elevate Global IO, Hannah brings sharp investment instincts and a global network to support founders at every stage of their journey.',
-    photo: '/images/team/hannah-savage.jpg',
+    photo: '/images/hannah_savage.png',
     links: [
       { label: 'LinkedIn', href: 'https://www.linkedin.com/in/hannahsavage7' },
       { label: 'MinervaFund', href: 'https://www.evfm.co/p/funds' },
@@ -38,7 +38,7 @@ const team: {
     name: 'Rodney Ferrell',
     title: 'Partner',
     bio: 'Founder of Ferrell Digital Production and Partner at Evolution Accelerator, Rodney brings creative entrepreneurship and deep expertise in digital media to help portfolio founders tell their stories and build their brands.',
-    photo: '/images/team/rodney-ferrell.jpg',
+    photo: '/images/rodney_ferrell.png',
     links: [
       { label: 'Ferrell Digital', href: 'https://www.ferrelldigital.co/' },
       { label: 'Evolution Accelerator', href: 'https://www.evolutionaccelerator.co/' },
@@ -48,7 +48,7 @@ const team: {
     name: 'Charles Ansbach',
     title: 'Partner',
     bio: 'Lecturer at the UC Davis Graduate School of Management and Partner at Evolution Accelerator, Charles connects founders with world-class academic insight and a lifetime of entrepreneurial and business strategy expertise.',
-    photo: '/images/team/charles-ansbach.jpg',
+    photo: '/images/charles_ansbach.png',
     links: [
       { label: 'LinkedIn', href: 'https://www.linkedin.com/in/cansbach' },
       { label: 'UC Davis GSM', href: 'https://gsm.ucdavis.edu/faculty/charles-ansbach' },
