@@ -882,15 +882,42 @@
     "id": 26,
     "name": "Ladris",
     "slug": "ladris",
-    "sector": "Technology",
+    "sector": "AI & ML",
     "pageUrl": "",
-    "logo": "",
-    "description": "Peer-to-peer storage marketplace turning unused space into income for homeowners.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/ladris.png",
+    "description": "AI-driven platform providing real-time and advanced scenario forecasts for emergency managers responding to wildfires, floods, and other natural disasters.",
+    "website": "https://www.ladris.com",
+    "tagline": "AI-powered foresight for emergency response.",
+    "longDescription": "Ladris is a pioneering company that uses AI-driven models to provide real-time and advanced \"what-if\" scenario forecasts for emergency managers. Their platform enables data-driven decision-making in disaster response, focusing on events like wildfires, floods, and other natural calamities. By offering actionable insights and predictive analytics, Ladris helps emergency personnel optimize their strategies for evacuations, mitigation efforts, and overall disaster preparedness, enhancing community resilience and safety.\n\nAt Evolution, we see immense value in Ladris' ability to revolutionize disaster management through their cutting-edge AI technology. Their commitment to empowering emergency managers with real-time insights aligns with our mission to support innovative solutions that address critical global challenges. By improving disaster readiness and response, Ladris is making a meaningful impact on saving lives and minimizing risks in vulnerable areas.",
+    "founders": "Leo Zlimen",
+    "founded": "",
+    "coverImage": "/images/ladris-product.jpg",
+    "team": [
+      {
+        "name": "Leo Zlimen",
+        "title": "Founder & CEO",
+        "bio": "Leo Zlimen has been leading Ladris since its inception, where he is responsible for driving corporate strategy and go-to-market initiatives. Prior to founding Ladris, he worked as a software and data engineer, and his work earned him recognition such as the Berkeley Lipson Prize. He holds a Bachelor's degree from UC Berkeley, bringing a strong foundation in both technical and leadership roles.",
+        "photo": "/images/ladris-leo.jpg"
+      },
+      {
+        "name": "Bowen Kyle",
+        "title": "CTO",
+        "bio": "As the Chief Technology Officer at Ladris, Bowen Kyle oversees product strategy and AI development. He has extensive expertise in applied mathematics, machine learning, and systems integration, and is dedicated to turning cutting-edge technologies into practical, real-world applications. Bowen's experience in bridging technical innovations with operational needs makes him integral to Ladris' success.",
+        "photo": "/images/ladris-bowen.jpg"
+      },
+      {
+        "name": "Igor Zlimen, PhD",
+        "title": "VP of Engineering",
+        "bio": "With over four decades of experience in software engineering, Igor Zlimen serves as Vice President of Engineering at Ladris. His expertise includes the design and development of database software systems, and he has contributed to various significant projects across industries. Igor holds a Ph.D. in nuclear physics and has a rich background in applying his knowledge to complex technical challenges.",
+        "photo": "/images/ladris-igor.jpg"
+      },
+      {
+        "name": "Stefanie Fenton",
+        "title": "VP of Product and Customer Success",
+        "bio": "Stefanie Fenton brings 25 years of experience in software development and business strategy to her role as Vice President of Product and Customer Success at Ladris. She is known for building strong partnerships and high-performing teams, with a focus on product management, business development, and account management. Her leadership is key in fostering customer satisfaction and delivering product excellence.",
+        "photo": "/images/ladris-stefanie.jpg"
+      }
+    ]
   },
   {
     "id": 27,
