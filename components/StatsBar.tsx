@@ -5,7 +5,7 @@ import { motion, useInView } from 'framer-motion'
 import CountUp from './CountUp'
 
 const stats = [
-  { value: 49, suffix: '+', label: 'Portfolio Companies' },
+  { value: 50, suffix: '+', label: 'Portfolio Companies' },
 ]
 
 export default function StatsBar() {
