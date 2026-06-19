@@ -6,8 +6,6 @@ import CountUp from './CountUp'
 
 const stats = [
   { value: 49, suffix: '+', label: 'Portfolio Companies' },
-  { value: 7000, prefix: '~', label: 'Valley Investors' },
-  { value: 700, suffix: '+', label: 'Regional Startups' },
 ]
 
 export default function StatsBar() {
@@ -18,7 +16,7 @@ export default function StatsBar() {
     <div ref={ref} className="relative bg-[#16161F] border-y border-white/5 py-14 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-green/[0.04] to-transparent pointer-events-none" />
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-0 divide-y md:divide-y-0 md:divide-x divide-white/5">
+        <div className="flex justify-center">
           {stats.map((stat, i) => (
             <motion.div
               key={i}
