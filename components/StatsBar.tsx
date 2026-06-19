@@ -26,7 +26,7 @@ export default function StatsBar() {
               className="flex flex-col items-center text-center py-8 md:py-2 px-8"
             >
               <span className="font-raleway font-black text-5xl md:text-6xl text-green-accent mb-2">
-                <CountUp to={stat.value} prefix={stat.prefix} suffix={stat.suffix} duration={1600} />
+                <CountUp to={stat.value} suffix={stat.suffix} duration={1600} />
               </span>
               <span className="font-inter text-white/30 text-xs uppercase tracking-[0.25em]">
                 {stat.label}
