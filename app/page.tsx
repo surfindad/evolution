@@ -315,42 +315,6 @@ function RegionSection() {
             </div>
           </motion.div>
 
-          {/* ~7K */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={delay(1)}
-            className="col-span-1 bg-[#1E1E2A] p-8 lg:p-10 flex flex-col justify-end"
-          >
-            <span
-              className="font-raleway font-black text-green-accent leading-none"
-              style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)' }}
-            >
-              ~7K
-            </span>
-            <span className="text-white/35 font-inter text-sm mt-3 leading-relaxed">
-              Investors in the ecosystem
-            </span>
-          </motion.div>
-
-          {/* 700+ */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={delay(2)}
-            className="col-span-1 bg-[#1A1A26] p-8 lg:p-10 flex flex-col justify-end"
-          >
-            <span
-              className="font-raleway font-black text-green-accent leading-none"
-              style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)' }}
-            >
-              700+
-            </span>
-            <span className="text-white/35 font-inter text-sm mt-3 leading-relaxed">
-              Active startups in the region
-            </span>
-          </motion.div>
-
           {/* 50+ — wide bottom */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}

@@ -16,7 +16,6 @@ const STATS = [
   { value: '50+',  label: 'Portfolio Companies' },
   { value: '9',    label: 'Sectors' },
   { value: '#5',   label: 'Women Entrepreneurs' },
-  { value: '700+', label: 'Regional Startups' },
 ]
 
 export default function PortfolioPage() {
