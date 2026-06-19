@@ -283,7 +283,7 @@ function RegionSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-white/25 text-base font-inter max-w-xs leading-relaxed lg:text-right"
+            className="text-white/50 text-base font-inter max-w-xs leading-relaxed lg:text-right"
           >
             Numbers that tell the story of a region ready to become the next great startup hub.
           </motion.p>

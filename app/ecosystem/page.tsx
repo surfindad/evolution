@@ -230,7 +230,7 @@ function Philosophy() {
               transition={{ duration: 0.6, delay: 0.2 + i * 0.1 }}
               className="bg-[#16161F] p-8 flex flex-col gap-6 hover:bg-[#1a1a26] transition-colors duration-300"
             >
-              <span className="text-white/20 font-inter text-xs tracking-widest">{p.num}</span>
+              <span className="text-white/45 font-inter text-xs tracking-widest">{p.num}</span>
               <h3 className="font-raleway font-black uppercase text-white text-2xl leading-none">{p.title}</h3>
               <p className="text-white/40 font-inter text-sm leading-relaxed flex-1">{p.body}</p>
             </motion.div>
@@ -263,7 +263,7 @@ function Partners() {
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-white/20 font-inter text-sm tracking-widest"
+            className="text-white/45 font-inter text-sm tracking-widest"
           >
             {partners.length} Partners
           </motion.p>
@@ -281,7 +281,7 @@ function Partners() {
               transition={{ duration: 0.7, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
               className="group grid grid-cols-[56px_1fr_auto] md:grid-cols-[80px_1fr_300px_auto] gap-6 md:gap-12 py-8 md:py-10 hover:bg-white/[0.02] transition-colors duration-500 -mx-6 px-6 lg:-mx-10 lg:px-10 items-center"
             >
-              <span className="text-white/20 font-inter text-sm tracking-widest">{p.num}</span>
+              <span className="text-white/45 font-inter text-sm tracking-widest">{p.num}</span>
               <h3
                 className="font-raleway font-black uppercase text-white/70 group-hover:text-white transition-colors duration-300 leading-none"
                 style={{ fontSize: 'clamp(1.5rem, 3vw, 2.5rem)' }}
@@ -293,7 +293,7 @@ function Partners() {
               </p>
               <ArrowUpRight
                 size={18}
-                className="text-white/20 group-hover:text-green transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 shrink-0"
+                className="text-white/45 group-hover:text-green transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 shrink-0"
               />
             </motion.a>
           ))}
@@ -449,7 +449,7 @@ function Apply() {
           >
             Apply Now <ArrowRight size={16} />
           </a>
-          <p className="text-white/20 font-inter text-xs text-center">
+          <p className="text-white/45 font-inter text-xs text-center">
             Startups · Investors · Partners
           </p>
         </motion.div>

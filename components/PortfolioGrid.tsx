@@ -68,7 +68,7 @@ export default function PortfolioGrid() {
       <div className="mb-8 flex flex-col gap-5">
         {/* Search */}
         <div className="relative max-w-md">
-          <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-white/20" size={15} />
+          <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-white/40" size={15} />
           <input
             type="text"
             placeholder="Search companies…"
@@ -79,7 +79,7 @@ export default function PortfolioGrid() {
           {query && (
             <button
               onClick={() => setQuery('')}
-              className="absolute right-4 top-1/2 -translate-y-1/2 text-white/25 hover:text-white/60 transition-colors"
+              className="absolute right-4 top-1/2 -translate-y-1/2 text-white/50 hover:text-white/70 transition-colors"
             >
               <X size={14} />
             </button>
@@ -107,7 +107,7 @@ export default function PortfolioGrid() {
         </div>
 
         {/* Results count */}
-        <p className="text-white/20 text-xs font-inter tracking-widest uppercase">
+        <p className="text-white/45 text-xs font-inter tracking-widest uppercase">
           {filtered.length} {filtered.length === 1 ? 'company' : 'companies'}
           {sector !== ALL ? ` · ${sector}` : ''}
         </p>
@@ -138,7 +138,7 @@ export default function PortfolioGrid() {
                         className="object-contain max-w-full max-h-full"
                       />
                     ) : (
-                      <span className="font-raleway font-black text-white/20 text-5xl leading-none">
+                      <span className="font-raleway font-black text-white/40 text-5xl leading-none">
                         {company.name.charAt(0)}
                       </span>
                     )}
@@ -147,7 +147,7 @@ export default function PortfolioGrid() {
                   <div className="p-6 flex flex-col gap-3 flex-1">
                     <div className="flex items-center justify-between gap-3">
                       <SectorPill sector={company.sector} />
-                      <ArrowUpRight size={14} className="text-white/20 group-hover:text-green transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 shrink-0" />
+                      <ArrowUpRight size={14} className="text-white/40 group-hover:text-green transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 shrink-0" />
                     </div>
                     {/* Name + description */}
                     <div className="flex-1">
@@ -185,8 +185,8 @@ export default function PortfolioGrid() {
             exit={{ opacity: 0 }}
             className="text-center py-32"
           >
-            <p className="text-white/25 font-inter text-lg mb-2">No companies found</p>
-            <p className="text-white/15 font-inter text-sm">Try a different search or filter</p>
+            <p className="text-white/55 font-inter text-lg mb-2">No companies found</p>
+            <p className="text-white/40 font-inter text-sm">Try a different search or filter</p>
           </motion.div>
         )}
       </AnimatePresence>

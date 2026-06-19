@@ -17,7 +17,7 @@ export default function StatsBar() {
         transition={{ duration: 0.7, ease: [0.25, 0.4, 0.25, 1] }}
         className="flex items-center justify-between px-10 lg:px-20 py-10 gap-8"
       >
-        <span className="font-inter text-white/25 text-sm uppercase tracking-[0.3em] shrink-0">
+        <span className="font-inter text-white/55 text-sm uppercase tracking-[0.3em] shrink-0">
           Portfolio Companies
         </span>
         <div className="flex-1 h-px bg-gradient-to-r from-white/10 via-green/30 to-white/10" />
@@ -25,7 +25,7 @@ export default function StatsBar() {
           <CountUp to={50} suffix="+" duration={1600} />
         </span>
         <div className="flex-1 h-px bg-gradient-to-r from-white/10 via-green/30 to-white/10" />
-        <span className="font-inter text-white/25 text-sm uppercase tracking-[0.3em] shrink-0">
+        <span className="font-inter text-white/55 text-sm uppercase tracking-[0.3em] shrink-0">
           And Growing
         </span>
       </motion.div>

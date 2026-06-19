@@ -226,7 +226,7 @@ function CTABand() {
           >
             Apply Now <ArrowRight size={15} />
           </a>
-          <p className="text-white/20 font-inter text-xs text-center">
+          <p className="text-white/45 font-inter text-xs text-center">
             Sacramento Valley &amp; beyond
           </p>
         </motion.div>

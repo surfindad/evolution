@@ -241,7 +241,7 @@ function Pillars() {
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-white/20 font-inter text-sm tracking-widest"
+            className="text-white/45 font-inter text-sm tracking-widest"
           >
             Our Principles
           </motion.p>
@@ -258,7 +258,7 @@ function Pillars() {
               className="group grid grid-cols-[56px_1fr] md:grid-cols-[80px_1fr_1fr] gap-6 md:gap-12 py-10 md:py-14 hover:bg-white/[0.02] transition-colors duration-500 -mx-6 px-6 lg:-mx-10 lg:px-10"
             >
               {/* Number */}
-              <span className="text-white/20 font-inter text-sm tracking-widest pt-2 md:pt-4">
+              <span className="text-white/45 font-inter text-sm tracking-widest pt-2 md:pt-4">
                 {p.num}
               </span>
 
@@ -436,7 +436,7 @@ function Apply() {
           >
             Apply Now <ArrowRight size={16} />
           </a>
-          <p className="text-white/20 font-inter text-xs text-center">
+          <p className="text-white/45 font-inter text-xs text-center">
             Startups · Investors · Partners
           </p>
         </motion.div>

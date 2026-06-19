@@ -90,19 +90,19 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="py-6 border-t border-white/[0.06] flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-white/20 text-xs font-inter">
+          <p className="text-white/45 text-xs font-inter">
             © {new Date().getFullYear()} Evolution Accelerator, Inc. All Rights Reserved.
           </p>
           <div className="flex gap-6">
             <Link
               href="/terms"
-              className="text-white/20 hover:text-white/50 text-xs font-inter transition-colors"
+              className="text-white/45 hover:text-white/70 text-xs font-inter transition-colors"
             >
               Terms &amp; Conditions
             </Link>
             <Link
               href="/privacy"
-              className="text-white/20 hover:text-white/50 text-xs font-inter transition-colors"
+              className="text-white/45 hover:text-white/70 text-xs font-inter transition-colors"
             >
               Privacy Policy
             </Link>

@@ -243,7 +243,7 @@ function TeamGrid() {
                   {member.bio}
                 </p>
               ) : (
-                <p className="text-white/20 font-inter text-sm leading-relaxed flex-1 mt-4 italic">
+                <p className="text-white/45 font-inter text-sm leading-relaxed flex-1 mt-4 italic">
                   Bio coming soon.
                 </p>
               )}
@@ -257,7 +257,7 @@ function TeamGrid() {
                       href={link.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 text-white/25 hover:text-green transition-colors duration-300"
+                      className="inline-flex items-center gap-1.5 text-white/50 hover:text-green transition-colors duration-300"
                     >
                       <span className="font-inter text-xs tracking-widest uppercase">{link.label}</span>
                       <ArrowUpRight size={11} />
@@ -358,7 +358,7 @@ function JoinSection() {
           >
             Apply Now <ArrowRight size={16} />
           </a>
-          <p className="text-white/20 font-inter text-xs text-center">
+          <p className="text-white/45 font-inter text-xs text-center">
             Sacramento Valley &amp; beyond
           </p>
         </motion.div>
