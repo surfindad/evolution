@@ -373,7 +373,7 @@ function Substack() {
                 initial={{ opacity: 0, x: 20 }}
                 animate={isInView ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.5, delay: 0.3 + i * 0.07 }}
-                className={`border border-white/[0.07] rounded-full px-5 py-2.5 font-inter text-sm text-white/30 ${i % 2 === 0 ? 'self-start' : 'self-end'}`}
+                className={`border border-white/[0.15] rounded-full px-5 py-2.5 font-inter text-sm text-white/70 ${i % 2 === 0 ? 'self-start' : 'self-end'}`}
               >
                 {tag}
               </motion.div>
