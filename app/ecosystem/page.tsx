@@ -161,102 +161,81 @@ function Hero() {
   )
 }
 
-/* ── Philosophy — the centerpiece ────────────────────────────── */
+/* ── Our Approach ────────────────────────────────────────────── */
 function Philosophy() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-80px' })
+
+  const pillars = [
+    {
+      num: '01',
+      title: 'Capital',
+      body: 'Access to the funding and financial resources that give great ideas the runway to become great companies. We connect founders with investors who believe in the mission.',
+    },
+    {
+      num: '02',
+      title: 'Community',
+      body: 'A living network of founders, operators, and partners who actively lift each other up. The Sacramento Valley ecosystem grows stronger every time we collaborate.',
+    },
+    {
+      num: '03',
+      title: 'Culture',
+      body: 'We back founders who are building something meaningful — companies with a clear sense of purpose, a strong team, and the conviction to see it through.',
+    },
+    {
+      num: '04',
+      title: 'Ecosystem',
+      body: 'Free to join for all non-monetized activities. We make money when you make money — 10% only when you earn through the Evolution Ecosystem.',
+    },
+  ]
 
   return (
     <section className="py-32 bg-[#16161F] relative overflow-hidden grain">
       <div className="absolute inset-0 grid-bg opacity-[0.025] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={isInView ? { opacity: 1 } : {}}
-          transition={{ duration: 0.5 }}
-          className="label-mono mb-16"
-          ref={ref}
-        >
-          The Philosophy
-        </motion.p>
-
-        {/* Main quote — full width, very large */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.9, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-          className="mb-20"
-        >
-          <p
-            className="font-raleway font-black uppercase gradient-text leading-[0.88]"
-            style={{ fontSize: 'clamp(3rem, 8vw, 8rem)' }}
-          >
-            No cages.
-          </p>
-        </motion.div>
-
-        {/* Two-column editorial body */}
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
+        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-10 mb-20" ref={ref}>
+          <div>
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={isInView ? { opacity: 1 } : {}}
+              transition={{ duration: 0.5 }}
+              className="label-mono mb-6"
+            >
+              Our Approach
+            </motion.p>
+            <WordReveal
+              text="Capital. Community. Culture."
+              delay={0.1}
+              className="font-raleway font-black uppercase gradient-text leading-[0.9]"
+              style={{ fontSize: 'clamp(2.5rem, 6vw, 6rem)' }}
+            />
+          </div>
+          <motion.p
+            initial={{ opacity: 0, y: 10 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="space-y-6"
+            transition={{ duration: 0.7, delay: 0.4 }}
+            className="text-white/40 font-inter text-lg leading-relaxed lg:max-w-sm border-l-2 border-green/30 pl-6"
           >
-            <p className="text-white/50 font-inter text-xl leading-relaxed">
-              The beautiful birds of the heavens are invited to nest in the beautiful tree
-              of the Evolution Ecosystem — and yet fly freely.
-            </p>
-            <p className="text-white/35 font-inter text-lg leading-relaxed">
-              Today, some may see a small beginning, a small tree, and a few small birds.
-              Yet these are very precious birds gracing the branches with their beauty.
-              May we be careful not to despise such a small start.
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.45 }}
-            className="space-y-6"
-          >
-            <p className="text-white/35 font-inter text-lg leading-relaxed">
-              After all, how many seeds have sprouted and became massive trees where many
-              birds nest?
-            </p>
-            <p className="text-white/50 font-inter text-xl leading-relaxed italic border-l-2 border-green/30 pl-6">
-              &ldquo;May the tree and the birds who fly freely grow mighty and strong and live
-              long and prosper to the glory of the Heavens and Love itself.&rdquo;
-            </p>
-          </motion.div>
+            Evolution Accelerator backs founders building scalable solutions across nine sectors — providing the resources, relationships, and support to grow.
+          </motion.p>
         </div>
 
-        {/* Decorative stat */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.7, delay: 0.6 }}
-          className="mt-20 pt-10 border-t border-white/[0.06] flex flex-col sm:flex-row sm:items-center gap-10"
-        >
-          <div>
-            <span className="font-raleway font-black text-green-accent leading-none" style={{ fontSize: 'clamp(3rem, 7vw, 6rem)' }}>
-              Free
-            </span>
-            <p className="text-white/30 font-inter text-sm mt-1">For all non-monetized activities</p>
-          </div>
-          <div className="w-px h-12 bg-white/10 hidden sm:block" />
-          <div>
-            <span className="font-raleway font-black text-green-accent leading-none" style={{ fontSize: 'clamp(3rem, 7vw, 6rem)' }}>
-              10%
-            </span>
-            <p className="text-white/30 font-inter text-sm mt-1">Only when you earn — we earn</p>
-          </div>
-          <div className="w-px h-12 bg-white/10 hidden sm:block" />
-          <p className="text-white/30 font-inter text-base leading-relaxed max-w-xs">
-            We make money when you make money. Until then — nest freely.
-          </p>
-        </motion.div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-white/[0.06] rounded-2xl overflow-hidden">
+          {pillars.map((p, i) => (
+            <motion.div
+              key={p.num}
+              initial={{ opacity: 0, y: 20 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: 0.2 + i * 0.1 }}
+              className="bg-[#16161F] p-8 flex flex-col gap-6 hover:bg-[#1a1a26] transition-colors duration-300"
+            >
+              <span className="text-white/20 font-inter text-xs tracking-widest">{p.num}</span>
+              <h3 className="font-raleway font-black uppercase text-white text-2xl leading-none">{p.title}</h3>
+              <p className="text-white/40 font-inter text-sm leading-relaxed flex-1">{p.body}</p>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   )
