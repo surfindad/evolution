@@ -1194,15 +1194,36 @@
     "id": 35,
     "name": "Ozaru",
     "slug": "ozaru",
-    "sector": "Technology",
+    "sector": "AI & ML",
     "pageUrl": "",
-    "logo": "",
-    "description": "Gaming and interactive entertainment platform built for the next generation of players.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/ozaru-logo.jpg",
+    "description": "AI supervisor for frontline workers, building intuitive tools to enhance job opportunities and simplify work for 2.6 billion frontline workers worldwide.",
+    "website": "https://ozaru.io",
+    "tagline": "Your AI supervisor.",
+    "longDescription": "Ozaru is a company focused on transforming the future of work for frontline workers through artificial intelligence. Their mission is to enhance job opportunities, simplify work processes, and empower over 2.6 billion frontline workers worldwide by developing intuitive AI tools that address practical needs and bridge gaps in traditional tools.\n\nAt Evolution, we see significant value in Ozaru's innovative approach to reshaping the work environment for frontline workers. Their commitment to leveraging AI to improve job processes and reskilling aligns with our goal to support groundbreaking companies that drive systemic change and empower diverse entrepreneurs.",
+    "founders": "Guillermo Garza, Nomara Parra, Ernesto Leal",
+    "founded": "",
+    "coverImage": "/images/ozaru-cover.jpg",
+    "team": [
+      {
+        "name": "Guillermo Garza",
+        "title": "Co-Founder & CEO",
+        "bio": "Guillermo Garza is the CEO of Ozaru and one of its co-founders. He plays a pivotal role in guiding the company's strategic direction and overall vision. His leadership focuses on leveraging AI technology to enhance frontline operations for enterprises.",
+        "photo": "/images/ozaru-guillermo.jpg"
+      },
+      {
+        "name": "Nomara Parra",
+        "title": "Co-Founder & Chief Growth Officer",
+        "bio": "As the Chief Growth Officer, Nomara Parra oversees Ozaru's expansion strategies and growth initiatives. Her expertise lies in scaling the company's solutions to meet the demands of a growing market, ensuring that Ozaru remains at the forefront of AI-driven operational management.",
+        "photo": "/images/ozaru-nomara.jpg"
+      },
+      {
+        "name": "Ernesto Leal",
+        "title": "Co-Founder & Chief Product Officer",
+        "bio": "Ernesto Leal serves as the Chief Product Officer, responsible for the development and innovation of Ozaru's AI Supervisor. His work ensures that the product meets the needs of frontline workers by integrating advanced technology into everyday business processes.",
+        "photo": "/images/ozaru-ernesto.jpg"
+      }
+    ]
   },
   {
     "id": 36,
