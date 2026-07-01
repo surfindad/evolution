@@ -993,15 +993,29 @@
     "id": 29,
     "name": "Mimoto",
     "slug": "mimoto",
-    "sector": "Technology",
+    "sector": "AI & ML",
     "pageUrl": "",
-    "logo": "",
-    "description": "Electric micro-mobility solutions redefining urban transportation for the last mile.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/mimoto-logo.jpg",
+    "description": "AI-powered cybersecurity that validates users by behavior, not credentials, for real-time threat detection and response.",
+    "website": "https://mimoto.ai",
+    "tagline": "Security based on who you are, not what you know.",
+    "longDescription": "Mimoto is an AI-powered cybersecurity company that delivers continual validation for access management and threat detection and response based on a specific person, not a credential, for real-time defensive responses before damage is done.\n\nThe Mimoto secret sauce is its ability to adapt on the fly the combination of algorithms used based on the available data streams. Its combination of anomaly detection and advanced pattern matching enables drastically fewer false positives than traditional cybersecurity solutions.\n\nAt Evolution, we invested in Mimoto because they are redefining how businesses protect their systems through behavioral security. Their innovative approach moves beyond traditional credentials, using advanced technology to verify users based on unique behavioral patterns.",
+    "founders": "Kris Bondi, David Charboneau",
+    "founded": "",
+    "team": [
+      {
+        "name": "Kris Bondi",
+        "title": "Co-Founder & CEO",
+        "bio": "In prior executive leadership roles, Mimoto CEO & Co-founder Kris Bondi made a name for herself as a category creator and GTM strategist that significantly increased adoption and positioned companies. She contributed to seven acquisitions and two IPO filings, and is best known for making \"serverless\" a movement and a category.\n\nKris is a pioneer in applying AI to real-world problems. As CMO of Neura, an Israel-based AI company, she championed the concept of products proactively interacting with people. This experience with a neural network of digital doubles has enabled her to determine where Mimoto's groundbreaking technology can immediately address an organization's most critical internal security gaps. Among her career highlights is serving as a stringer for the Harrisburg Patriot covering Nelson Mandela's first speech in the United States.",
+        "photo": "/images/mimoto-kris.jpg"
+      },
+      {
+        "name": "David Charboneau",
+        "title": "Co-Founder & CTO",
+        "bio": "Mimoto CTO and Co-founder David Charboneau is a repeat cofounder with a rich background in building products at scale. His 20+ years of experience in the software industry spans from startups to Fortune 500 enterprises.\n\nDavid served as Director of Consulting at Quansight, the machine learning and data science consultancy co-founded by Travis Oliphant. David and Travis went on to co-found OpenTeams, which specializes in data science and high-performance computing. He was also a founding member of the Foundation Services Team and a founding member of Bank of America Merrill Lynch's Quartz Team.\n\nDavid holds 5 patents in areas covering distributed graph databases, content indexing with RDF, and user experience tools. He resides in North Carolina and is active in the global open source community.",
+        "photo": "/images/mimoto-david.jpg"
+      }
+    ]
   },
   {
     "id": 30,
