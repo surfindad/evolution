@@ -966,13 +966,28 @@
     "slug": "meddefend",
     "sector": "Health",
     "pageUrl": "",
-    "logo": "",
-    "description": "AI-driven medical liability protection platform for physicians and healthcare systems.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/meddefend.jpg",
+    "description": "Healthcare technology platform using AI and data analytics to prevent medical errors and improve patient safety.",
+    "website": "https://mymeddefend.com",
+    "tagline": "Protecting Patients. Empowering Providers.",
+    "longDescription": "MedDefend is a healthcare technology company that provides innovative patient safety solutions designed to protect against medical errors, improve clinical workflows, and enhance overall patient outcomes.\n\nTheir flagship platform focuses on automating error prevention, managing risk, and ensuring regulatory compliance in healthcare settings. By utilizing advanced data analytics and machine learning, MedDefend helps healthcare organizations detect potential issues before they occur, significantly reducing the incidence of medical errors and improving patient safety.\n\nMedDefend's commitment to reducing preventable harm and improving patient outcomes represents a transformative solution that simplifies healthcare access and decision-making for patients by integrating AI-driven tools and community support into the platform.",
+    "founders": "Sarah Porter, Jeremy Mitchell",
+    "founded": "",
+    "coverImage": "/images/meddefend-product.jpg",
+    "team": [
+      {
+        "name": "Sarah Porter",
+        "title": "Co-Founder & CEO",
+        "bio": "Sarah Porter is the Co-Founder and CEO of MedDefend, a company focused on patient empowerment and healthcare navigation. She has a strong background in healthcare technology and leadership, previously holding positions at Coviance and State Farm. Sarah's vision for MedDefend is to simplify healthcare access and decision-making for patients by integrating AI-driven tools and community support into the platform.",
+        "photo": "/images/meddefend-sarah.jpg"
+      },
+      {
+        "name": "Jeremy Mitchell",
+        "title": "Co-Founder",
+        "bio": "Jeremy Mitchell is the Co-Founder of MedDefend, a company focused on medical education services based in Des Moines. He played a key role in launching the company, helping to shape its vision of improving access to vital healthcare information. His leadership at MedDefend reflects his commitment to leveraging technology for better medical education and patient outcomes.",
+        "photo": "/images/meddefend-jeremy.jpg"
+      }
+    ]
   },
   {
     "id": 29,
