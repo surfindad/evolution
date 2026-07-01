@@ -335,13 +335,21 @@ function TeamSection({ team }: { team: { name: string; title: string; bio: strin
               className="flex flex-col gap-6"
             >
               <div className="w-36 h-36 rounded-full overflow-hidden border border-white/10">
-                <Image
-                  src={member.photo}
-                  alt={member.name}
-                  width={144}
-                  height={144}
-                  className="object-cover object-top w-full h-full"
-                />
+                {member.photo ? (
+                  <Image
+                    src={member.photo}
+                    alt={member.name}
+                    width={144}
+                    height={144}
+                    className="object-cover object-top w-full h-full"
+                  />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center bg-white/[0.04]">
+                    <span className="font-raleway font-black text-green-accent text-4xl leading-none">
+                      {member.name.charAt(0)}
+                    </span>
+                  </div>
+                )}
               </div>
               <div>
                 <h3 className="font-raleway font-black uppercase text-white text-xl leading-none mb-2">

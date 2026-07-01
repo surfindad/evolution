@@ -1063,13 +1063,39 @@
     "slug": "mypanda",
     "sector": "Consumer",
     "pageUrl": "",
-    "logo": "",
-    "description": "Personal assistant next door app \u2014 hyper-local services on demand.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/panda-logo.jpg",
+    "description": "Personal assistant app connecting users with local helpers, known as Pandas, for flexible and fairly paid help with daily tasks.",
+    "website": "https://mypandaapp.com",
+    "tagline": "Your personal assistant next door.",
+    "longDescription": "My Panda is a pioneering personal assistant app designed to address the time and support scarcity faced by women today. The app connects users with local helpers, known as Pandas, who provide flexible and fairly paid assistance with daily tasks. My Panda streamlines the process of requesting and receiving support for errands and chores through a secure, user-friendly platform.\n\nAt Evolution, we recognize the value of My Panda's approach to supporting women and local communities through practical assistance. Their commitment to enhancing daily life and creating job opportunities for local helpers aligns with our dedication to fostering innovation that addresses real societal challenges and empowers diverse entrepreneurs.",
+    "founders": "Tamara Lucas",
+    "founded": "",
+    "team": [
+      {
+        "name": "Tamara Lucas",
+        "title": "Founder & CEO",
+        "bio": "Tamara Lucas founded My Panda with a vision to create a service that connects neighbors to help with everyday tasks. Her background includes a Master's in Social Work from the University of Georgia, and she has a deep passion for community-building and offering flexible job opportunities. Tamara has led My Panda through its growth, building a hyperlocal service that supports both its users and local businesses.",
+        "photo": "/images/panda-tamara.jpg"
+      },
+      {
+        "name": "Anna Hamilton",
+        "title": "Operations",
+        "bio": "Anna Hamilton manages operations at My Panda, ensuring the smooth functioning of the platform and overseeing the management of Pandas (personal assistants) who deliver on-demand services. With a focus on process optimization, Anna ensures that both the client-side experience and the backend logistics are aligned with the company's mission of community-driven support.",
+        "photo": ""
+      },
+      {
+        "name": "Chris Waterbury",
+        "title": "Lead Developer & Chief Software Architect",
+        "bio": "Chris Waterbury is responsible for the technical architecture and development of My Panda's app. With a background in physics and biology from the Georgia Institute of Technology, Waterbury has extensive experience in app development and has worked in various technology consulting roles prior to joining My Panda. He oversees the app's functionality, ensuring a user-friendly and reliable platform for both customers and Pandas.",
+        "photo": ""
+      },
+      {
+        "name": "Jonathan Richter",
+        "title": "Head of Product",
+        "bio": "Jonathan Richter leads product development at My Panda, focusing on enhancing user experience and expanding service offerings. He works closely with the development and operations teams to ensure that My Panda's product aligns with customer needs and market trends.",
+        "photo": ""
+      }
+    ]
   },
   {
     "id": 32,
