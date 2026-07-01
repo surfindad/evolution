@@ -1161,13 +1161,34 @@
     "slug": "offi",
     "sector": "Enterprise",
     "pageUrl": "",
-    "logo": "",
-    "description": "Flexible workspace management platform for distributed teams and hybrid offices.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/offi-logo.jpg",
+    "description": "Blended office solutions offering a hybrid approach to workspace management that seamlessly combines remote and in-office work.",
+    "website": "https://www.getoffi.com",
+    "tagline": "Blended office solutions for the future of work.",
+    "longDescription": "Offi is a company that provides blended office solutions, offering a hybrid approach to workspace management that seamlessly combines remote and in-office work environments. By providing flexible, scalable office spaces and comprehensive management tools, Offi enables businesses to optimize their operations, reduce overhead costs, and enhance employee productivity and satisfaction. Their services are tailored to meet the evolving needs of modern businesses in a dynamic work environment.\n\nAt Evolution, we recognize the transformative potential of Offi's blended office solutions. As the future of work continues to shift towards hybrid models, Offi's innovative approach to workspace management aligns with our mission to support companies that drive meaningful change and efficiency in the business world. Offi's commitment to flexibility and productivity makes them an invaluable partner in shaping the future of work.",
+    "founders": "Gonzalo Aguero, Angelina Vigliocco, Iván Addolorato",
+    "founded": "",
+    "coverImage": "/images/offi-cover.jpg",
+    "team": [
+      {
+        "name": "Gonzalo Aguero",
+        "title": "Co-Founder & CEO",
+        "bio": "Gonzalo Aguero is the Co-Founder and CEO of Offi, where he leads the company's vision and strategic direction. With extensive experience in marketplace solutions, he plays a crucial role in scaling Offi's B2B platform for remote workspaces. His leadership focuses on enabling companies to efficiently manage their remote workforce through innovative hybrid office solutions.",
+        "photo": "/images/offi-gonzalo.jpg"
+      },
+      {
+        "name": "Angelina Vigliocco",
+        "title": "Co-Founder & COO",
+        "bio": "Angelina Vigliocco serves as the Co-Founder and Chief Operating Officer of Offi, overseeing the company's daily operations and ensuring smooth business processes. She brings her operational expertise to optimize internal workflows and client services. Her role is central in managing both the team and the platform's expanding global presence.",
+        "photo": "/images/offi-angelina.jpg"
+      },
+      {
+        "name": "Iván Addolorato",
+        "title": "Co-Founder & CTO",
+        "bio": "As Co-Founder and Chief Technology Officer, Iván Addolorato leads the technology development at Offi, ensuring that the platform remains at the cutting edge of remote work solutions. His technical leadership enables the seamless integration of technology and user experience, allowing companies and individuals to efficiently find and book flexible workspaces worldwide.",
+        "photo": "/images/offi-ivan.jpg"
+      }
+    ]
   },
   {
     "id": 35,
