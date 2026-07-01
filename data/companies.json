@@ -1023,13 +1023,39 @@
     "slug": "mv",
     "sector": "Enterprise",
     "pageUrl": "",
-    "logo": "",
-    "description": "Your ERP and CRM complement \u2014 bridging the gap between operations and customer success.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/mv-logo.jpg",
+    "description": "AI-native operating system for field sales and logistics teams, automating routing, orders, delivery, and payment.",
+    "website": "https://movilventas.com/en/home/",
+    "tagline": "Your ERP and CRM complement.",
+    "longDescription": "MV AI is an AI-native operating system for field sales and logistic teams. The company streamlines and automates all parts of the field sales process, from routing and order processing to delivery and payment.\n\nCurrently, over 600,000 field sales teams are using fragmented, manual processes to run their organization. MV is changing that. Our routing system alone saves our clients on avg. 12 hours a week.\n\nAt Evolution, we recognize how MV Sales & Logistics is solving critical pain points in wholesale distribution. Founded by Pedro Peroni, who comes from a 40-year family background in wholesale distribution and has 15+ years of international sales experience, the company brings deep industry expertise to modernizing sales and logistics.",
+    "founders": "Pedro Peroni",
+    "founded": "",
+    "team": [
+      {
+        "name": "Pedro Peroni",
+        "title": "Co-Founder & CEO",
+        "bio": "Pedro Peroni, Co-Founder and CEO of MV, grew up immersed in the family business, which was the main distributor of Gatorade in Colombia. From a young age, he dedicated summers to working in field sales for Gatorade, trading summer camps for firsthand experience in the industry.\n\nThis hands-on journey not only exposed him to incredible opportunities in the distribution sector but also highlighted its significant challenges \u2014 many of which arise from outdated practices that can be revolutionized through technology. After diving deeper into the process and engaging with colleagues in the food and beverage industry, Pedro recognized a pressing need to automate and modernize these businesses. That realization led to the creation of MV.",
+        "photo": "/images/mv-pedro.jpg"
+      },
+      {
+        "name": "Aida Zamora",
+        "title": "Technology Director",
+        "bio": "Aida is the Technology Director of MV and leads the 8 developers and all R&D efforts. With 10 years of experience in the technology industry, Aida excels at creating innovative solutions to complex real-world problems. Prior to co-founding MV, Aida was the head of QA team at Frubana where she led a team that was focused on quality and control at one of the fastest growing technology companies in Latam.",
+        "photo": "/images/mv-aida.jpg"
+      },
+      {
+        "name": "Silvia Franco",
+        "title": "Business Development",
+        "bio": "Silvia is a dynamic Business Development Specialist with a strong track record of driving growth and innovation across Latin America, the Caribbean, the U.S., and Canada. With a background in Business Administration and complementary studies in Sales and Marketing from Pontificia Universidad Javeriana, Silvia excels at identifying market opportunities and delivering tailored solutions for clients.\n\nOver the course of her career, she's worked with leading global companies such as Oracle, where she exceeded demand generation quotas by connecting businesses with cutting-edge applications and software solutions. Silvia's journey also includes roles focused on trade marketing and innovation, where her strategic insights contributed to increased efficiency and successful product launches.\n\nOutside the office, Silvia is passionate about exploring new cultures, continuously learning, and connecting with like-minded professionals. She brings her curiosity and interpersonal skills into every new challenge, helping companies build meaningful relationships and foster long-term growth.",
+        "photo": "/images/mv-silvia.jpg"
+      },
+      {
+        "name": "Jerson Suaza",
+        "title": "Systems Engineer",
+        "bio": "Jerson Suaza is a Systems Engineer at MV, contributing his technical expertise to building and scaling the company's field sales and logistics platform.",
+        "photo": "/images/mv-jerson.jpg"
+      }
+    ]
   },
   {
     "id": 31,
