@@ -1229,15 +1229,36 @@
     "id": 36,
     "name": "The Paai.com",
     "slug": "paai",
-    "sector": "AI & ML",
+    "sector": "Enterprise",
     "pageUrl": "",
-    "logo": "",
-    "description": "Conversational AI platform enabling businesses to deploy intelligent virtual agents.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/paai-logo.jpg",
+    "description": "Partner management platform giving partner managers the tools to identify, nurture, and optimize successful partnerships and drive revenue growth.",
+    "website": "https://www.thepaai.com",
+    "tagline": "The world's first partner creation platform.",
+    "longDescription": "Paai is an innovative platform designed to empower partner managers by providing them with the tools needed to create and manage successful partnerships from the ground up. The platform offers a comprehensive solution for identifying, nurturing, and optimizing partnerships, ultimately driving significant revenue growth. With a focus on simplifying the partner management process, Paai enables companies to scale their partnership strategies effectively and efficiently.\n\nAt Evolution, we see tremendous value in Paai's unique approach to partner relationship management. By offering a specialized platform tailored to the needs of partner managers, Paai is helping businesses unlock the full potential of their partnerships, driving growth and innovation. Their commitment to simplifying and enhancing the partnership process aligns perfectly with our mission to support companies that drive meaningful change.",
+    "founders": "Delya Jansen, Ilya Rogovoy",
+    "founded": "",
+    "coverImage": "/images/paai-cover.jpg",
+    "team": [
+      {
+        "name": "Delya Jansen",
+        "title": "Founder & CEO",
+        "bio": "Delya Jansen brings over 15 years of experience as a partner manager across startups and large organizations. She has specialized in developing partner strategies from scratch, with a proven track record of driving significant revenue growth — often contributing to 25% or more in partner-driven revenue. Prior to founding Paai, Delya held a pivotal role at NetApp, a leading storage company, where she launched and scaled successful partner programs.",
+        "photo": "/images/paai-delya.jpg"
+      },
+      {
+        "name": "Ilya Rogovoy",
+        "title": "Co-Founder & Head of Product Design",
+        "bio": "Ilya Rogovoy is on a mission to revolutionize how the partnership community manages early-stage partnerships. As Head of Product Design at Paai, he focuses on delivering the world's first partner creation platform to partner managers globally. With 12 years of experience in both business and technology, Ilya has become an expert in optimizing partner relationships and product design.",
+        "photo": "/images/paai-ilya.jpg"
+      },
+      {
+        "name": "Ali Rashidifar",
+        "title": "VP of Engineering",
+        "bio": "Ali Rashidifar is a seasoned startup founder and CTO with over 15 years of experience in product design. He has successfully led four startups, two of which have been acquired. As VP of Engineering at Paai, Ali plays a critical role in shaping the company's technical strategy and ensuring the robust development of its platform.",
+        "photo": "/images/paai-ali.jpg"
+      }
+    ]
   },
   {
     "id": 37,
