@@ -1132,13 +1132,28 @@
     "slug": "nala-membranes",
     "sector": "CleanTech",
     "pageUrl": "",
-    "logo": "",
-    "description": "Advanced filtration membranes for water purification and industrial waste treatment.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/nala-logo.jpg",
+    "description": "Developing the first highly chlorine-tolerant reverse osmosis membrane, resisting biofouling to enable low-cost desalination and water reuse.",
+    "website": "https://nalamembranes.com",
+    "tagline": "The first chlorine-tolerant membrane for reverse osmosis.",
+    "longDescription": "NALA has developed and is commercializing the first highly chlorine tolerant membrane for reverse osmosis. Reverse osmosis membranes are widely applied for desalination and wastewater treatment but conventional membranes are easily clogged and damaged. NALA membranes are uniquely stable to chlorine bleach to prevent biofouling that clogs membranes and making them easily and rapidly cleanable with high concentrations of bleach if used to treat very dirty wastewater. Solving the world's water problems starts with being able to reuse water that we've already used. NALA's technology enables a proven route to cleaning up even the dirtiest water.\n\nAt Evolution, we're excited about NALA Membranes for their bold reimagination of a critical infrastructure component too often plagued by inefficiency. By engineering reverse-osmosis membranes that tolerate chlorine and resist biofouling, they've crafted a technology that boosts reliability and slashes maintenance costs. Their science-first mindset, early validation in demanding water reuse markets, and sharp focus on lowering total cost of ownership position them as a game-changer.",
+    "founders": "Sue Mecham, Judy Riffle",
+    "founded": "",
+    "coverImage": "/images/nala-cover.jpg",
+    "team": [
+      {
+        "name": "Sue Mecham",
+        "title": "Co-Founder & CEO",
+        "bio": "Sue J. Mecham, Ph.D., is Co-Founder and CEO of NALA Membranes. Sue has a polymer chemistry background and over 25 years of experience building and leading technical and business teams in both industry and academia. Sue is passionate about water and water resources and how NALA Membranes can help solve water challenges for industry, agriculture, and humanity.",
+        "photo": "/images/nala-sue.jpg"
+      },
+      {
+        "name": "Judy Riffle",
+        "title": "Co-Founder & CTO",
+        "bio": "Judy Riffle, PhD in polymer chemistry, is the Chief Technical Officer of NALA Membranes and the inventor of NALA's patented polymers. She worked in industry including as Vice President of Research and Development at Thoratec in Berkeley, CA where she co-directed development of their FDA-approved ventricular assist devices and vascular grafts. Dr. Riffle joined Virginia Tech in 1988 as a professor of chemistry, where she taught and conducted research for 31 years mentoring and graduating 68 graduate level polymer chemists and engineers. She is now a Professor Emerita of Chemistry. Dr. Riffle retired from Virginia Tech in 2019 and joined her daughter, Sue Mecham (CEO and also a polymer chemist/engineer) to found NALA Membranes.",
+        "photo": "/images/nala-judy.jpg"
+      }
+    ]
   },
   {
     "id": 34,
