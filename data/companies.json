@@ -1266,13 +1266,34 @@
     "slug": "pickaxe",
     "sector": "AI & ML",
     "pageUrl": "",
-    "logo": "",
-    "description": "No-code AI tool builder \u2014 create and deploy custom AI workflows without engineering.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/pickaxe-logo.jpg",
+    "description": "No-code platform for non-coders to build and monetize businesses on top of GPTs, with a GPT builder, customizable storefronts, and a CRM.",
+    "website": "https://www.pickaxeproject.com/",
+    "tagline": "Build and monetize businesses on top of GPTs.",
+    "longDescription": "Pickaxe is a platform designed for non-coders to build and monetize businesses on top of GPTs. It solves issues such as achieving consistent AI results, branding, and monetization. With tools like a GPT builder, customizable storefronts, and a CRM, Pickaxe allows users to create personalized AI models using their own data and preferences, transforming their AI tools into scalable SaaS businesses.\n\nAt Evolution, we see significant value in Pickaxe's innovative approach to empowering small business owners. Their platform makes AI technology more accessible by providing essential tools for creating, personalizing, and monetizing GPT-based solutions. Pickaxe's focus on helping users efficiently turn AI capabilities into profitable ventures aligns with our commitment to investing in companies that foster meaningful growth through innovation.",
+    "founders": "Nathaniel Mahowald, Mike Gioia, Ian Eck",
+    "founded": "",
+    "coverImage": "/images/pickaxe-cover.jpg",
+    "team": [
+      {
+        "name": "Nathaniel Mahowald",
+        "title": "CEO",
+        "bio": "Nathaniel founded Pickaxe after serving as a Research Associate at ARK, focusing on Autonomous Technology and Robotics. With a strong background in data science, he was previously the lead data scientist at Sivo, a fintech company specializing in debt-as-a-service. His expertise in technology and finance drives Pickaxe's mission to democratize access to AI tools for users without coding skills.",
+        "photo": "/images/pickaxe-nathaniel.jpg"
+      },
+      {
+        "name": "Mike Gioia",
+        "title": "COO",
+        "bio": "Mike transitioned from Hollywood's writers' rooms to technology, where he developed LLM (Large Language Model) pipelines for generating realistic and varied outputs. As COO, he is focused on creating the no-code infrastructure essential for widespread AI adoption among consumers. His unique background in storytelling and tech innovation contributes to the creative direction of Pickaxe.",
+        "photo": "/images/pickaxe-mike.jpg"
+      },
+      {
+        "name": "Ian Eck",
+        "title": "Chief Design Officer",
+        "bio": "Ian is a designer, writer, and filmmaker who has redefined his role as a \"prompt designer.\" He aims to inspire others to embrace prompt design, envisioning a future where these skills are recognized in new and creative terms like \"explorer,\" \"curator,\" or \"artist.\" Ian's vision at Pickaxe is to make AI tools accessible and user-friendly for everyone, promoting creativity and innovation.",
+        "photo": "/images/pickaxe-ian.jpg"
+      }
+    ]
   },
   {
     "id": 38,
