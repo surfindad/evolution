@@ -1103,13 +1103,28 @@
     "slug": "my-town",
     "sector": "AI & ML",
     "pageUrl": "",
-    "logo": "",
-    "description": "AI-powered civic engagement platform bringing communities closer to local government.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/mytown-logo.jpg",
+    "description": "Platform that builds a low-cost digital twin of each town, giving under-resourced local governments on-demand access to integrated municipal data.",
+    "website": "https://mytownai.net",
+    "tagline": "A digital twin for every town.",
+    "longDescription": "My Town AI is an innovative platform designed to empower under-resourced local governments by providing on-demand access to integrated municipal data. By creating a low-cost digital twin of each town, it enables staff, boards, and citizens to make informed decisions on critical issues such as affordable housing, economic development, and emergency management while also increasing productivity for operational tasks such as development proposals, grant writing, and citizen communications.\n\nAt Evolution, we recognize the potential of My Town AI to transform how small governments operate. Their approach to simplifying complex municipal data and providing predictive insights aligns with our commitment to supporting companies that drive meaningful change through technology. By enabling towns to visualize and optimize their planning processes, My Town AI is creating a smarter, more efficient future for local governance.",
+    "founders": "Nicole Sterling, Kavita Rasal",
+    "founded": "",
+    "coverImage": "/images/mytown-cover.jpg",
+    "team": [
+      {
+        "name": "Nicole Sterling",
+        "title": "Founder & CEO",
+        "bio": "Nicole Sterling started building for the public sector because she serves as the Mayor Pro Tem of Nederland, Colorado. In this role, she has made significant contributions to the town's strategy, particularly through her leadership in affordable housing, economic development, resilient growth, and preparing towns like Nederland for the future of technology. Her background ranges from HR to Operations and Finance to Marketing. As a technology product owner, she increased NPS scores, reduced chargebacks by millions, and increased employee performance with an emphasis on organizational learning.",
+        "photo": "/images/mytown-nicole.jpg"
+      },
+      {
+        "name": "Kavita Rasal",
+        "title": "CTO",
+        "bio": "Kavita Rasal's expertise spans from AI-driven product development to large-scale team leadership. As the co-founder and CTO of thePerks.ai, she spearheaded the creation of an AI-first product for D2C brands, to enhance customer retention and predict buying behavior. Before her entrepreneurial ventures, Kavita served as the Director of Software Engineering at Amperity, where she led the $50M ARR product engineering teams for Customer Identity and Customer360. She was an early adopter of Large Language Models (LLMs) for cost-reduction initiatives and played a pivotal role in reducing workflow processing times by 40%.",
+        "photo": "/images/mytown-kavita.jpg"
+      }
+    ]
   },
   {
     "id": 33,
