@@ -16,7 +16,7 @@ const team: {
     name: 'Alex Chompff',
     title: 'Managing Director',
     bio: 'Lead General Partner of Evolution Ventures MinervaFund and AI Thought Leader at Evolution Labs, Alex brings a rare combination of investment expertise and frontier technology insight to his leadership of Evolution Accelerator.',
-    photo: '/images/alex_chompff.png',
+    photo: '/images/alexchompff.jpg',
     links: [
       { label: 'MinervaFund', href: 'https://www.evfm.co/p/funds' },
       { label: 'Evolution Labs', href: 'https://www.evolutionlabs.dev/' },
@@ -38,7 +38,7 @@ const team: {
     name: 'Rodney Ferrell',
     title: 'Partner',
     bio: 'Founder of Ferrell Digital Production and Partner at Evolution Accelerator, Rodney brings creative entrepreneurship and deep expertise in digital media to help portfolio founders tell their stories and build their brands.',
-    photo: '/images/rodney_ferrell.png',
+    photo: '/images/rodney_ferrell.jpg',
     links: [
       { label: 'Ferrell Digital', href: 'https://www.ferrelldigital.co/' },
       { label: 'Evolution Accelerator', href: 'https://www.evolutionaccelerator.co/' },
