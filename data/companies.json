@@ -1602,13 +1602,28 @@
     "slug": "villie",
     "sector": "Consumer",
     "pageUrl": "",
-    "logo": "",
-    "description": "Baby registry and family gifting platform built around community and connection.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/villie-logo.jpg",
+    "description": "Tech platform addressing isolation for expectant and new mothers through communication, gifting, and practical assistance from their invited support \"Village.\"",
+    "website": "https://www.villie.com",
+    "tagline": "Get your Village involved in your journey to mom.",
+    "longDescription": "Villie is a tech platform designed to address the isolation experienced by expectant and new mothers. Through enhanced communication, thoughtful gifting, and practical assistance, Villie fosters a supportive community — mothers invite their \"Village\" to stay connected, celebrate, and mobilize help when needed. The platform creates an interactive and engaging environment where families and friends can actively participate in a mother's journey.\n\nAt Evolution, we value Villie's commitment to building community-driven support networks for mothers. Their approach to connecting families and enhancing care resonates with our mission to support innovative solutions that promote stronger relationships and well-being. Villie's blend of technology and community empowers mothers during an important life stage.",
+    "founders": "Kimberly Jolasun, Melissa Antal Iftimie",
+    "founded": "",
+    "coverImage": "/images/villie-cover.jpg",
+    "team": [
+      {
+        "name": "Kimberly Jolasun",
+        "title": "Co-Founder & CEO",
+        "bio": "Kimberly Jolasun founded Villie after gaining extensive experience in project management for global clinical research trials and working in public relations for major brands. Her career has focused on maternal health and businesses led by women, aiming to impact motherhood positively. Kimberly's personal experiences as a mother helped inspire her vision for Villie, creating a platform that connects new mothers with their support networks.",
+        "photo": "/images/villie-kimberly.jpg"
+      },
+      {
+        "name": "Melissa Antal Iftimie",
+        "title": "Co-Founder",
+        "bio": "Melissa Antal Iftimie is a co-founder of Villie and brings a wealth of experience in developing technology solutions to support families. Her role focuses on ensuring the platform offers a seamless experience for mothers and their communities to interact meaningfully. Melissa's work aims to make Villie a place where families and friends can provide emotional and practical support.",
+        "photo": "/images/villie-melissa.jpg"
+      }
+    ]
   },
   {
     "id": 49,
