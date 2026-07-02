@@ -48,7 +48,7 @@ const team: {
     name: 'Charles Ansbach',
     title: 'Partner',
     bio: 'Lecturer at the UC Davis Graduate School of Management and Partner at Evolution Accelerator, Charles connects founders with world-class academic insight and a lifetime of entrepreneurial and business strategy expertise.',
-    photo: '/images/charles_ansbach.png',
+    photo: '/images/charles_ansbach.jpg',
     links: [
       { label: 'LinkedIn', href: 'https://www.linkedin.com/in/cansbach' },
       { label: 'UC Davis GSM', href: 'https://gsm.ucdavis.edu/faculty/charles-ansbach' },
