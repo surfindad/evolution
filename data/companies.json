@@ -1301,13 +1301,28 @@
     "slug": "qatch",
     "sector": "Consumer",
     "pageUrl": "",
-    "logo": "",
-    "description": "AI-curated personal shopping platform matching consumers to brands they'll love.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/qatch-logo.jpg",
+    "description": "Personalizes the online shopping experience for Gen-Z and Millennial shoppers with AI-driven, tailored brand recommendations.",
+    "website": "https://joinqatch.com",
+    "tagline": "Personalized shopping, powered by AI.",
+    "longDescription": "Qatch, founded by sisters Nicole and Raquel, personalizes the online shopping experience for Gen-Z and Millennial shoppers. Frustrated by impersonal and overwhelming online shopping, they created Qatch to provide tailored recommendations using AI-driven algorithms and personalized preferences. The platform continually refines suggestions to match each user's unique style.\n\nAt Evolution, we value Qatch's innovative approach to transforming the fashion technology space. Their focus on enhancing consumer engagement aligns with our mission to support companies that drive meaningful change and empower diverse entrepreneurs.",
+    "founders": "Nicole Phillips, Raquel Phillips",
+    "founded": "",
+    "coverImage": "/images/qatch-cover.jpg",
+    "team": [
+      {
+        "name": "Nicole Phillips",
+        "title": "Co-Founder & CEO",
+        "bio": "Nicole co-founded Qatch to transform the online shopping experience. With a background as a fashion law attorney, she leveraged her industry expertise to create a personalized shopping platform using iMessage's Tapback feature. Under her leadership, Qatch partners with over 100 brands, including Nordstrom and Free People, offering a seamless shopping experience for busy professionals.",
+        "photo": "/images/qatch-nicole.jpg"
+      },
+      {
+        "name": "Raquel Phillips",
+        "title": "Co-Founder & COO",
+        "bio": "Raquel, Nicole's sister, serves as COO, focusing on the operational and financial aspects of Qatch. She previously worked at PwC before joining forces with Nicole to bring Qatch to life, using her detailed, numbers-oriented approach to balance Nicole's visionary mindset. Together, they successfully navigate the fashion-tech landscape, offering real-time access to brand inventories for their users.",
+        "photo": "/images/qatch-raquel.jpg"
+      }
+    ]
   },
   {
     "id": 39,
