@@ -1425,17 +1425,26 @@
   },
   {
     "id": 42,
-    "name": "Shadowgen",
+    "name": "ShadowGen",
     "slug": "shadowgen",
-    "sector": "Technology",
+    "sector": "AI & ML",
     "pageUrl": "",
-    "logo": "",
-    "description": "Synthetic data generation platform for training AI models without privacy risk.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/shadow-logo.jpg",
+    "description": "AI-powered communications protocol that reconstructs speech from minimal data through a digital voice twin, cutting bandwidth requirements by more than 99%.",
+    "website": "https://www.shadowgen.io",
+    "tagline": "Voice, reimagined for the edge.",
+    "longDescription": "ShadowGen has developed a breakthrough communications protocol that uses AI to reconstruct speech from minimal data through a digital voice twin, reducing bandwidth requirements by more than 99%. This innovation allows voice signals to travel farther and faster, operating even on portions of the spectrum once considered unusable. By running its AI locally on edge devices, ShadowGen minimizes latency, enhances scalability, and eliminates reliance on cloud infrastructure.\n\nAt Evolution, we're inspired by ShadowGen's breakthrough in communication technology, using AI to make voice transmission faster, more efficient, and accessible even in challenging environments. Their ability to cut bandwidth use by over 99% while maintaining quality reflects the kind of bold innovation we look for — technology that redefines what's possible and drives meaningful advancements in how the world connects.",
+    "founders": "Julie Gerber",
+    "founded": "",
+    "coverImage": "/images/shadow-cover.jpg",
+    "team": [
+      {
+        "name": "Julie Gerber",
+        "title": "CEO",
+        "bio": "",
+        "photo": "/images/shadow-julie.jpg"
+      }
+    ]
   },
   {
     "id": 43,
