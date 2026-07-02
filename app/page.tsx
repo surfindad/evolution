@@ -249,12 +249,30 @@ function ThreeCsSection() {
   )
 }
 
-/* ── Sacramento Valley — bento grid ─────────────────────────── */
+/* ── Why Evolution Works — bento grid ───────────────────────── */
 function RegionSection() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-80px' })
 
   const delay = (i: number) => ({ duration: 0.7, delay: i * 0.08, ease: [0.16, 1, 0.3, 1] as const })
+
+  const reasons = [
+    {
+      num: '01',
+      title: 'Capital',
+      body: 'Access to the funding and financial resources that give great ideas the runway to become great companies.',
+    },
+    {
+      num: '02',
+      title: 'Community',
+      body: 'A living network of founders, operators, and partners who actively lift each other up across the Sacramento Valley.',
+    },
+    {
+      num: '03',
+      title: 'Culture',
+      body: 'We back founders building something meaningful — a clear sense of purpose, a strong team, and the conviction to see it through.',
+    },
+  ]
 
   return (
     <section className="py-28 bg-[#1E1E2A]">
@@ -270,7 +288,7 @@ function RegionSection() {
               transition={{ duration: 0.5 }}
               className="label-mono mb-6"
             >
-              Sacramento Valley
+              Why Evolution Works
             </motion.p>
             <WordReveal
               text="California's most underestimated ecosystem."
@@ -285,37 +303,50 @@ function RegionSection() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-white/50 text-base font-inter max-w-xs leading-relaxed lg:text-right"
           >
-            Numbers that tell the story of a region ready to become the next great startup hub.
+            Capital, community, and culture — the three things every founder actually needs.
           </motion.p>
         </div>
 
         {/* Bento grid */}
-        <div ref={ref} className="grid grid-cols-1 gap-px bg-white/[0.05] rounded-2xl overflow-hidden">
-
-          {/* 50+ — full width */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={delay(0)}
-            className="bg-[#16161F] p-8 lg:p-10 flex items-center justify-between gap-6"
-          >
-            <div>
-              <span
-                className="font-raleway font-black text-green-accent leading-none"
-                style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)' }}
-              >
-                50+
-              </span>
-              <span className="text-white/35 font-inter text-sm block mt-1">Portfolio companies</span>
-            </div>
-            <a
-              href="/portfolio"
-              className="inline-flex items-center gap-2 text-green font-raleway font-bold text-xs tracking-[0.25em] uppercase border border-green/25 px-6 py-3 rounded-full hover:bg-green/10 hover:border-green/50 transition-all duration-300 shrink-0"
+        <div ref={ref} className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-white/[0.05] rounded-2xl overflow-hidden">
+          {reasons.map((r, i) => (
+            <motion.div
+              key={r.num}
+              initial={{ opacity: 0, y: 30 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={delay(i)}
+              className="bg-[#16161F] p-8 lg:p-10 flex flex-col gap-5 hover:bg-[#1a1a26] transition-colors duration-300"
             >
-              View All <ArrowUpRight size={13} />
-            </a>
-          </motion.div>
+              <span className="text-white/45 font-inter text-xs tracking-widest">{r.num}</span>
+              <h3 className="font-raleway font-black uppercase text-white text-2xl leading-none">{r.title}</h3>
+              <p className="text-white/40 font-inter text-sm leading-relaxed flex-1">{r.body}</p>
+            </motion.div>
+          ))}
         </div>
+
+        {/* 50+ — full width */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={delay(3)}
+          className="mt-px bg-[#16161F] p-8 lg:p-10 flex items-center justify-between gap-6 rounded-2xl border border-white/[0.05]"
+        >
+          <div>
+            <span
+              className="font-raleway font-black text-green-accent leading-none"
+              style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)' }}
+            >
+              50+
+            </span>
+            <span className="text-white/35 font-inter text-sm block mt-1">Portfolio companies</span>
+          </div>
+          <a
+            href="/portfolio"
+            className="inline-flex items-center gap-2 text-green font-raleway font-bold text-xs tracking-[0.25em] uppercase border border-green/25 px-6 py-3 rounded-full hover:bg-green/10 hover:border-green/50 transition-all duration-300 shrink-0"
+          >
+            View All <ArrowUpRight size={13} />
+          </a>
+        </motion.div>
       </div>
     </section>
   )
