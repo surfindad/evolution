@@ -1330,13 +1330,28 @@
     "slug": "revshopp",
     "sector": "E-Commerce",
     "pageUrl": "",
-    "logo": "",
-    "description": "Social commerce platform turning customer reviews into a revenue-driving discovery channel.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/rev-logo.jpg",
+    "description": "Data-driven platform using body shape intelligence to optimize e-commerce sales with tailored strategies, personalized recommendations, and higher conversion.",
+    "website": "https://revshopp.com",
+    "tagline": "Body shape intelligence for smarter online shopping.",
+    "longDescription": "RevShopp is a data-driven platform designed to optimize e-commerce sales by providing tailored strategies and insights for online retailers. The platform leverages advanced algorithms and market data to enhance product recommendations, boost conversion rates, and drive customer engagement. RevShopp's goal is to help businesses maximize their revenue potential by offering intelligent, personalized solutions to scale their online presence efficiently.\n\nAt Evolution Accelerator, we see tremendous value in RevShopp's innovative approach to transforming the e-commerce landscape. Their focus on using data and technology to deliver personalized shopping experiences aligns with our commitment to supporting forward-thinking companies that bring impactful solutions to the market. RevShopp's ability to help businesses drive higher engagement and sales while streamlining their operations is a key factor in our decision to invest in this visionary company.",
+    "founders": "Amy Wister, Subbu Balakrishnan",
+    "founded": "",
+    "coverImage": "/images/rev-cover.jpg",
+    "team": [
+      {
+        "name": "Amy Wister",
+        "title": "Co-Founder and CEO",
+        "bio": "Amy Wister is the Co-Founder and CEO of RevShopp, where she leads the development of innovative solutions that leverage body shape intelligence to transform the online shopping experience. With over a decade of experience in data-driven retail and customer behavior analytics, Amy's work focuses on personalizing shopping recommendations to boost customer confidence and reduce return rates. Her vision for RevShopp is to create a seamless shopping experience that empowers both consumers and retailers.",
+        "photo": "/images/rev-amy.jpg"
+      },
+      {
+        "name": "Subbu Balakrishnan",
+        "title": "Co-Founder & CTO",
+        "bio": "Subbu Balakrishnan serves as the Co-Founder and Chief Technology Officer (CTO) of RevShopp, responsible for overseeing the technological infrastructure and development of the platform's core algorithms. He has extensive experience in software engineering and data science, with a focus on scalable systems and AI-driven personalization tools. At RevShopp, Subbu ensures that the platform's technology evolves to meet the changing needs of retailers and consumers alike.",
+        "photo": "/images/rev-subbu.jpg"
+      }
+    ]
   },
   {
     "id": 40,
