@@ -290,37 +290,14 @@ function RegionSection() {
         </div>
 
         {/* Bento grid */}
-        <div ref={ref} className="grid grid-cols-2 lg:grid-cols-4 grid-rows-[auto_auto] gap-px bg-white/[0.05] rounded-2xl overflow-hidden">
+        <div ref={ref} className="grid grid-cols-1 gap-px bg-white/[0.05] rounded-2xl overflow-hidden">
 
-          {/* Featured — #5 (tall, left) */}
+          {/* 50+ — full width */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={delay(0)}
-            className="col-span-2 row-span-2 bg-[#16161F] p-10 lg:p-14 flex flex-col justify-between relative overflow-hidden min-h-[280px]"
-          >
-            {/* decorative corner arc */}
-            <div className="absolute top-0 right-0 w-48 h-48 rounded-bl-full bg-green/[0.04]" />
-            <p className="label-mono">Top Ranked</p>
-            <div>
-              <span
-                className="font-raleway font-black text-green-accent leading-none block"
-                style={{ fontSize: 'clamp(5rem, 14vw, 12rem)' }}
-              >
-                #5
-              </span>
-              <span className="text-white/40 font-inter text-base leading-relaxed max-w-[20ch] block mt-2">
-                Regionally for women entrepreneurs
-              </span>
-            </div>
-          </motion.div>
-
-          {/* 50+ — wide bottom */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={delay(3)}
-            className="col-span-2 bg-[#16161F] p-8 lg:p-10 flex items-center justify-between gap-6"
+            className="bg-[#16161F] p-8 lg:p-10 flex items-center justify-between gap-6"
           >
             <div>
               <span
