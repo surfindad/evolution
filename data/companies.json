@@ -1472,15 +1472,30 @@
     "id": 44,
     "name": "The Agenda",
     "slug": "theagenda",
-    "sector": "Enterprise",
+    "sector": "Health",
     "pageUrl": "",
-    "logo": "",
-    "description": "Smart scheduling and meeting intelligence platform for high-performance teams.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/theagenda-logo.jpg",
+    "description": "Mobile app supporting women's health by tracking menstrual cycles and integrating that data with holistic resources for physical, mental, and emotional well-being.",
+    "website": "https://www.theagendaperiod.com",
+    "tagline": "Understand and manage your cycle.",
+    "longDescription": "The Agenda is a company focused on supporting women's health by developing a mobile app that helps users better understand and manage their menstrual cycles. The platform not only tracks cycles and symptoms but also integrates this data with holistic resources, offering tailored products and services to promote physical, mental, and emotional well-being. By addressing the growing demand for holistic health tools, The Agenda seeks to empower individuals with knowledge and support through personalized health insights and recommendations.\n\nAt Evolution, we value The Agenda's innovative approach to women's health, especially their focus on integrating technology with personalized care solutions. Their mission aligns with our goal of investing in companies that drive meaningful impact in everyday lives by leveraging technology to improve health outcomes.",
+    "founders": "Alyx Coble-Frakes, Anna Sneed",
+    "founded": "",
+    "coverImage": "/images/theagenda-cover.jpg",
+    "team": [
+      {
+        "name": "Alyx Coble-Frakes",
+        "title": "CEO",
+        "bio": "Alyx Coble-Frakes is the visionary behind The Agenda, where she leads as the CEO. With a passion for women's health, she co-founded the company to help people better understand and navigate their menstrual cycles. Alyx's background in holistic health coaching has fueled her mission to empower individuals with personalized cycle tracking and well-being solutions.",
+        "photo": "/images/theagenda-alyx.jpg"
+      },
+      {
+        "name": "Anna Sneed",
+        "title": "COO",
+        "bio": "Anna Sneed serves as the COO of The Agenda, overseeing operations and ensuring smooth execution of the company's vision. With a strong organizational background, she focuses on enhancing the platform's functionality and user experience. Anna's leadership is instrumental in bringing innovative health solutions to the market, supporting the company's growth and impact on users' well-being.",
+        "photo": "/images/theagenda-anna.jpg"
+      }
+    ]
   },
   {
     "id": 45,
