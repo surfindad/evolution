@@ -1631,13 +1631,34 @@
     "slug": "windharvest",
     "sector": "CleanTech",
     "pageUrl": "",
-    "logo": "",
-    "description": "Vertical axis wind turbines engineered for low-wind environments and urban deployment.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/wind-logo.jpg",
+    "description": "Proprietary near-ground wind turbines that efficiently capture turbulent, low-speed wind, unlocking sites where traditional turbines are less effective.",
+    "website": "https://windharvest.com",
+    "tagline": "Harvesting wind, close to the ground.",
+    "longDescription": "Wind Harvest is a company dedicated to developing innovative wind turbine technology that efficiently captures wind energy at low heights, close to the ground. Their proprietary near-ground wind turbines are designed to operate in areas with turbulent, low-speed winds, making them an ideal solution for sites where traditional wind turbines are less effective. Wind Harvest's technology increases the accessibility of wind energy, advancing global efforts to reduce reliance on fossil fuels and increase the use of renewable energy sources.\n\nAt Evolution, we recognize the transformative potential of Wind Harvest's cutting-edge wind turbine technology. By addressing the limitations of traditional turbines and unlocking new opportunities in wind energy generation, Wind Harvest is positioned to drive significant change in the renewable energy landscape. Their focus on efficiency and scalability aligns with our commitment to investing in companies that bring innovative and impactful solutions to the world's most pressing challenges.",
+    "founders": "Kevin Wolf",
+    "founded": "",
+    "coverImage": "/images/wind-cover.jpg",
+    "team": [
+      {
+        "name": "Kevin Wolf",
+        "title": "Founder & CEO",
+        "bio": "Kevin Wolf has over 20 years of experience in renewable energy and is the driving force behind Wind Harvest's mission to revolutionize wind energy. As CEO, he focuses on the development and deployment of the company's cutting-edge wind turbines designed to capture low-level winds, improving energy production efficiency. His expertise in business strategy and energy systems has positioned Wind Harvest as an innovative player in the clean energy sector.",
+        "photo": "/images/wind-kevin.jpg"
+      },
+      {
+        "name": "Christine Nielson",
+        "title": "President, Wind Harvest Pilot Project",
+        "bio": "Christine Nielson has a long-standing career in promoting sustainability, including founding Coyuchi, Inc., which was the first U.S. company to create organic cotton home products. At Wind Harvest, she leads the pilot projects, leveraging her deep experience in eco-friendly initiatives to advance the company's turbine technology. Her leadership is integral to scaling Wind Harvest's projects in alignment with global sustainability goals.",
+        "photo": "/images/wind-christine.jpg"
+      },
+      {
+        "name": "Cornelius Fitzgerald",
+        "title": "Board Member",
+        "bio": "Cornelius Fitzgerald joined Wind Harvest's management team in 2013 and previously served as CEO, where he led key negotiations, secured financing, and helped commercialize the company's turbine technology. Currently a board member, Cornelius also works with Clean Energy Holdings, LLC, and Blair Energy, LLC, aligning Wind Harvest's interests with large-scale clean energy projects. He holds a bachelor's degree in finance from the University of Arizona and an MBA in sustainable enterprise from Dominican University of California.",
+        "photo": ""
+      }
+    ]
   },
   {
     "id": 50,
