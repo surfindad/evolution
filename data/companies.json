@@ -1524,15 +1524,36 @@
     "id": 46,
     "name": "Tumbleweed",
     "slug": "tumbleweed",
-    "sector": "Consumer",
+    "sector": "Health",
     "pageUrl": "",
-    "logo": "",
-    "description": "Plant-based snack brand bringing bold, sustainable flavors to the better-for-you category.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/tumbleweed-logo.jpg",
+    "description": "Human-centered legacy planning platform helping families organize records, capture wishes, and close gaps in legal, financial, and insurance needs through agentic AI.",
+    "website": "https://tumbleweedplan.com",
+    "tagline": "Compassionate tech, starting at life's most difficult crossroads.",
+    "longDescription": "Tumbleweed is a human-centered legacy planning platform helping families organize records, capture wishes, and close gaps in their legal, financial, and insurance needs over time. Through a compassionate SaaS experience powered by agentic AI, Tumbleweed supports both aging adults and the 1 in 5 caregivers navigating complex end-of-life planning. With over 90% of its revenue coming from B2B partnerships, Tumbleweed is already closing critical policyholder engagement gaps for insurance carriers, while making it easier for families to prepare, not just react. Headquartered in the Midwest, Tumbleweed is building the future of compassionate tech — starting at life's most difficult crossroads.\n\nAt Evolution, we backed Tumbleweed because of their unwavering commitment to solving one of the most emotionally complex and operationally fragmented challenges families face. Their personal experiences, deep industry expertise, and bold vision for human-centered legacy planning set the foundation for a solution the market has long needed.",
+    "founders": "Paul Richardson, Keisha Chandler, Colleen Kinsey",
+    "founded": "",
+    "coverImage": "/images/tumbleweed-cover.jpg",
+    "team": [
+      {
+        "name": "Paul Richardson",
+        "title": "Founder & CEO",
+        "bio": "Paul is a healthcare veteran turned tech founder who has lived the caregiving journey firsthand. With a background in organizational development and healthcare transformation, he's passionate about making end-of-life planning more equitable, accessible, and empowering for all families.",
+        "photo": "/images/tumbleweed-paul.jpg"
+      },
+      {
+        "name": "Keisha Chandler",
+        "title": "Co-Founder & COO",
+        "bio": "Keisha brings over a decade of experience in operational leadership and strategic planning across public health and nonprofit sectors. A systems thinker and community builder, she is committed to transforming how we support families before and after loss.",
+        "photo": "/images/tumbleweed-keisha.jpg"
+      },
+      {
+        "name": "Colleen Kinsey",
+        "title": "Co-Founder & Product Lead",
+        "bio": "Colleen is a UX/UI leader with deep experience spanning startups to legacy insurance carriers. Her human-centered design expertise and personal experiences with family caregiving fuel her drive to build technology that truly supports people in times of transition.",
+        "photo": "/images/tumbleweed-colleen.jpg"
+      }
+    ]
   },
   {
     "id": 47,
