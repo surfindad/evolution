@@ -1382,13 +1382,46 @@
     "slug": "seemedx",
     "sector": "Health",
     "pageUrl": "",
-    "logo": "",
-    "description": "Medical imaging AI that accelerates diagnosis and reduces radiologist workload.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/seemedx-logo.jpg",
+    "description": "Non-invasive healthcare technology that detects acute Congestive Heart Failure symptoms up to 72 hours in advance through real-time hemodynamic monitoring.",
+    "website": "https://seemedx.com",
+    "tagline": "Early detection and prevention of heart failure.",
+    "longDescription": "SeeMedX is pioneering non-invasive healthcare solutions for early detection and prevention of heart failure. Their advanced technology detects acute Congestive Heart Failure (CHF) symptoms up to 72 hours in advance, allowing healthcare providers to adjust treatments proactively through real-time hemodynamic monitoring, enhancing patient care and saving lives.\n\nAt Evolution, we recognize the groundbreaking potential of SeeMedX's approach to improving cardiac care. Their focus on non-invasive, early detection aligns with our mission to support innovative companies led by underrepresented founders, driving systemic transformation in the healthcare industry and beyond.",
+    "founders": "Deborah Simpson",
+    "founded": "",
+    "coverImage": "/images/seemedx-cover.jpg",
+    "team": [
+      {
+        "name": "Deborah Simpson",
+        "title": "CEO",
+        "bio": "Deborah Simpson brings over two decades of experience in the medical device industry to her role as CEO of SeeMedX. She has a background in mergers and acquisitions, ensuring that the company grows strategically and sustainably. Additionally, she serves on the Board of Directors for NASA's incubator program, showcasing her leadership in high-tech and medical innovation sectors.",
+        "photo": "/images/seemedx-deborah.jpg"
+      },
+      {
+        "name": "Dr. Marc O'Griofa, MD, PhD",
+        "title": "Chief Medical Officer",
+        "bio": "Dr. Marc O'Griofa is a highly accomplished physician and biomedical engineer, holding positions such as a NASA Aquanaut and NOAA-trained Diving Medical Officer. His experience includes working as Medical Director for the City of Las Vegas and serving in key roles with the Space Shuttle program. At SeeMedX, Dr. O'Griofa is focused on advancing medical technologies to enhance patient care.",
+        "photo": "/images/seemedx-marc.jpg"
+      },
+      {
+        "name": "EJ Bird, CPA",
+        "title": "Chief Financial Officer",
+        "bio": "EJ Bird is responsible for overseeing the financial operations of SeeMedX. With a background spanning industries such as retail, investment management, and oil and gas, EJ brings a wealth of experience in managing complex financial structures. His innovative approach to finance helps the company remain competitive in the fast-evolving healthcare technology landscape.",
+        "photo": "/images/seemedx-ej.jpg"
+      },
+      {
+        "name": "Michael O'Gorman",
+        "title": "President, Commercial Operations",
+        "bio": "Michael O'Gorman is an expert in life sciences, focusing on business development and customer relationships. His role at SeeMedX involves driving commercial growth while maintaining a strong connection with patients and healthcare providers. He brings extensive experience in administration, finance, and customer service to his leadership position.",
+        "photo": "/images/seemedx-michael.jpg"
+      },
+      {
+        "name": "Dr. Kevin Ferguson, MD FACEP FCCM",
+        "title": "Chief Product Officer",
+        "bio": "Dr. Kevin Ferguson is an experienced ICU and ER physician, with leadership experience as the Founding Program Director of the University of Florida's Emergency Medicine department. He has also served as Medical Director for NASA and is an entrepreneur in the healthcare space. At SeeMedX, he leads product development, ensuring the company's offerings are cutting-edge and tailored to patient needs.",
+        "photo": "/images/seemedx-kevin.jpg"
+      }
+    ]
   },
   {
     "id": 42,
