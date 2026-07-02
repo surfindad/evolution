@@ -1503,13 +1503,22 @@
     "slug": "thepocketpanty",
     "sector": "Consumer",
     "pageUrl": "",
-    "logo": "",
-    "description": "Innovative intimates with hidden pockets \u2014 function meets fashion.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/thepocketpanty-logo.jpg",
+    "description": "On-the-go underwear solution for women addressing unexpected incontinence, heavy periods, and vaginal odor \u2014 compact, individually wrapped, and discreet.",
+    "website": "https://thepocketpanty.com",
+    "tagline": "A spare pair when you need it most.",
+    "longDescription": "Pocket Panty provides an innovative, on-the-go underwear solution for women, addressing common challenges such as unexpected incontinence, heavy periods, and vaginal odor. Each pair is compact, individually wrapped, and designed to offer comfort, convenience, and confidence in various situations. The company's mission is to promote inclusivity, resilience, and dignity for women facing such challenges, while expanding access to clean, affordable underwear globally.\n\nAt Evolution, we see tremendous potential in Pocket Panty's unique approach to addressing women's wellness needs. Their focus on offering a convenient, portable solution for common, often stigmatized issues aligns with our goal of supporting businesses that create meaningful social impact. Pocket Panty's emphasis on inclusivity and accessibility, coupled with its commitment to empowering women, makes them a valuable addition to our portfolio.",
+    "founders": "Ashlee L. Turner",
+    "founded": "",
+    "coverImage": "/images/pocketpanty-cover.jpg",
+    "team": [
+      {
+        "name": "Ashlee L. Turner",
+        "title": "Founder",
+        "bio": "Ashlee L. Turner founded The Pocket Panty to offer an innovative, on-the-go underwear solution for women. Previously, she ran a successful candy business, Sweet Sugar, on the Melrose Strip in Los Angeles, catering celebrity events before turning her focus to sales and entrepreneurship. Ashlee is committed to using The Pocket Panty to address the stigma surrounding common issues women face, while supporting underprivileged communities through access to essential products.",
+        "photo": "/images/pocketpanty-ashlee.jpg"
+      }
+    ]
   },
   {
     "id": 46,
