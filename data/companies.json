@@ -1357,15 +1357,24 @@
     "id": 40,
     "name": "REX",
     "slug": "rex",
-    "sector": "Fintech",
+    "sector": "AI & ML",
     "pageUrl": "",
-    "logo": "",
-    "description": "Real estate exchange platform streamlining transactions between buyers, sellers, and agents.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/rex-logo.jpg",
+    "description": "A vertical AI Chief Marketing Agent that optimizes ad budgets across 32+ channels in real time, replacing agencies and in-house teams.",
+    "website": "https://www.rexd.com",
+    "tagline": "Your AI Chief Marketing Agent.",
+    "longDescription": "We've started a revolution in the $1T digital advertising industry. REX is a $1k/mo vertical AI Chief Marketing Agent (CMA) that optimizes your ad budget across our 32+ ad channels including Google, Meta, Amazon, display, TikTok, streaming, etc. in real time in order to maximize revenue. No more agencies. No more ad accounts. No more fraud, waste and abuse. Only results. You = making money.\n\nAt Evolution, we backed REX for their transformative take on digital advertising, a trillion-dollar industry overdue for disruption. By combining agency-level expertise with vertical AI, they've built a platform that automates ad buying, targeting, and optimization, delivering efficiency and performance. With proven traction, a leadership team with deep AdTech and brand-side experience, and early validation from paying customers, REX is positioned to democratize high-impact advertising. Their scalable, AI-driven model offers a smarter, faster, and far more cost-effective alternative to agencies and in-house teams, unlocking a powerful new way for brands to grow.",
+    "founders": "Sean Gilfillan",
+    "founded": "",
+    "coverImage": "/images/rex-cover.jpg",
+    "team": [
+      {
+        "name": "Sean Gilfillan",
+        "title": "CEO",
+        "bio": "Sean Gilfillan is an accomplished executive and former $1B+ Chief Marketing Officer with a track record of driving transformational growth at scale. He has served as a U.S. Diplomat and an Army Officer, bringing a unique blend of global leadership, strategic insight, and operational excellence. Sean's career spans the private and public sectors, where he has consistently delivered impact across marketing, international relations, and organizational strategy.",
+        "photo": "/images/rex-sean.jpg"
+      }
+    ]
   },
   {
     "id": 41,
