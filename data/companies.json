@@ -1557,17 +1557,44 @@
   },
   {
     "id": 47,
-    "name": "Veracity",
+    "name": "Veracity Labs",
     "slug": "veracity",
     "sector": "Technology",
     "pageUrl": "",
-    "logo": "",
-    "description": "Trust and verification infrastructure for digital identity and content authenticity.",
-    "website": "",
-    "tagline": "",
-    "longDescription": "",
-    "founders": "",
-    "founded": ""
+    "logo": "/images/veracity-logo.jpg",
+    "description": "Cybersecurity company tackling the human factor with VIV ID, a \"Single Point of Truth\" that makes access unshareable, authentication unphishable, and assets undiscoverable.",
+    "website": "https://www.veracitylabs.io",
+    "tagline": "Making authentication unphishable.",
+    "longDescription": "Veracity Labs is a cybersecurity company that focuses on addressing some of the most critical vulnerabilities in the modern digital world: the human factor. Their flagship product, VIV ID, introduces a revolutionary solution by creating a \"Single Point of Truth,\" which securely links users' identities to their digital assets, making access unshareable, authentication unphishable, and assets undiscoverable. By developing a robust cybersecurity defense ecosystem, Veracity Labs aims to significantly reduce the risk of breaches stemming from human errors, such as social engineering attacks.\n\nAt Evolution, we recognize Veracity Labs' innovative approach to tackling cybersecurity challenges. Their technology is poised to redefine how businesses protect themselves from threats, ensuring stronger defense mechanisms built on human-focused vulnerabilities. Veracity Labs' ability to make authentication nearly impenetrable and assets untraceable is a bold leap in a high-risk landscape. We believe their solutions align perfectly with our mission to back companies that are both transformative and essential to their industries.",
+    "founders": "Shmuel Silverman",
+    "founded": "",
+    "coverImage": "/images/veracity-cover.jpg",
+    "team": [
+      {
+        "name": "Shmuel Silverman",
+        "title": "Founder & CEO",
+        "bio": "Shmuel Silverman is a serial entrepreneur and inventor with over 100 patents in the fields of telecommunications, cybersecurity, and human-centric technologies. As the founder of Veracity Labs, his vision is to revolutionize cybersecurity by addressing vulnerabilities stemming from human error. His extensive experience spans leadership roles in companies focused on AI, communication, and security innovations.",
+        "photo": "/images/veracity-shmuel.jpg"
+      },
+      {
+        "name": "Michael Miller",
+        "title": "Chief Revenue Officer",
+        "bio": "Michael Miller is responsible for driving revenue growth and optimizing sales strategies at Veracity Labs. With extensive experience in business development, he plays a key role in expanding Veracity's market reach. His focus is on building strong customer relationships and driving revenue through strategic initiatives.",
+        "photo": "/images/veracity-michael.jpg"
+      },
+      {
+        "name": "Andrea Tiller",
+        "title": "Chief Financial Officer",
+        "bio": "Andrea Tiller manages the financial operations of Veracity Labs. With a robust background in finance, she ensures financial strategies align with the company's growth goals. Andrea is instrumental in maintaining fiscal responsibility as Veracity expands its innovative solutions in cybersecurity.",
+        "photo": "/images/veracity-andrea.jpg"
+      },
+      {
+        "name": "Chris Clausen",
+        "title": "Chief Product Officer",
+        "bio": "Chris Clausen leads product development and innovation at Veracity Labs. As the Chief Product Officer, he is tasked with overseeing the design and execution of the company's flagship solutions, including VIV ID. His work ensures that Veracity's products meet the highest standards of security and usability.",
+        "photo": "/images/veracity-chris.jpg"
+      }
+    ]
   },
   {
     "id": 48,
