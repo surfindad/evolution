@@ -268,6 +268,6 @@ Photos uploaded directly to `public/images/` (flat, not a `team/` subfolder as e
 
 - [ ] Hannah Savage team page headshot — only one of the 4 core team photos still missing
 - [ ] Confirm who owns/monitors the Airtable base the Apply Now / Contact / Do Not Sell forms submit to
-- [ ] Event photos to add somewhere (about/home page) — not yet sourced
+- [x] Event photos for About page — done: 3 photos (`about-event-1/2/3.jpg`) added to the `PhotoBanner` gallery on `app/about/page.tsx`
 - [ ] Admisio `founded` year — never provided by source site
 - [ ] User flagged wanting to revisit "this part of the website" (unspecified section) as feeling underdeveloped — needs follow-up to clarify which page/section
