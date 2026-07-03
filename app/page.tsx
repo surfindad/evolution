@@ -324,27 +324,18 @@ function RegionSection() {
           ))}
         </div>
 
-        {/* 50+ — full width */}
+        {/* View all — centered CTA */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={delay(3)}
-          className="mt-px bg-[#16161F] p-8 lg:p-10 flex items-center justify-between gap-6 rounded-2xl border border-white/[0.05]"
+          className="mt-12 flex justify-center"
         >
-          <div>
-            <span
-              className="font-raleway font-black text-green-accent leading-none"
-              style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)' }}
-            >
-              50+
-            </span>
-            <span className="text-white/35 font-inter text-sm block mt-1">Portfolio companies</span>
-          </div>
           <a
             href="/portfolio"
-            className="inline-flex items-center gap-2 text-green font-raleway font-bold text-xs tracking-[0.25em] uppercase border border-green/25 px-6 py-3 rounded-full hover:bg-green/10 hover:border-green/50 transition-all duration-300 shrink-0"
+            className="inline-flex items-center gap-2 text-green font-raleway font-bold text-xs tracking-[0.25em] uppercase border border-green/25 px-6 py-3 rounded-full hover:bg-green/10 hover:border-green/50 transition-all duration-300"
           >
-            View All <ArrowUpRight size={13} />
+            View Full Portfolio <ArrowUpRight size={13} />
           </a>
         </motion.div>
       </div>

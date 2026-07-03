@@ -27,7 +27,7 @@ const team: {
     name: 'Hannah Savage',
     title: 'Investment Lead',
     bio: 'Investment Lead at Evolution Ventures MinervaFund and Managing Director of Elevate Global IO, Hannah brings sharp investment instincts and a global network to support founders at every stage of their journey.',
-    photo: '/images/hannah_savage.png',
+    photo: null,
     links: [
       { label: 'LinkedIn', href: 'https://www.linkedin.com/in/hannahsavage7' },
       { label: 'MinervaFund', href: 'https://www.evfm.co/p/funds' },

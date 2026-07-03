@@ -146,7 +146,7 @@ function Hero() {
             className="lg:max-w-sm border-l-2 border-green/30 pl-6 shrink-0"
           >
             <p className="text-white/40 font-inter text-base leading-relaxed">
-              A free-to-nest community of innovators, investors, and partners united in
+              A free-to-join community of innovators, investors, and partners united in
               expanding the breadth and reach of the Evolution Ecosystem.
             </p>
           </motion.div>
@@ -347,7 +347,7 @@ function Terms() {
               className="text-white/35 font-inter text-base leading-relaxed mb-8"
             >
               As the world grows more complex, we&apos;ve had to add formal terms — but the spirit
-              remains unchanged. No cages.
+              remains unchanged: open, transparent, and built on trust.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 10 }}
@@ -400,7 +400,7 @@ function Terms() {
           className="mt-20 pt-10 border-t border-white/[0.06] max-w-2xl"
         >
           <p className="text-white/50 font-inter text-lg leading-relaxed italic">
-            &ldquo;Thank you. Without the birds, the tree will be lonely. May agape and peace be yours.&rdquo;
+            &ldquo;Thank you for being part of the ecosystem. We&apos;re better, together.&rdquo;
           </p>
         </motion.div>
       </div>

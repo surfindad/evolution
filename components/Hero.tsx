@@ -58,23 +58,6 @@ export default function Hero() {
         </span>
       </motion.div>
 
-      {/* Depth plane 3 — floating stat bottom-right (mid) */}
-      <motion.div
-        className="absolute bottom-20 right-10 lg:right-20 hidden lg:flex flex-col items-end pointer-events-none"
-        style={{ x: midX, y: midY }}
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1.8, duration: 1 }}
-      >
-        <span
-          className="font-raleway font-black text-green-accent leading-none"
-          style={{ fontSize: 'clamp(4rem, 7vw, 7rem)' }}
-        >
-          50+
-        </span>
-        <span className="label-mono mt-1 text-right">Portfolio Companies</span>
-      </motion.div>
-
       {/* Vignette */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#1E1E2A]/10 via-transparent to-[#1E1E2A]/80 pointer-events-none" />
 

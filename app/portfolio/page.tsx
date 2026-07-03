@@ -14,8 +14,6 @@ const THESIS = [
 
 const STATS = [
   { value: '50+',  label: 'Portfolio Companies' },
-  { value: '9',    label: 'Sectors' },
-  { value: '#5',   label: 'Women Entrepreneurs' },
 ]
 
 export default function PortfolioPage() {
@@ -98,10 +96,10 @@ export default function PortfolioPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, delay: 0.65 }}
-            className="grid grid-cols-2 lg:grid-cols-4 gap-px bg-white/[0.06] rounded-xl overflow-hidden"
+            className="inline-flex bg-white/[0.06] rounded-xl overflow-hidden self-start"
           >
             {STATS.map((s) => (
-              <div key={s.label} className="bg-[#1E1E2A] px-6 py-5 flex flex-col gap-1">
+              <div key={s.label} className="bg-[#1E1E2A] px-8 py-5 flex flex-col gap-1">
                 <span className="font-raleway font-black text-green-accent leading-none" style={{ fontSize: 'clamp(1.8rem, 4vw, 2.8rem)' }}>
                   {s.value}
                 </span>
