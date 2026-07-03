@@ -206,18 +206,18 @@ function TeamGrid() {
               {/* Photo / initials */}
               <div className="mb-8">
                 {member.photo ? (
-                  <div className="w-20 h-20 rounded-full overflow-hidden border border-white/10 group-hover:border-green/30 transition-colors duration-300">
+                  <div className="w-36 h-36 rounded-full overflow-hidden border border-white/10 group-hover:border-green/30 transition-colors duration-300">
                     <Image
                       src={member.photo}
                       alt={member.name}
-                      width={80}
-                      height={80}
+                      width={144}
+                      height={144}
                       className="object-cover object-top w-full h-full"
                     />
                   </div>
                 ) : (
-                  <div className="w-20 h-20 rounded-full bg-white/[0.06] border border-white/[0.08] group-hover:border-green/20 flex items-center justify-center transition-colors duration-300">
-                    <span className="font-raleway font-black text-white/40 text-2xl leading-none">
+                  <div className="w-36 h-36 rounded-full bg-white/[0.06] border border-white/[0.08] group-hover:border-green/20 flex items-center justify-center transition-colors duration-300">
+                    <span className="font-raleway font-black text-white/40 text-4xl leading-none">
                       {member.name.split(' ').map((n) => n[0]).join('')}
                     </span>
                   </div>
@@ -280,8 +280,8 @@ function TeamGrid() {
               transition={{ duration: 0.7, delay: (filled.length + i) * 0.1 }}
               className="bg-[#16161F] p-10 flex flex-col items-start justify-center min-h-[280px]"
             >
-              <div className="w-20 h-20 rounded-full border border-dashed border-white/10 flex items-center justify-center mb-8">
-                <ImageIcon size={18} className="text-white/15" />
+              <div className="w-36 h-36 rounded-full border border-dashed border-white/10 flex items-center justify-center mb-8">
+                <ImageIcon size={24} className="text-white/15" />
               </div>
               <p className="text-white/15 font-inter text-sm tracking-widest uppercase">
                 Coming soon
