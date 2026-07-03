@@ -13,8 +13,9 @@ const links = [
     Icon: TrendingUp,
     iconBg: 'bg-orange-500/15',
     iconColor: 'text-orange-400',
-    topBar: 'from-orange-500/60 via-orange-400/30 to-transparent',
-    glow: 'group-hover:shadow-[0_0_40px_rgba(249,115,22,0.15)]',
+    borderHover: 'hover:border-orange-400/40',
+    topBar: 'from-orange-500 via-orange-400/40 to-transparent',
+    glow: 'group-hover:shadow-[0_0_40px_rgba(249,115,22,0.18)]',
     stat: 'Minerva Fund',
     statLabel: 'Active investment vehicle',
   },
@@ -26,8 +27,9 @@ const links = [
     Icon: DollarSign,
     iconBg: 'bg-green/10',
     iconColor: 'text-green',
-    topBar: 'from-green/60 via-green/30 to-transparent',
-    glow: 'group-hover:shadow-[0_0_40px_rgba(119,221,119,0.15)]',
+    borderHover: 'hover:border-green/40',
+    topBar: 'from-green via-green/40 to-transparent',
+    glow: 'group-hover:shadow-[0_0_40px_rgba(119,221,119,0.18)]',
     stat: 'Apply Now',
     statLabel: 'Open to new applicants',
   },
@@ -39,8 +41,9 @@ const links = [
     Icon: Rss,
     iconBg: 'bg-amber-500/15',
     iconColor: 'text-amber-400',
-    topBar: 'from-amber-500/60 via-amber-400/30 to-transparent',
-    glow: 'group-hover:shadow-[0_0_40px_rgba(245,158,11,0.15)]',
+    borderHover: 'hover:border-amber-400/40',
+    topBar: 'from-amber-500 via-amber-400/40 to-transparent',
+    glow: 'group-hover:shadow-[0_0_40px_rgba(245,158,11,0.18)]',
     stat: 'Newsletter',
     statLabel: 'Ecosystem insights & news',
   },
@@ -81,38 +84,38 @@ export default function LearnMore() {
               initial={{ opacity: 0, y: 40 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, delay: 0.1 + i * 0.12, ease: [0.25, 0.4, 0.25, 1] }}
-              className={`glass rounded-2xl flex flex-col relative overflow-hidden transition-all duration-500 ${link.glow}`}
+              className={`group glass rounded-2xl flex flex-col relative overflow-hidden transition-all duration-500 hover:-translate-y-1.5 ${link.borderHover} ${link.glow}`}
             >
               {/* Top accent bar */}
-              <div className={`h-px w-full bg-gradient-to-r ${link.topBar}`} />
+              <div className={`h-1 w-full bg-gradient-to-r ${link.topBar}`} />
 
               <div className="p-8 flex flex-col gap-6 flex-1">
                 {/* Icon + stat row */}
                 <div className="flex items-start justify-between">
-                  <div className={`w-12 h-12 rounded-xl ${link.iconBg} flex items-center justify-center`}>
-                    <link.Icon size={22} className={link.iconColor} />
+                  <div className={`w-14 h-14 rounded-2xl ${link.iconBg} flex items-center justify-center transition-transform duration-500 group-hover:scale-110`}>
+                    <link.Icon size={26} className={link.iconColor} />
                   </div>
                   <div className="text-right">
                     <p className={`font-raleway font-black text-sm ${link.iconColor}`}>{link.stat}</p>
-                    <p className="text-white/25 text-xs font-inter mt-0.5">{link.statLabel}</p>
+                    <p className="text-white/35 text-xs font-inter mt-0.5">{link.statLabel}</p>
                   </div>
                 </div>
 
                 {/* Text */}
                 <div className="flex-1">
-                  <p className="text-green/40 text-xs font-inter tracking-widest uppercase mb-2">
+                  <p className={`text-xs font-inter font-bold tracking-widest uppercase mb-2 ${link.iconColor} opacity-70`}>
                     {link.label}
                   </p>
-                  <h3 className="font-raleway font-bold text-white text-xl mb-3 group-hover:text-green transition-colors duration-300">
+                  <h3 className="font-raleway font-bold text-white text-2xl mb-3 group-hover:text-green transition-colors duration-300">
                     {link.title}
                   </h3>
-                  <p className="text-white/30 text-sm font-inter leading-relaxed">
+                  <p className="text-white/45 text-sm font-inter leading-relaxed">
                     {link.description}
                   </p>
                 </div>
 
                 {/* CTA */}
-                <div className={`flex items-center gap-2 text-sm font-inter font-semibold transition-colors duration-300 ${link.iconColor} opacity-70 group-hover:opacity-100`}>
+                <div className={`flex items-center gap-2 text-sm font-inter font-semibold transition-all duration-300 ${link.iconColor} pt-2 border-t border-white/[0.06] group-hover:gap-3`}>
                   Visit Platform <ExternalLink size={13} />
                 </div>
               </div>
