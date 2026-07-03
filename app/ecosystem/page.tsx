@@ -11,30 +11,35 @@ const partners = [
     name: 'MasterVerse.AI',
     description: 'AI-powered services platform',
     href: 'https://www.masterverse.ai/p/services',
+    logo: '/images/masterverseAI-logo.jpg',
   },
   {
     num: '02',
     name: 'Evolution Venture Catalyst',
     description: 'Venture catalyst program',
     href: 'https://www.evolutionacceleration.com/venture-catalyst-program',
+    logo: '/images/evolution-logo.jpg',
   },
   {
     num: '03',
     name: 'Elevate Global',
     description: 'Global acceleration services',
     href: 'https://www.elevateglobal.io/p/services',
+    logo: '/images/elevateglobal-logo.jpg',
   },
   {
     num: '04',
     name: 'Red Dot Accelerator',
     description: 'Accelerator program partner',
     href: 'https://www.evolutionacceleration.com/red-dot-accelerator',
+    logo: '/images/reddotaccelerator-logo.jpg',
   },
   {
     num: '05',
     name: 'The CRC Digest',
     description: 'Ecosystem news and insights',
     href: 'https://crcdigest.com/',
+    logo: '/images/thecrc-logo.jpg',
   },
 ]
 
@@ -279,9 +284,14 @@ function Partners() {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
-              className="group grid grid-cols-[56px_1fr_auto] md:grid-cols-[80px_1fr_300px_auto] gap-6 md:gap-12 py-8 md:py-10 hover:bg-white/[0.02] transition-colors duration-500 -mx-6 px-6 lg:-mx-10 lg:px-10 items-center"
+              className="group grid grid-cols-[56px_44px_1fr_auto] md:grid-cols-[80px_64px_1fr_300px_auto] gap-6 md:gap-12 py-8 md:py-10 hover:bg-white/[0.02] transition-colors duration-500 -mx-6 px-6 lg:-mx-10 lg:px-10 items-center"
             >
               <span className="text-white/45 font-inter text-sm tracking-widest">{p.num}</span>
+              <img
+                src={p.logo}
+                alt={`${p.name} logo`}
+                className="w-10 h-10 md:w-14 md:h-14 rounded-lg object-contain bg-white p-1.5 shrink-0"
+              />
               <h3
                 className="font-raleway font-black uppercase text-white/70 group-hover:text-white transition-colors duration-300 leading-none"
                 style={{ fontSize: 'clamp(1.5rem, 3vw, 2.5rem)' }}
