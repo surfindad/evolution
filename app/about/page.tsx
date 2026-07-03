@@ -2,7 +2,7 @@
 
 import { useRef } from 'react'
 import { motion, useInView, useScroll, useTransform } from 'framer-motion'
-import { ArrowRight, ImageIcon } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 
 /* ── Data ────────────────────────────────────────────────────── */
 const pillars = [
@@ -193,10 +193,16 @@ function Mission() {
   )
 }
 
-/* ── Photo banner placeholder ────────────────────────────────── */
+/* ── Photo banner — event gallery ────────────────────────────── */
 function PhotoBanner() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-60px' })
+
+  const photos = [
+    { src: '/images/about-event-1.jpg', alt: 'Evolution Accelerator community at an ecosystem event' },
+    { src: '/images/about-event-2.jpg', alt: 'Alex Chompff speaking at a founder coaching session' },
+    { src: '/images/about-event-3.jpg', alt: 'Evolution Accelerator community at a MinervaFund investor session' },
+  ]
 
   return (
     <section className="bg-[#1E1E2A] px-6 lg:px-10">
@@ -205,14 +211,16 @@ function PhotoBanner() {
         initial={{ opacity: 0, y: 20 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.8 }}
-        className="max-w-7xl mx-auto"
+        className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4"
       >
-        {/* Replace with: <img src="/images/about-banner.jpg" alt="Evolution Accelerator" className="w-full h-[520px] object-cover rounded-2xl" /> */}
-        <div className="w-full h-64 md:h-[480px] rounded-2xl border border-dashed border-white/10 flex flex-col items-center justify-center gap-3 bg-white/[0.015]">
-          <ImageIcon size={32} className="text-white/15" />
-          <p className="text-white/20 font-inter text-sm tracking-widest uppercase">Team / Event Photo</p>
-          <p className="text-white/12 font-inter text-xs">Drop image at /public/images/about-banner.jpg</p>
-        </div>
+        {photos.map((photo) => (
+          <img
+            key={photo.src}
+            src={photo.src}
+            alt={photo.alt}
+            className="w-full h-64 md:h-[420px] object-cover rounded-2xl"
+          />
+        ))}
       </motion.div>
     </section>
   )
