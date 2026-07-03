@@ -284,13 +284,13 @@ function Partners() {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
-              className="group grid grid-cols-[56px_72px_1fr_auto] md:grid-cols-[80px_112px_1fr_300px_auto] gap-6 md:gap-12 py-8 md:py-10 hover:bg-white/[0.02] transition-colors duration-500 -mx-6 px-6 lg:-mx-10 lg:px-10 items-center"
+              className="group grid grid-cols-[40px_96px_1fr_auto] md:grid-cols-[64px_176px_1fr_300px_auto] gap-6 md:gap-12 py-8 md:py-10 hover:bg-white/[0.02] transition-colors duration-500 -mx-6 px-6 lg:-mx-10 lg:px-10 items-center"
             >
               <span className="text-white/45 font-inter text-sm tracking-widest">{p.num}</span>
               <img
                 src={p.logo}
                 alt={`${p.name} logo`}
-                className="w-16 h-16 md:w-24 md:h-24 rounded-lg object-contain bg-white p-2 shrink-0"
+                className="w-20 h-20 md:w-40 md:h-40 rounded-xl object-contain bg-white p-3 shrink-0"
               />
               <h3
                 className="font-raleway font-black uppercase text-white/70 group-hover:text-white transition-colors duration-300 leading-none"
