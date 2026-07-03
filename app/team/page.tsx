@@ -56,8 +56,8 @@ const team: {
     ],
   },
   {
-    name: '',
-    title: '',
+    name: 'Coleman',
+    title: 'Operator. Investor. Thinker.',
     bio: '',
     photo: null,
     links: [],
