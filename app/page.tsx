@@ -259,18 +259,18 @@ function RegionSection() {
   const reasons = [
     {
       num: '01',
-      title: 'Capital',
-      body: 'Access to the funding and financial resources that give great ideas the runway to become great companies.',
+      title: 'Track Record',
+      body: '50+ companies backed across 9 sectors — from AI to CleanTech, Health to Fintech. A portfolio built on proof, not promises.',
     },
     {
       num: '02',
-      title: 'Community',
-      body: 'A living network of founders, operators, and partners who actively lift each other up across the Sacramento Valley.',
+      title: 'Founder-First Terms',
+      body: 'Free to join. We only earn when you do — a flat 10% on revenue generated through the ecosystem, nothing else.',
     },
     {
       num: '03',
-      title: 'Culture',
-      body: 'We back founders building something meaningful — a clear sense of purpose, a strong team, and the conviction to see it through.',
+      title: 'Direct Access',
+      body: 'No layers, no gatekeepers. You work directly with the partners who make the decisions — not an analyst three steps removed.',
     },
   ]
 
@@ -291,7 +291,7 @@ function RegionSection() {
               Why Evolution Works
             </motion.p>
             <WordReveal
-              text="California's most underestimated ecosystem."
+              text="Built for founders, not spreadsheets."
               className="font-raleway font-black leading-tight gradient-text"
               style={{ fontSize: 'clamp(2rem, 5vw, 5rem)' }}
             />
@@ -303,7 +303,7 @@ function RegionSection() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-white/50 text-base font-inter max-w-xs leading-relaxed lg:text-right"
           >
-            Capital, community, and culture — the three things every founder actually needs.
+            Three things that set us apart from a typical accelerator.
           </motion.p>
         </div>
 
