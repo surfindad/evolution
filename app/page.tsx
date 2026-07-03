@@ -369,7 +369,7 @@ function StatementBand() {
           className="font-raleway font-black uppercase text-[#1E1E2A] leading-none"
           style={{ fontSize: 'clamp(2.2rem, 5vw, 4.5rem)' }}
         >
-          50+ companies.<br />One ecosystem.
+          One ecosystem.<br />Endless potential.
         </p>
         <a
           href="/portfolio"
